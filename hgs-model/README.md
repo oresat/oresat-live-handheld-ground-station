@@ -41,6 +41,19 @@ Phone Holder:
 	Designed to hold the phone in a landscape orientation.
 
 	Dimensions:
-		Base 60mm x 100mm x
-		Peg Diameter
+		Base 60mm x 100mm x 10mm
+		Attachment holes:
+			Hole Diameter: 4mm
+			Row Spacing: 10mm
+			Row to Row Distance: 50mm
 		Clamps 20mm x 25mm x 100mm (designed to hold max 15mm thick phones)
+
+		Spacers: 10mm x 10mm x 60mm
+
+Handle:
+	Single handle under the device for holding, attaches to bottom of backplane.
+
+	Dimensions:
+		Attachment holes:
+			Diameter: 4mm
+			Spacing: 20mm
