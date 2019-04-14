@@ -17,6 +17,7 @@ Defining variables to use throughout this CSS file
 
 body {
     background-color: rgb(157, 160, 156);
+    color: var(--nav-bar-text);
 }
 /*=======================================*/
 /* Header bar at top of page             */
