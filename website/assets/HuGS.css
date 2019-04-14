@@ -1,0 +1,124 @@
+/* 
+Defining variables to use throughout this CSS file 
+<variable name> : <variable content>
+*/
+:root {
+  --nav-bar-text: rgb(233, 233, 233);
+  --nav-bar-bg: rgb(106, 107, 106);
+  --nav-hover-text: rgb(254, 255, 254);
+  --nav-hover-bg: rgb(65, 66, 65);
+}
+
+/* Reset margins and padding for everything */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(157, 160, 156);
+}
+/*=======================================*/
+/* Header bar at top of page             */
+/* Style the navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: var(--nav-bar-bg);
+    display: flex;
+}
+
+.topnav a {
+    float: right;
+    color: var(--nav-bar-text);
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 16px;
+    margin: auto;
+}
+
+.topnav a:hover {
+    background-color: var(--nav-hover-bg);
+    color: var(--nav-hover-text);
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.topnav img{
+    float: center;
+    height: 100%;
+    width: auto;
+    margin: auto;
+    padding-left: 10px;
+}
+
+.title{
+    flex:1 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin: auto;
+    color: var(--nav-bar-text);
+}
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+.navbar a {
+    float: none;
+    display: block;
+}
+} 
+
+/*=======================================*/
+/* Formats for image with overlayed text */
+.stream-wrapper {
+    text-align: center;
+}
+
+.stream-container {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
+
+.stream-container img {
+    width: 100%;
+    border: 5px solid black;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
