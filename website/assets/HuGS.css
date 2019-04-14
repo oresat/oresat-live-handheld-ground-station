@@ -53,6 +53,7 @@ body {
     width: auto;
     margin: auto;
     padding-left: 10px;
+    min-height: 30px;
 }
 
 .title{
@@ -76,6 +77,7 @@ body {
 
 /*=======================================*/
 /* Formats for image with overlayed text */
+#colon { visibility:hidden }
 .stream-wrapper {
     text-align: center;
 }
@@ -85,11 +87,12 @@ body {
     text-align: center;
     display: inline-block;
     margin: auto;
+    border: 5px solid black;
+    padding: 5px;
 }
 
 .stream-container img {
     width: 100%;
-    border: 5px solid black;
 }
 
 .bottom-left {

@@ -6,6 +6,7 @@
   <title>OreSat Live - Streaming Page</title>
   <link rel="stylesheet" href="assets/HuGS.css" />
   <link rel="icon" href="assets/img/oresat.svg"/>
+  <script src="assets/jquery.min.js"></script>
 </head>
 
 <!------------------------------------>
@@ -24,12 +25,23 @@
 <div class="stream-wrapper">
   <div class="stream-container">
     <img src="assets/img/test.png" alt="test">
-    <div class="bottom-left">Bottom Left</div>
-    <div class="top-left">Top Left</div>
-    <div class="top-right">Top Right</div>
-    <div class="bottom-right">Bottom Right</div>
-    <div class="centered">Centered</div>
+    <div class="bottom-right">
+        <span id="hours"></span><span id="colon">:</span><span id="minutes"></span>
+    </div>
   </div>
+
 </div>
 </body>
+
+<script type="text/javascript">
+var toggle = true;
+setInterval(function() {
+  var d = new Date().toLocaleTimeString('en-US', { hour12: false, hour: 'numeric', minute: 'numeric' });
+  var parts = d.split(":");
+  $('#hours').text(parts[0]);
+  $('#minutes').text(parts[1]);
+  $("#colon").css({ visibility: toggle?"visible":"hidden"});
+  toggle=!toggle;
+},1000);
+</script>
 </html>
