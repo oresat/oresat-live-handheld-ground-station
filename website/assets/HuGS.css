@@ -7,6 +7,7 @@ Defining variables to use throughout this CSS file
   --nav-bar-bg: rgb(106, 107, 106);
   --nav-hover-text: rgb(254, 255, 254);
   --nav-hover-bg: rgb(65, 66, 65);
+  --overlay-text: rgb(86, 219, 59);
 }
 
 /* Reset margins and padding for everything */
@@ -118,6 +119,7 @@ body {
     position: absolute;
     bottom: 8px;
     right: 16px;
+    color: var(--overlay-text);
 }
 
 .centered {
