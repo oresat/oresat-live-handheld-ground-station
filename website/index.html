@@ -24,7 +24,8 @@
 <body>
 <div class="stream-wrapper">
   <div class="stream-container">
-    <img src="assets/img/stream_error.png" alt="test">
+    <img id="live-stream" src="./?action=stream" onerror="this.src='assets/img/stream_error.png'" alt="Live Stream">
+
     <div class="bottom-right">
         <span id="hours"></span><span id="colon">:</span><span id="minutes"></span>
     </div>
