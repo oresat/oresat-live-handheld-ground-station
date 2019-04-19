@@ -7,6 +7,41 @@
   <link rel="stylesheet" href="assets/HuGS.css" />
   <link rel="icon" href="assets/img/oresat.svg"/>
   <script src="assets/jquery.min.js"></script>
+
+  <!-- Allows for pausing of video stream -->
+  <script>
+    var playing = true;
+    var callback;
+
+    function reload_img() {
+      var d = new Date();
+      document.getElementById('live-stream').src="/latest.jpg?now="+d.getTime();
+    }
+
+    function play() {
+      var btn = document.getElementById('btn');
+      btn.innerText = 'Pause';
+      callback = setInterval(reload_img, 500);
+      playing = true;
+    }
+
+    function pause() {
+      var btn = document.getElementById('btn');
+      btn.innerText = 'Play';
+      clearInterval(callback);
+      playing = false;
+    }
+
+    function btn_clicked() {
+      if (playing == true) { 
+        pause();
+      }
+      else {
+        play();
+      }
+    }
+
+  </script>
 </head>
 
 <!------------------------------------>
@@ -21,10 +56,10 @@
 
 <!------------------------------------>
 <!--Page Contents-->
-<body>
+<body onload = "play()">
 <div class="stream-wrapper">
   <div class="stream-container">
-    <img id="live-stream" src="./?action=stream" onerror="this.src='assets/img/stream_error.png'" alt="Live Stream">
+    <img id="live-stream" src="/latest.jpg" onerror="this.src='assets/img/stream_error.png'" alt="Live Stream">
 
     <div class="bottom-right">
         <span id="hours"></span><span id="colon">:</span><span id="minutes"></span>
