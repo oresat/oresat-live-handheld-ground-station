@@ -2,7 +2,7 @@
 
 Helical Antenna Segment:
 	This antenna is designed to be 100mm on it's longest axis (height).
-	It is designed to be printed standing up, with the pins at the top.
+	It is designed to be printed standing up, with the peg at the top.
 
 	Four of these segments make up a single antenna.
 
