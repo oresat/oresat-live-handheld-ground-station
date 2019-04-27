@@ -57,3 +57,11 @@ Handle:
 		Attachment holes:
 			Diameter: 4mm
 			Spacing: 20mm
+
+Fasteners:
+	Using #4 screws and nuts as standard fasteners.
+		Model dimensions for insets and holes: (added clearances to account for printing inaccuracies)
+			Hole diamaeter: 3mm
+			Nut/head height: 2.5mm
+			Flat to flat width: 6.5mm
+			Corner to corner: 7.5mm
