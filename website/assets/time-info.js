@@ -5,7 +5,11 @@ setInterval(function() {
   $('#hours').text(parts[0]);
   $('#minutes').text(parts[1]);
   $('#seconds').text(parts[2]);
-  $("#colon").css({ visibility: toggle?"visible":"hidden"});
-  $("#colon2").css({ visibility: toggle?"visible":"hidden"});
+
+  // Blink all colons
+  var c = document.getElementsByClassName("colon");
+  for(var i=0; i<c.length; i++){
+    $(c[i]).css({ visibility: toggle?"visible":"hidden"});
+  }
   toggle=!toggle;
 },1000);
