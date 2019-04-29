@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name DxWiFi)(type KiCad)(uri /home/jordan/Projects/oresat-live-handheld-ground-station/backplane/backplane)(options "")(descr ""))
+)
