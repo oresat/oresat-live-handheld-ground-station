@@ -7,41 +7,8 @@
   <link rel="stylesheet" href="assets/HuGS.css" />
   <link rel="icon" href="assets/img/oresat.svg"/>
   <script src="assets/jquery.min.js"></script>
-
-  <!-- Allows for pausing of video stream -->
-  <script>
-    var playing = true;
-    var callback;
-
-    function reload_img() {
-      var d = new Date();
-      document.getElementById('live-stream').src="/latest.jpg?now="+d.getTime();
-    }
-
-    function play() {
-      var btn = document.getElementById('btn');
-      btn.innerText = 'Pause';
-      callback = setInterval(reload_img, 500);
-      playing = true;
-    }
-
-    function pause() {
-      var btn = document.getElementById('btn');
-      btn.innerText = 'Play';
-      clearInterval(callback);
-      playing = false;
-    }
-
-    function btn_clicked() {
-      if (playing == true) { 
-        pause();
-      }
-      else {
-        play();
-      }
-    }
-
-  </script>
+  <script src="assets/stream-play.js"></script>
+  <script src="assets/time-info.js"></script>
 </head>
 
 <!------------------------------------>
@@ -86,18 +53,4 @@
 
 </div>
 </body>
-
-<script type="text/javascript">
-var toggle = true;
-setInterval(function() {
-  var d = new Date().toLocaleTimeString('en-US', { hour12: false, hour: 'numeric', minute: 'numeric' , second: 'numeric'});
-  var parts = d.split(":");
-  $('#hours').text(parts[0]);
-  $('#minutes').text(parts[1]);
-  $('#seconds').text(parts[2]);
-  $("#colon").css({ visibility: toggle?"visible":"hidden"});
-  $("#colon2").css({ visibility: toggle?"visible":"hidden"});
-  toggle=!toggle;
-},1000);
-</script>
 </html>
