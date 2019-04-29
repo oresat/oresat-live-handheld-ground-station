@@ -80,6 +80,16 @@ body {
 
 /*=======================================*/
 /* Borders and formatting for stream     */
+#btn {
+    color: var(--nav-bar-text);
+    background-color: var(--nav-bar-bg);
+    border: 1px solid black;
+    padding: 5px;
+}
+#btn:hover{
+    background-color: var(--nav-hover-bg);
+    color: var(--nav-hover-text);
+}
 #colon { visibility:hidden }
 .stream-wrapper {
     text-align: center;

@@ -57,14 +57,17 @@
 <!------------------------------------>
 <!--Page Contents-->
 <body onload = "play()">
+
 <div class="stream-wrapper">
+  <!-- Live Stream here-->
   <div class="stream-container">
     <img id="live-stream" src="/latest.jpg" onerror="this.src='assets/img/stream_error.png'" alt="Live Stream">
+    <button id="btn" onclick="btn_clicked()">Play</button></td></tr>
   </div>
-
-
-
-  <br>
+  
+  <!--Spacing between stream and useful time information-->
+  <br><br>
+  
   <table class="stream-info-wrapper" cellspacing="0">
       <tr class="top bottom row">
         <td>Local Time:</td>
