@@ -115,6 +115,10 @@ body {
     margin: auto;
 }
 
+td.value {
+    text-align: left;
+}
+
 th, td {
     padding-left: 20px;
     padding-right: 20px;
