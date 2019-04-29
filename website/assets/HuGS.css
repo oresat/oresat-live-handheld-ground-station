@@ -8,6 +8,7 @@ Defining variables to use throughout this CSS file
   --nav-hover-text: rgb(254, 255, 254);
   --nav-hover-bg: rgb(65, 66, 65);
   --overlay-text: rgb(86, 219, 59);
+  --info-color  : rgb(0, 0, 0);
 }
 
 /* Reset margins and padding for everything */
@@ -22,7 +23,7 @@ body {
 }
 /*=======================================*/
 /* Header bar at top of page             */
-/* Style the navigation bar */
+/* Style the navigation bar              */
 .topnav {
     overflow: hidden;
     background-color: var(--nav-bar-bg);
@@ -78,7 +79,7 @@ body {
 } 
 
 /*=======================================*/
-/* Formats for image with overlayed text */
+/* Borders and formatting for stream     */
 #colon { visibility:hidden }
 .stream-wrapper {
     text-align: center;
@@ -96,6 +97,41 @@ body {
 .stream-container img {
     width: 100%;
 }
+
+.stream-info-wrapper {
+    position: inherit;
+    text-align: center;
+    color: var(--info-color);
+    margin: auto;
+}
+
+th, td {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px black;
+}
+
+tr.top td {
+    border-top: thin solid black;
+  }
+  
+  tr.bottom td {
+    border-bottom: thin solid black;
+  }
+  
+  tr.row td:first-child {
+    border-left: thin solid black;
+  }
+  
+  tr.row td:last-child {
+    border-right: thin solid black;
+  }
+
+
+/*=======================================*/
+/* Formats for image with overlayed text 
+   Put these classes in the same div as the
+   image you want text over              */
 
 .bottom-left {
     position: absolute;

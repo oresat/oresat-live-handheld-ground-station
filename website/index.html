@@ -60,11 +60,26 @@
 <div class="stream-wrapper">
   <div class="stream-container">
     <img id="live-stream" src="/latest.jpg" onerror="this.src='assets/img/stream_error.png'" alt="Live Stream">
-
-    <div class="bottom-right">
-        <span id="hours"></span><span id="colon">:</span><span id="minutes"></span>
-    </div>
   </div>
+
+
+
+  <br>
+  <table class="stream-info-wrapper" cellspacing="0">
+      <tr class="top bottom row">
+        <td>Local Time:</td>
+        <td colspan=2><span id="hours"></span><span id="colon">:</span><span id="minutes"></span><span id="colon2">:</span><span id="seconds"></span></td>
+      </tr>
+    <tr>
+      <th>AOS</th><th>Zenith</th><th>LOS</th>
+    </tr>
+    <tr>
+      <td>Time AOS</td><td>Time Zenith</td><td>Time LOS</td>
+    </tr>
+    <tr>
+      <td>T+##s</td><td>T-##s</td><td>T-##s</td>
+    </tr>
+  </table>
 
 </div>
 </body>
@@ -72,11 +87,13 @@
 <script type="text/javascript">
 var toggle = true;
 setInterval(function() {
-  var d = new Date().toLocaleTimeString('en-US', { hour12: false, hour: 'numeric', minute: 'numeric' });
+  var d = new Date().toLocaleTimeString('en-US', { hour12: false, hour: 'numeric', minute: 'numeric' , second: 'numeric'});
   var parts = d.split(":");
   $('#hours').text(parts[0]);
   $('#minutes').text(parts[1]);
+  $('#seconds').text(parts[2]);
   $("#colon").css({ visibility: toggle?"visible":"hidden"});
+  $("#colon2").css({ visibility: toggle?"visible":"hidden"});
   toggle=!toggle;
 },1000);
 </script>
