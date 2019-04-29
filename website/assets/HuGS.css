@@ -123,19 +123,19 @@ th, td {
 
 tr.top td {
     border-top: thin solid black;
-  }
-  
-  tr.bottom td {
-    border-bottom: thin solid black;
-  }
-  
-  tr.row td:first-child {
-    border-left: thin solid black;
-  }
-  
-  tr.row td:last-child {
-    border-right: thin solid black;
-  }
+}
+
+tr.bottom td {
+border-bottom: thin solid black;
+}
+
+tr.row td:first-child {
+border-left: thin solid black;
+}
+
+tr.row td:last-child {
+border-right: thin solid black;
+}
 
 
 /*=======================================*/
