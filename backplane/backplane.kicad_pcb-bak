@@ -98,7 +98,7 @@
   )
 
   (module DxWiFi:microstrip (layer F.Cu) (tedit 5CC924BF) (tstamp 5CC8D989)
-    (at 96 86.51731)
+    (at 118.86 116.99731)
     (fp_text reference REF** (at -4 2.5) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -110,7 +110,7 @@
   )
 
   (module muwave_stub (layer F.Cu) (tedit 5CC926B8) (tstamp 5CC9258C)
-    (at 96.52 86.36 270)
+    (at 119.38 116.84 270)
     (fp_text reference REF** (at -1.27 0.5 90) (layer F.SilkS)
       (effects (font (size 0.25 0.25) (thickness 0.05)))
     )
@@ -123,7 +123,7 @@
   )
 
   (module DxWiFi:Antenna (layer F.Cu) (tedit 5CC91BE1) (tstamp 5CC62A88)
-    (at 75 75)
+    (at 97.86 105.48)
     (fp_text reference REF** (at 0 0.5) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -138,7 +138,7 @@
   )
 
   (module DxWiFi:Phone-Holder (layer F.Cu) (tedit 5CC62DB5) (tstamp 5CC62E58)
-    (at 45 108)
+    (at 67.86 138.48)
     (fp_text reference REF** (at 7.9 -13.9) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -158,7 +158,7 @@
   )
 
   (module DxWiFi:Raspberry-Pi-Zero (layer F.Cu) (tedit 5CC625D8) (tstamp 5CC6305F)
-    (at 121 52 90)
+    (at 143.86 82.48 90)
     (fp_text reference REF** (at 10 -5.5 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -179,7 +179,7 @@
   )
 
   (module DxWiFi:Atheros (layer F.Cu) (tedit 5CC624F7) (tstamp 5CC63034)
-    (at 137 96 90)
+    (at 159.86 126.48 90)
     (fp_text reference REF** (at 5 -3.5 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -200,7 +200,7 @@
   )
 
   (module DxWiFi:Handle-Clamp (layer F.Cu) (tedit 5CC62CDD) (tstamp 5CC62B92)
-    (at 55 150)
+    (at 77.86 180.48)
     (fp_text reference REF** (at 8 -4.5) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -217,9 +217,9 @@
     (pad 1 thru_hole circle (at 10 -10) (size 3 3) (drill 0.762) (layers *.Cu *.Mask))
   )
 
-  (gr_line (start 0 150) (end 0 0) (layer Edge.Cuts) (width 0.05) (tstamp 5CC62A61))
-  (gr_line (start 150 150) (end 0 150) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 150 0) (end 150 150) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 0 0) (end 150 0) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 22.86 180.48) (end 22.86 30.48) (layer Edge.Cuts) (width 0.05) (tstamp 5CC62A61))
+  (gr_line (start 172.86 180.48) (end 22.86 180.48) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 172.86 30.48) (end 172.86 180.48) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 22.86 30.48) (end 172.86 30.48) (layer Edge.Cuts) (width 0.05))
 
 )
