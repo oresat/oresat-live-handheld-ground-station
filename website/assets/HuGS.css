@@ -3,9 +3,10 @@ Defining variables to use throughout this CSS file
 <variable name> : <variable content>
 */
 :root {
+  --body-bg: rgb(255, 255, 255);
   --nav-bar-text: rgb(233, 233, 233);
-  --nav-bar-bg: rgb(106, 107, 106);
-  --nav-hover-text: rgb(254, 255, 254);
+  --nav-bar-bg: rgb(4, 77, 4);
+  --nav-hover-text: rgb(3, 56, 3);
   --nav-hover-bg: rgb(65, 66, 65);
   --overlay-text: rgb(86, 219, 59);
   --info-color  : rgb(0, 0, 0);
@@ -18,7 +19,7 @@ Defining variables to use throughout this CSS file
 }
 
 body {
-    background-color: rgb(157, 160, 156);
+    background-color: var(--body-bg);
     color: var(--nav-bar-text);
 }
 /*=======================================*/
