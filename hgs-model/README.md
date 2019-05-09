@@ -10,6 +10,7 @@ Helical Antenna Segment:
 	especially to fill the pegs.
 
 	Models were originally created with Solidworks. .SLDPRT files, and exported .STL files will live here.
+	When modifying .sldprt files, make sure to save a copy as .stl as well for printing.
 
 	Dimensions:
 		Diameter 39.5mm
@@ -52,6 +53,8 @@ Phone Holder:
 
 Handle:
 	Single handle under the device for holding, attaches to bottom of backplane.
+	Comes in two halves, a top and bottom, for access to battery compartment and printing on smaller printers.
+	(When modifying, all edits applied to full model, and modifications should be applied before the split.)
 
 	Dimensions:
 		Attachment holes:
@@ -61,7 +64,7 @@ Handle:
 Fasteners:
 	Using #4 screws and nuts as standard fasteners.
 		Model dimensions for insets and holes: (added clearances to account for printing inaccuracies)
-			Hole diamaeter: 3mm
+			Hole diamaeter: 3.2mm
 			Nut/head height: 2.5mm
 			Flat to flat width: 6.5mm
 			Corner to corner: 7.5mm
