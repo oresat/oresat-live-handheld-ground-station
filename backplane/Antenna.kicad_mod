@@ -1,5 +1,5 @@
-(module Antenna (layer F.Cu) (tedit 5CD4A292)
-  (fp_text reference Antenna (at 0 0.5) (layer F.SilkS) hide
+(module Antenna (layer F.Cu) (tedit 5CD4BBA0)
+  (fp_text reference Antenna (at 0 -22.86) (layer F.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value Antenna (at 0 -22.86) (layer F.SilkS)
