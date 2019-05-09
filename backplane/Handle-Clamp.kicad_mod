@@ -1,5 +1,5 @@
-(module Handle-Clamp (layer F.Cu) (tedit 5CD363D1)
-  (fp_text reference REF** (at 8 -4.5) (layer F.SilkS)
+(module Handle-Clamp (layer F.Cu) (tedit 5CD4A07D)
+  (fp_text reference Handle-Clamp (at 20.32 -3.81) (layer F.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value Handle-Clamp (at 20.32 -1.27) (layer F.SilkS)

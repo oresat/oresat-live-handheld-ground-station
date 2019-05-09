@@ -1,8 +1,8 @@
-(module Atheros (layer F.Cu) (tedit 5CD362B1)
-  (fp_text reference REF** (at 5 -3.5) (layer F.SilkS)
+(module Atheros (layer F.Cu) (tedit 5CD4A121)
+  (fp_text reference "Atheros WiFi Module" (at 17.5 -3.5) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value Atheros (at 5 -4.5) (layer F.Fab)
+  (fp_text value "Atheros WiFi Module" (at 17.5 -1.27) (layer B.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0 0) (end 35 0) (layer B.SilkS) (width 0.12))
