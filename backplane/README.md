@@ -18,4 +18,5 @@ For signal lines to and from microstrip:
 	Length: Arbitrary
 
 
-(http://www.electronics-lab.com/raspberry-pi-zero-footprint-and-dimensions/)[Source for Raspberry Pi Zero Footprint]
+(http://www.electronics-lab.com/raspberry-pi-zero-footprint-and-dimensions/)[Source for Raspberry Pi Zero footprint]\
+(https://www.aliexpress.com/item/wireless-net-card-LAN-NIC-module-AR9271-150M-wireless-LAN-net-card-industrial-module/32746090657.html?tt=sns_none&aff_platform=default&cpt=1557507604073&sk=cC0ydLx2&aff_trace_key=5d988d9ac55b4f4d80da408161a19463-1557507604073-02869-cC0ydLx2&terminal_id=523d634d52754e72ad5634ec5f8829c2)[Source for wf-np9202 footprint]
