@@ -16,3 +16,6 @@ For signal lines to and from microstrip:
 140 ohm
 	Width:  0.238155 mm
 	Length: Arbitrary
+
+
+(http://www.electronics-lab.com/raspberry-pi-zero-footprint-and-dimensions/)[Source for Raspberry Pi Zero Footprint]
