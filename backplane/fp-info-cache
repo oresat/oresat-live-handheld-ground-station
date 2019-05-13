@@ -1,4 +1,4 @@
-12462194086316
+14019979518541
 DxWiFi
 Antenna
 
@@ -13,6 +13,13 @@ Atheros
 0
 0
 0
+DxWiFi
+GND-pad
+
+
+0
+1
+1
 DxWiFi
 Handle-Clamp
 

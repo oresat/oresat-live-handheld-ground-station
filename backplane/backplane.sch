@@ -15,27 +15,31 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:GND #PWR0101
-U 1 1 5CD9D487
-P 5550 5050
-F 0 "#PWR0101" H 5550 4800 50  0001 C CNN
-F 1 "GND" H 5555 4877 50  0000 C CNN
-F 2 "" H 5550 5050 50  0001 C CNN
-F 3 "" H 5550 5050 50  0001 C CNN
-	1    5550 5050
+L Device:L L1
+U 1 1 5CDA2A41
+P 5000 4650
+F 0 "L1" H 5053 4696 50  0000 L CNN
+F 1 "L" H 5053 4605 50  0000 L CNN
+F 2 "DxWiFi:GND-pad" H 5000 4650 50  0001 C CNN
+F 3 "~" H 5000 4650 50  0001 C CNN
+	1    5000 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L2
+U 1 1 5CDA301B
+P 5350 4650
+F 0 "L2" H 5403 4696 50  0000 L CNN
+F 1 "L" H 5403 4605 50  0000 L CNN
+F 2 "DxWiFi:GND-pad" H 5350 4650 50  0001 C CNN
+F 3 "~" H 5350 4650 50  0001 C CNN
+	1    5350 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 5050 5550 5050
-Connection ~ 5550 5050
+	5350 4500 5000 4500
 Wire Wire Line
-	5600 4950 5600 5050
-Wire Wire Line
-	5550 4950 5600 4950
-Wire Wire Line
-	5550 5050 5550 4950
-Text Label 5600 4950 0    50   ~ 0
-GND
-Text GLabel 5550 5000 0    50   Input ~ 0
-GND
+	5000 4800 5350 4800
+Text Notes 4400 4400 0    50   ~ 0
+No actual inductors to be used on board.\nUsed to create a netlist to connect copper planes \nto a common net for our ground planes.
 $EndSCHEMATC

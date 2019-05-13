@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\Chana_Inspiron\Documents\PSU\Capstone\oresat-live-handheld-ground-station\backplane\backplane.sch)
-    (date "2019/05/13 14:25:40")
+    (date "2019/05/13 15:41:41")
     (tool "Eeschema (5.1.2)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -14,7 +14,43 @@
         (comment (number 2) (value ""))
         (comment (number 3) (value ""))
         (comment (number 4) (value "")))))
-  (components)
-  (libparts)
-  (libraries)
-  (nets))
+  (components
+    (comp (ref L1)
+      (value L)
+      (footprint DxWiFi:GND-pad)
+      (datasheet ~)
+      (libsource (lib Device) (part L) (description Inductor))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5CDA2A41))
+    (comp (ref L2)
+      (value L)
+      (footprint DxWiFi:GND-pad)
+      (datasheet ~)
+      (libsource (lib Device) (part L) (description Inductor))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5CDA301B)))
+  (libparts
+    (libpart (lib Device) (part L)
+      (description Inductor)
+      (docs ~)
+      (footprints
+        (fp Choke_*)
+        (fp *Coil*)
+        (fp Inductor_*)
+        (fp L_*))
+      (fields
+        (field (name Reference) L)
+        (field (name Value) L))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive)))))
+  (libraries
+    (library (logical Device)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Device.lib")))
+  (nets
+    (net (code 2) (name "Net-(L1-Pad1)")
+      (node (ref L1) (pin 1))
+      (node (ref L2) (pin 1)))
+    (net (code 3) (name "Net-(L1-Pad2)")
+      (node (ref L1) (pin 2))
+      (node (ref L2) (pin 2)))))
