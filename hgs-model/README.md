@@ -54,7 +54,7 @@ Phone Holder:
 Handle:
 	Single handle under the device for holding, attaches to bottom of backplane.
 	Comes in two halves, a top and bottom, for access to battery compartment and printing on smaller printers.
-	(When modifying, all edits applied to full model, and modifications should be applied before the split.)
+	(When modifying, all edits applied to full model, and modifications should be applied before the split. After saving main handle file, open split parts, File/Reload and rebuild them to update them to reflact the changes in the main model.)
 
 	Dimensions:
 		Attachment holes:
@@ -66,5 +66,5 @@ Fasteners:
 		Model dimensions for insets and holes: (added clearances to account for printing inaccuracies)
 			Hole diamaeter: 3.2mm
 			Nut/head height: 2.5mm
-			Flat to flat width: 6.5mm
+			Flat to flat width: 6.5mm (use 6.5-7mm for insets)
 			Corner to corner: 7.5mm
