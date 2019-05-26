@@ -1,4 +1,4 @@
-(module Raspberry-Pi-Zero (layer F.Cu) (tedit 5CDE4144)
+(module Raspberry-Pi-Zero (layer F.Cu) (tedit 5CEAFC08)
   (fp_text reference "Raspberry-Pi-Zero " (at 15.24 -5.08) (layer B.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -21,8 +21,8 @@
   (fp_line (start 0 -20.54) (end -1 -20.54) (layer F.SilkS) (width 0.12))
   (fp_line (start -1 -28.09) (end 0 -28.09) (layer F.SilkS) (width 0.12))
   (fp_line (start -1 -20.54) (end -1 -28.09) (layer F.SilkS) (width 0.12))
-  (pad "" np_thru_hole circle (at 26.5 -3.5) (size 2.75 2.75) (drill 2.75) (layers *.Cu *.Mask))
-  (pad "" np_thru_hole circle (at 3.5 -61.5) (size 2.75 2.75) (drill 2.75) (layers *.Cu *.Mask))
-  (pad "" np_thru_hole circle (at 26.5 -61.5) (size 2.75 2.75) (drill 2.75) (layers *.Cu *.Mask))
-  (pad "" np_thru_hole circle (at 3.5 -3.5) (size 2.75 2.75) (drill 2.75) (layers *.Cu *.Mask))
+  (pad "" np_thru_hole circle (at 26.5 -3.5) (size 2.75 2.75) (drill 2.75) (layers *.Cu))
+  (pad "" np_thru_hole circle (at 3.5 -61.5) (size 2.75 2.75) (drill 2.75) (layers *.Cu))
+  (pad "" np_thru_hole circle (at 26.5 -61.5) (size 2.75 2.75) (drill 2.75) (layers *.Cu))
+  (pad "" np_thru_hole circle (at 3.5 -3.5) (size 2.75 2.75) (drill 2.75) (layers *.Cu))
 )

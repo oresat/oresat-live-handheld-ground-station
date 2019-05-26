@@ -1,5 +1,5 @@
-(module string_mount (layer F.Cu) (tedit 5CD9D0CA)
-  (fp_text reference REF** (at 0 0.5) (layer F.SilkS)
+(module string_mount (layer F.Cu) (tedit 5CEAFE46)
+  (fp_text reference REF** (at 0 0.5) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value string_mount (at 0 -0.5) (layer F.Fab)

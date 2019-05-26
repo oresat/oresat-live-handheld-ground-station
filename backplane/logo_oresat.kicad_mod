@@ -1,4 +1,4 @@
-(module logo_oresat (layer F.Cu) (tedit 5CDE4021)
+(module logo_oresat (layer F.Cu) (tedit 5CEAFEE6)
   (fp_text reference logo_oresat (at 0 -2.54) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -146,7 +146,7 @@
   (fp_text user "OreSat Live" (at 0 15.24 180) (layer F.SilkS)
     (effects (font (size 3 3) (thickness 0.5)))
   )
-  (fp_text user "HGS v1.1" (at 0 20.32 180) (layer F.SilkS)
+  (fp_text user "HGS v1.2" (at 0 20.32 180) (layer F.SilkS)
     (effects (font (size 3 3) (thickness 0.5)))
   )
 )

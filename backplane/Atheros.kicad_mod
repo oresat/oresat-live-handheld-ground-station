@@ -1,4 +1,4 @@
-(module Atheros (layer F.Cu) (tedit 5CDE3DF1)
+(module Atheros (layer F.Cu) (tedit 5CEAFBBD)
   (fp_text reference "Atheros WiFi Module" (at 17.5 -3.5) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -15,7 +15,7 @@
   (fp_text user USB (at 39.37 -13) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (pad "" np_thru_hole circle (at 2.5 -2.5) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
-  (pad "" np_thru_hole circle (at 2.5 -14.5) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
-  (pad "" np_thru_hole circle (at 32.5 -2.5 180) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
+  (pad "" np_thru_hole circle (at 2.5 -2.5) (size 2.2 2.2) (drill 2.2) (layers *.Cu))
+  (pad "" np_thru_hole circle (at 2.5 -14.5) (size 2.2 2.2) (drill 2.2) (layers *.Cu))
+  (pad "" np_thru_hole circle (at 32.5 -2.5 180) (size 2.2 2.2) (drill 2.2) (layers *.Cu))
 )
