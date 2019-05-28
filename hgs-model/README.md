@@ -44,7 +44,6 @@ Phone Holder:
 	Dimensions:
 		Base 60mm x 100mm x 10mm
 		Attachment holes:
-			Hole Diameter: 4mm
 			Row Spacing: 10mm
 			Row to Row Distance: 50mm
 		Clamps 20mm x 25mm x 100mm (designed to hold max 15mm thick phones)
@@ -58,13 +57,11 @@ Handle:
 
 	Dimensions:
 		Attachment holes:
-			Diameter: 4mm
 			Spacing: 20mm
 
 Fasteners:
-	Using #4 screws and nuts as standard fasteners.
+	Using M3.5 as standard bolt. (#6 is Imperial alternative)
 		Model dimensions for insets and holes: (added clearances to account for printing inaccuracies)
-			Hole diamaeter: 3.2mm
-			Nut/head height: 2.5mm
-			Flat to flat width: 6.5mm (use 6.5-7mm for insets)
-			Corner to corner: 7.5mm
+			Hole diamaeter: 3.5mm ideal, 3.8mm modelled.
+			Nut/head height: 3.5mm ideal, 3.5mm modelled.
+			Flat to flat width: 10mm ideal, 11mm modelled.
