@@ -64,4 +64,4 @@ Fasteners:
 		Model dimensions for insets and holes: (added clearances to account for printing inaccuracies)
 			Hole diamaeter: 3.5mm ideal, 3.85mm modelled.
 			Nut/head height: 3.5mm ideal, 3.5mm modelled.
-			Flat to flat width: 6mm ideal, 6.6mm modelled.
+			Flat to flat width: 6mm ideal, 7.2mm modelled.
