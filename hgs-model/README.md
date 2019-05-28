@@ -62,6 +62,6 @@ Handle:
 Fasteners:
 	Using M3.5 as standard bolt. (#6 is Imperial alternative)
 		Model dimensions for insets and holes: (added clearances to account for printing inaccuracies)
-			Hole diamaeter: 3.5mm ideal, 3.8mm modelled.
+			Hole diamaeter: 3.5mm ideal, 3.85mm modelled.
 			Nut/head height: 3.5mm ideal, 3.5mm modelled.
-			Flat to flat width: 10mm ideal, 11mm modelled.
+			Flat to flat width: 6mm ideal, 6.6mm modelled.
