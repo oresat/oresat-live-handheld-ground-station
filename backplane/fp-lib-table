@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name DxWiFi)(type KiCad)(uri C:/Users/Chana_Inspiron/Documents/PSU/Capstone/oresat-live-handheld-ground-station/backplane)(options "")(descr ""))
+  (lib (name DxWiFi-fooprints)(type KiCad)(uri ${KIPRJMOD}/DxWiFi-fooprints.pretty)(options "")(descr ""))
 )
