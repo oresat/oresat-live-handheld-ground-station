@@ -1,6 +1,9 @@
 var toggle = true;
-var countDownDate = "May 2, 2019 19:30:00";
-var CDDate = new Date(countDownDate).toLocaleTimeString('en-US', { hour12: false, hour: 'numeric', minute: 'numeric' , second: 'numeric'});;
+var AOSdate = "June 7, 2019 15:00:00";
+var LOSdate = "June 7, 2019 17:00:00";
+
+var AOStime = new Date(AOSdate).toLocaleTimeString('en-US', { hour12: false, hour: 'numeric', minute: 'numeric' , second: 'numeric'});;
+var LOStime = new Date(LOSdate).toLocaleTimeString('en-US', { hour12: false, hour: 'numeric', minute: 'numeric' , second: 'numeric'});;
 setInterval(function() {
   // Display current time
   var d = new Date().toLocaleTimeString('en-US', { hour12: false, hour: 'numeric', minute: 'numeric' , second: 'numeric'});
@@ -10,10 +13,16 @@ setInterval(function() {
   $('#seconds').text(parts[2]);
 
   // Display LOS hours
-  var parts2 = CDDate.split(":");
-  $('#LOS-hours').text(parts2[0]);
-  $('#LOS-minutes').text(parts2[1]);
-  $('#LOS-seconds').text(parts2[2]);
+  var LOS = LOStime.split(":");
+  $('#LOS-hours').text(LOS[0]);
+  $('#LOS-minutes').text(LOS[1]);
+  $('#LOS-seconds').text(LOS[2]);
+
+  // Display AOS hours
+  var AOS = AOStime.split(":");
+  $('#AOS-hours').text(AOS[0]);
+  $('#AOS-minutes').text(AOS[1]);
+  $('#AOS-seconds').text(AOS[2]);
 
   // Blink all colons
   var c = document.getElementsByClassName("colon");
@@ -23,9 +32,14 @@ setInterval(function() {
   toggle=!toggle;
 
 
-  var LOS = new Date(countDownDate).getTime() - new Date().getTime()
+  var LOScountdown = new Date(LOSdate).getTime() - new Date().getTime()
   // Calculate number of seconds till the specified time (ignoring days)
-  var seconds = Math.floor((LOS % (1000*60*60*24))/1000);
-  $('#LOS-T').text(seconds)
+  var LOSseconds = Math.floor((LOScountdown % (1000*60*60*24))/1000);
+  // Display seconds at HTML element with id LOS-T
+  $('#LOS-T').text(LOSseconds)
+
+  var AOScountdown = new Date(AOSdate).getTime() - new Date().getTime()
+  var AOSseconds = Math.floor((AOScountdown % (1000*60*60*24))/1000);
+  $('#AOS-T').text(AOSseconds)
 
 },1000);
