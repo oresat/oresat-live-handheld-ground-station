@@ -1,63 +1,65 @@
 3D model of the Handheld Ground Station.
 
-Helical Antenna Segment:
-	This antenna is designed to be 100mm on it's longest axis (height).
-	It is designed to be printed standing up, with the peg at the top.
+For Printing:
+	All components are designed to be printed in a particular orientation, without the need for supports.
+	There are example pictures in the appropriately named subfolder.
 
-	Four of these segments make up a single antenna.
+	For full assembly, print:
+	1 : Antenna_Base_Clamp
+	1 : Antenna_Cap
+	1 : Handle_Clamp
+	4 : Helical_Antenna_Segment
+	1 : Phone&Battery_Holder_Base
+	1 : Phone&Battery_Holder_Top
+	1 : Phone&Battery_Holder_Bottom
+	Either:
+		1 : Handle (If printer large enough)
+	Or:
+		1 : Handle_Top
+		1 : Handle_Bottom
+	
+	Assembly:
+		Parts are designed to fit together with a combination of epoxy and M4 (or #8 imperial) bolts and nuts.
+		The antenna segments and it's cap and clamp use the epoxy, this may be replaced or supplemented by a threaded rod.
 
-	Works fine with 20% infill, but increasing the wall thickness is recommended,
-	especially to fill the pegs.
+Individual Component Notes:
 
-	Models were originally created with Solidworks. .SLDPRT files, and exported .STL files will live here.
-	When modifying .sldprt files, make sure to save a copy as .stl as well for printing.
+	Helical Antenna Segment:
+		This antenna is designed to be 100mm on it's longest axis (height).
+		It is designed to be printed standing up, with the peg at the top.
 
-	Dimensions:
-		Diameter 39.5mm
-		Body Length 93mm
-		Peg Length 7mm
-		Peg Width 20mm
-		Alignment Peg Width 4mm
-		Peg Hole Extra Clearance 0.5mm
+		Four of these segments make up a single antenna.
 
-Backplane:
-	Backplane for the antenna, other components attach to it as well.
+		Works fine with 20% infill, but increasing the wall thickness is recommended,
+		especially to strengthen the peg. (In stress testing the peg broke before anything else.)
 
-	Dimensions:
-		Minimum Diameter 92mm
-		Using 100mm
+		Models were originally created with Solidworks. .SLDPRT files, and exported .STL files will live here.
+		When modifying .sldprt files, make sure to save a copy as .stl as well for printing.
 
-Raspberry Pi Zero:
-	Model by Anathae
-	Link: https://www.thingiverse.com/thing:1612021
+		Dimensions:
+			Diameter 39.5mm
+			Body Length 93mm
+			Peg Length 7mm
+			Peg Width 20mm
+			Alignment Peg Width 4mm
+			Peg Hole Extra Clearance 0.5mm
 
-Atheros AR9271:
-	Dimensions:
-		Width 17mm
-		Length 35.1mm
+	Phone and Battery Holder:
+		Three part device that hangs off the backplane and handle to hold the phone.
+		Consists of one sliding base, a fixed bottom section that is attached to the handle and also holds the battery,
+		and a sliding top section that can be adjusted for different phone sizes.
+		Designed to hold the phone in a landscape orientation.
 
-Phone Holder:
-	Three part device that hangs off the backplane to hold the phone.
-	Consists of one base, two identical clamps that can be adjusted on the base for different phone sizes.
-	Designed to hold the phone in a landscape orientation.
+	Handle:
+		Single handle under the device for holding, attaches to bottom of backplane.
+		Comes in two halves, a top and bottom, for printing on smaller printers.
+		Can be printed whole on larger printers.
+		(When modifying, all edits applied to full model, and modifications should be applied before the split.
+		After saving main handle file, open split parts, File/Reload and rebuild them to update them to reflact the changes in the main model.)
 
-	Dimensions:
-		Base 60mm x 100mm x 10mm
-		Attachment holes:
-			Row Spacing: 10mm
-			Row to Row Distance: 50mm
-		Clamps 20mm x 25mm x 100mm (designed to hold max 15mm thick phones)
-
-		Spacers: 10mm x 10mm x 60mm
-
-Handle:
-	Single handle under the device for holding, attaches to bottom of backplane.
-	Comes in two halves, a top and bottom, for access to battery compartment and printing on smaller printers.
-	(When modifying, all edits applied to full model, and modifications should be applied before the split. After saving main handle file, open split parts, File/Reload and rebuild them to update them to reflact the changes in the main model.)
-
-	Dimensions:
-		Attachment holes:
-			Spacing: 20mm
+		Dimensions:
+			Backplane Attachment Holes:
+				Spacing: 20mm
 
 Fasteners:
 	Using M4 as standard bolt. (#8 is Imperial alternative)
