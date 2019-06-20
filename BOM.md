@@ -21,28 +21,47 @@ Optional items for easy clamping while gluing or for assembly without glue:
 If you wish to use metric fasteners you can substitute #2-56 for M2 and #8-32 for M4
 
 1/4-20 hex nut for tripod mounting
+
 1.5in Hook-and-loop (velcro) adhesive backed
+
 Foam Tape - Camper Seal 3/16in x 1 1/4in
+
 Rubber band of your choosing
+
 
 ## Plastic Components
 Handle
+
 Screw Block
+
 Phone Holder Base
+
 Phone Holder Slide
+
 Battery Holder
+
 Antenna Sections (4)
+
 Antenna Top Cap
+
 Antenna Bottom Cap
+
 
 ## Electronics
 Raspberry Pi Zero W
+
 Atheros Module
+
 USB Micro B to Atheros module custom cable 
+
 6" USB A to Micro B power cable
+
 5000 mAh USB power bank
+
 
 ## Circuit Board Components
 8.2pF 0402 1% tolerance capacitor
+
 U.FL SMD connector
+
 75mm U.FL to U.FL coax cable

@@ -10,7 +10,7 @@ OreSat HGS act as a wifi access point providing an unsecured wireless network na
 
 HGS was created for use with the OreSat mission, but it is designed to be used by any group interested in long range image transmission.  The handheld ground stations can be reused for other cubesat or balloon launches.
 
-Once the final design is completed, users will be able to purchase all of the required parts as a kit from https://wwww.crowdsupply.com/
+Once the final design is completed, users will be able to purchase all of the required parts as a kit from https://www.crowdsupply.com/
 
 # HGS Parts List
 All of the required parts to build HGS can be found in the Bill of Materials [(BOM)](BOM.md)

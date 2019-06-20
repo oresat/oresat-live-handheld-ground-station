@@ -36,10 +36,11 @@ enable_uart=1
 
 
 # Enable SSH
+```
 sudo raspi-config
 choose interface options
 enable ssh
-
+```
 
 # Enable serial console (optional)
 Having access to a serial console can be handy for debug.  Connect a [USB serial cable](https://elinux.org/RPi_Serial_Connection) to the Raspberry Pi.
@@ -52,28 +53,32 @@ sudo screen /dev/ttyUSB0 115200
 
 
 # Compile wifibroadcast
+```
 apt-get install libpcap-dev
 cd /root/wifibroadcast
 make
-
+```
 
 # dnsmasq DNS + DHCP server
+```
 sudo apt install dnsmasq
 sudo systemctl start dnsmasq
-
+```
 
 # NginX web server
+```
 sudo apt install nginx
 ln -s /etc/nginx/sites-available/oresat_hgs /etc/nginx/sites-enabled/
 rm /etc/nginx/sites-enabled/default
-
+```
 
 # Enable HostAP
+```
 sudo apt install hostapd
 sudo systemctl unmask hostapd
 sudo systemctl enable hostapd
 sudo systemctl start hostapd
-
+```
 
 **Your ground station should now be properly configured and start automatically on the next reboot.**
 
