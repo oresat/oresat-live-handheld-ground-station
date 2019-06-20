@@ -1,0 +1,23 @@
+server {
+    # Listening on IP Address.
+    # This is the website iptables redirects to
+    listen       80 default_server;
+    root         /var/www/html;
+
+    # Make client understand this is a captive portal using 302 redirect
+    location / {
+        if (!-f $request_filename){
+            return 302 http://oresat.localnet/index.html;
+        }
+    }
+}
+
+server {
+     listen       80;
+     server_name  oresat.localnet;
+     root         /var/www/html;
+
+     location / {
+         try_files $uri $uri/ index.html;
+     }
+}
