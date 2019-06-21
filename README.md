@@ -16,7 +16,7 @@ Once the final design is completed, users will be able to purchase all of the re
 All of the required parts to build HGS can be found in the Bill of Materials [(BOM)](BOM.md)
 
 # Hardware Setup
-Build your Handheld Ground Station kit according to the [Assembly Instructions](ASSEMBLY.md)
+Build your Handheld Ground Station kit according to the [Assembly Instructions](hgs-model/assembly-instructions/OreSat_Live_HGS_Assembly.pdf)
 
 # Software Setup
 1. [Download the SD card image oresat_hgs_14_jun_2019.img](https://drive.google.com/a/pdx.edu/uc?id=1BvP8ltkEwoBRSbCfQXceEiuxpVhkSf37&export=download)
