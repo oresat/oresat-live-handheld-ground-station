@@ -11473,8 +11473,6 @@ Noel Case - Created 6/16/20</description>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C8" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="C" device="" value="0.1 uF"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C9" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="C" device="" value="0.1 uF"/>
-<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11482,8 +11480,8 @@ Noel Case - Created 6/16/20</description>
 <text x="151.13" y="177.8" size="1.778" layer="97">Missing: Raspberry Pi Zero W Pin Header</text>
 <text x="180.34" y="27.94" size="3.048" layer="94">OreSat Live Handheld Ground Station Reflector</text>
 <text x="265.43" y="6.35" size="3.048" layer="94">2</text>
-<text x="144.78" y="182.88" size="1.778" layer="97">Note: The Raspberry Pi Zero is powered via a USB port rather than by its pin header</text>
-<text x="208.28" y="90.17" size="1.778" layer="97">Note: J1 connects to the Atheros WiFi Adapter via coax</text>
+<text x="144.78" y="182.88" size="1.778" layer="95">Note: The Raspberry Pi Zero is powered via a USB port rather than by its pin header</text>
+<text x="208.28" y="90.17" size="1.778" layer="95">Note: J1 connects to the Atheros WiFi Adapter via coax</text>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="257.81" y="113.03" smashed="yes" rot="MR0">
@@ -11502,13 +11500,13 @@ Noel Case - Created 6/16/20</description>
 <instance part="GND4" gate="1" x="220.98" y="124.46" smashed="yes">
 <attribute name="VALUE" x="218.44" y="121.92" size="1.778" layer="96"/>
 </instance>
-<instance part="LED1" gate="G$1" x="102.87" y="162.56" smashed="yes">
-<attribute name="NAME" x="106.426" y="157.988" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="108.585" y="157.988" size="1.778" layer="96" rot="R90"/>
+<instance part="LED1" gate="G$1" x="95.25" y="161.29" smashed="yes">
+<attribute name="NAME" x="98.806" y="156.718" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="100.965" y="156.718" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R9" gate="R" x="102.87" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="101.3714" y="168.91" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="106.172" y="168.91" size="1.778" layer="96" rot="R90"/>
+<instance part="R9" gate="R" x="95.25" y="171.45" smashed="yes" rot="R90">
+<attribute name="NAME" x="93.7514" y="167.64" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="98.552" y="167.64" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C1" gate="CE" x="213.36" y="137.16" smashed="yes">
 <attribute name="NAME" x="214.376" y="137.795" size="1.778" layer="95"/>
@@ -11560,11 +11558,11 @@ Noel Case - Created 6/16/20</description>
 <instance part="GND1" gate="1" x="121.92" y="96.52" smashed="yes">
 <attribute name="VALUE" x="119.38" y="93.98" size="1.778" layer="96"/>
 </instance>
-<instance part="3.3V2" gate="G$1" x="102.87" y="182.88" smashed="yes">
-<attribute name="VALUE" x="100.33" y="182.88" size="1.778" layer="96"/>
+<instance part="3.3V2" gate="G$1" x="95.25" y="181.61" smashed="yes">
+<attribute name="VALUE" x="92.71" y="181.61" size="1.778" layer="96"/>
 </instance>
-<instance part="GND6" gate="1" x="102.87" y="153.67" smashed="yes">
-<attribute name="VALUE" x="100.33" y="151.13" size="1.778" layer="96"/>
+<instance part="GND6" gate="1" x="95.25" y="152.4" smashed="yes">
+<attribute name="VALUE" x="92.71" y="149.86" size="1.778" layer="96"/>
 </instance>
 <instance part="C6" gate="CE" x="95.25" y="113.03" smashed="yes" rot="R90">
 <attribute name="NAME" x="94.615" y="114.046" size="1.778" layer="95" rot="R90"/>
@@ -11608,19 +11606,12 @@ Noel Case - Created 6/16/20</description>
 <instance part="GND12" gate="1" x="173.99" y="107.95" smashed="yes" rot="R270">
 <attribute name="VALUE" x="171.45" y="110.49" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C8" gate="G$1" x="81.28" y="165.1" smashed="yes" rot="R90">
-<attribute name="NAME" x="78.74" y="167.64" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="81.28" y="167.64" size="1.778" layer="96" rot="R90"/>
+<instance part="C8" gate="G$1" x="77.47" y="165.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="74.93" y="167.64" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="77.47" y="167.64" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND13" gate="1" x="88.9" y="165.1" smashed="yes" rot="R90">
-<attribute name="VALUE" x="91.44" y="162.56" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="C9" gate="G$1" x="85.09" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="82.55" y="175.26" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="85.09" y="175.26" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="GND14" gate="1" x="92.71" y="172.72" smashed="yes" rot="R90">
-<attribute name="VALUE" x="95.25" y="170.18" size="1.778" layer="96" rot="R90"/>
+<instance part="GND13" gate="1" x="85.09" y="165.1" smashed="yes" rot="R90">
+<attribute name="VALUE" x="87.63" y="162.56" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -11672,7 +11663,7 @@ Noel Case - Created 6/16/20</description>
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="102.87" y1="156.21" x2="102.87" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="95.25" y1="154.94" x2="95.25" y2="156.21" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="144.78" y1="99.06" x2="151.13" y2="99.06" width="0.1524" layer="91"/>
@@ -11717,10 +11708,6 @@ Noel Case - Created 6/16/20</description>
 <pinref part="C8" gate="G$1" pin="2"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
-<segment>
-<pinref part="C9" gate="G$1" pin="2"/>
-<pinref part="GND14" gate="1" pin="GND"/>
-</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
@@ -11737,14 +11724,20 @@ Noel Case - Created 6/16/20</description>
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <pinref part="R9" gate="R" pin="1"/>
-<wire x1="102.87" y1="167.64" x2="102.87" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="95.25" y1="166.37" x2="95.25" y2="163.83" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
+<pinref part="U3" gate="G$1" pin="VOUT"/>
+<pinref part="3.3V1" gate="G$1" pin="3.3V"/>
+<wire x1="73.66" y1="172.72" x2="77.47" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="77.47" y1="172.72" x2="77.47" y2="176.53" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="R9" gate="R" pin="2"/>
 <pinref part="3.3V2" gate="G$1" pin="3.3V"/>
-<wire x1="102.87" y1="180.34" x2="102.87" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="95.25" y1="179.07" x2="95.25" y2="176.53" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="213.36" y1="139.7" x2="218.44" y2="139.7" width="0.1524" layer="91"/>
@@ -11834,7 +11827,7 @@ Noel Case - Created 6/16/20</description>
 <segment>
 <pinref part="U3" gate="G$1" pin="BYPASS"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="165.1" x2="73.66" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="74.93" y1="165.1" x2="73.66" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -11847,16 +11840,6 @@ Noel Case - Created 6/16/20</description>
 <wire x1="48.26" y1="165.1" x2="41.91" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="41.91" y1="165.1" x2="41.91" y2="172.72" width="0.1524" layer="91"/>
 <junction x="41.91" y="172.72"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="82.55" y1="172.72" x2="77.47" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="VOUT"/>
-<pinref part="3.3V1" gate="G$1" pin="3.3V"/>
-<wire x1="73.66" y1="172.72" x2="77.47" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="77.47" y1="172.72" x2="77.47" y2="176.53" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

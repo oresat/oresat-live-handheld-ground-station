@@ -11482,8 +11482,8 @@ Noel Case - Created 6/16/20</description>
 <text x="151.13" y="177.8" size="1.778" layer="97">Missing: Raspberry Pi Zero W Pin Header</text>
 <text x="180.34" y="27.94" size="3.048" layer="94">OreSat Live Handheld Ground Station Reflector</text>
 <text x="265.43" y="6.35" size="3.048" layer="94">2</text>
-<text x="144.78" y="182.88" size="1.778" layer="97">Note: The Raspberry Pi Zero is powered via a USB port rather than by its pin header</text>
-<text x="208.28" y="90.17" size="1.778" layer="97">Note: J1 connects to the Atheros WiFi Adapter via coax</text>
+<text x="144.78" y="182.88" size="1.778" layer="95">Note: The Raspberry Pi Zero is powered via a USB port rather than by its pin header</text>
+<text x="208.28" y="90.17" size="1.778" layer="95">Note: J1 connects to the Atheros WiFi Adapter via coax</text>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="257.81" y="113.03" smashed="yes" rot="MR0">
