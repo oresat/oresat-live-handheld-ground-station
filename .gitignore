@@ -23,3 +23,10 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+# EAGLE
+
+*.s#*
+*.b#*
+*.l#*
+
