@@ -11637,11 +11637,10 @@ Source: www.kingbright.com</description>
 <sheets>
 <sheet>
 <plain>
-<text x="152.4" y="208.28" size="1.778" layer="97">Missing: Raspberry Pi Zero W Pin Header</text>
 <text x="180.34" y="27.94" size="3.048" layer="94">OreSat Live Handheld Ground Station Reflector</text>
 <text x="265.43" y="6.35" size="3.048" layer="94">2</text>
-<text x="143.51" y="204.47" size="1.778" layer="97">Note: The Raspberry Pi Zero is powered via a USB port rather than by its pin header</text>
-<text x="208.28" y="86.36" size="1.778" layer="97">Note: J1 connects to the Atheros WiFi Adapter via coax</text>
+<text x="175.26" y="199.39" size="1.778" layer="97">Note: The Raspberry Pi Zero is powered via a USB port rather than by its pin header</text>
+<text x="274.32" y="90.17" size="1.778" layer="97" rot="R180">Note: J1 connects to the Atheros WiFi Adapter via coax</text>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="257.81" y="113.03" smashed="yes" rot="MR0">

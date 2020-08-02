@@ -6118,7 +6118,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="SPICETYPE" value="diode" x="-68.6" y="-15.4" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-69.87" y="-17.94" size="1.27" layer="27"/>
 </element>
-<element name="U$4" library="HGS_Data_Parts" package="AR9721" value="AR9721" x="-47.7" y="-22.5" smashed="yes"/>
+<element name="U$4" library="HGS_Data_Parts" package="AR9721" value="AR9721" x="-62.8" y="26.2" smashed="yes" rot="R270"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -6209,7 +6209,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="-52" y1="-2.4" x2="-52.1" y2="-1.6" width="0" layer="19" extent="1-1"/>
 <wire x1="-52.3" y1="-0.4" x2="-52.1" y2="-1.6" width="0" layer="19" extent="1-1"/>
 <wire x1="-51.3" y1="-0.7" x2="-52.3" y2="-0.4" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.7" y1="-19" x2="-52" y2="-2.4" width="0" layer="19" extent="1-1"/>
+<wire x1="-59.3" y1="4.2" x2="-52" y2="-2.4" width="0" layer="19" extent="1-1"/>
 <wire x1="-51.5" y1="35.5" x2="-52.3" y2="-0.4" width="0" layer="19" extent="1-1"/>
 <wire x1="-50.5" y1="35.5" x2="-51.5" y2="35.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-49.5" y1="35.5" x2="-50.5" y2="35.5" width="0" layer="19" extent="1-1"/>
@@ -6292,7 +6292,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="J1" pad="FEED"/>
 <contactref element="U$2" pad="4"/>
 <contactref element="U$4" pad="P$2"/>
-<wire x1="-52" y1="-3.1" x2="-61.538996875" y2="-22.484765625" width="0" layer="19" extent="1-1"/>
+<wire x1="-52" y1="-3.1" x2="-62.784765625" y2="40.038996875" width="0" layer="19" extent="1-1"/>
 <wire x1="-49.325" y1="38.8" x2="-52" y2="-3.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
