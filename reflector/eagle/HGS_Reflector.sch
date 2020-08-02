@@ -11629,7 +11629,7 @@ Source: www.kingbright.com</description>
 </part>
 <part name="U$3" library="HGS_Data_Parts" deviceset="1/4_WAVE_TRF" device=""/>
 <part name="ANT1" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="ANTENNA" device="" package3d_urn="urn:adsk.eagle:package:12928/1"/>
-<part name="X1" library="con-amp" library_urn="urn:adsk.eagle:library:127" deviceset="USB-787616" device="" package3d_urn="urn:adsk.eagle:package:8081650/1"/>
+<part name="PI_USB_OUT" library="con-amp" library_urn="urn:adsk.eagle:library:127" deviceset="USB-787616" device="" package3d_urn="urn:adsk.eagle:package:8081650/1"/>
 <part name="LED1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="" package3d_urn="urn:adsk.eagle:package:13319/2"/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$4" library="HGS_Data_Parts" deviceset="AR9721" device=""/>
@@ -11639,7 +11639,7 @@ Source: www.kingbright.com</description>
 <plain>
 <text x="180.34" y="27.94" size="3.048" layer="94">OreSat Live Handheld Ground Station Reflector</text>
 <text x="265.43" y="6.35" size="3.048" layer="94">2</text>
-<text x="175.26" y="199.39" size="1.778" layer="97">Note: The Raspberry Pi Zero is powered via a USB port rather than by its pin header</text>
+<text x="175.26" y="203.2" size="1.778" layer="97">Note: The Raspberry Pi Zero is powered via a USB port rather than by its pin header</text>
 <text x="274.32" y="90.17" size="1.778" layer="97" rot="R180">Note: J1 connects to the Atheros WiFi Adapter via coax</text>
 </plain>
 <instances>
@@ -11766,8 +11766,8 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="44.45" y="119.38" size="1.778" layer="95"/>
 <attribute name="VALUE" x="49.53" y="113.03" size="1.778" layer="96"/>
 </instance>
-<instance part="X1" gate="G$1" x="257.81" y="194.31" smashed="yes" rot="R90">
-<attribute name="NAME" x="248.92" y="190.5" size="1.778" layer="95" rot="R90"/>
+<instance part="PI_USB_OUT" gate="G$1" x="257.81" y="194.31" smashed="yes" rot="R90">
+<attribute name="NAME" x="264.16" y="199.39" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="265.43" y="190.5" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="LED1" gate="G$1" x="102.87" y="162.56" smashed="yes">
@@ -12019,7 +12019,7 @@ Source: www.kingbright.com</description>
 </net>
 <net name="1" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="1"/>
+<pinref part="PI_USB_OUT" gate="G$1" pin="1"/>
 <label x="252.73" y="186.69" size="1.778" layer="95" rot="R90"/>
 <wire x1="252.73" y1="189.23" x2="250.19" y2="189.23" width="0.1524" layer="91"/>
 <wire x1="250.19" y1="189.23" x2="250.19" y2="171.45" width="0.1524" layer="91"/>
@@ -12027,14 +12027,14 @@ Source: www.kingbright.com</description>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="4"/>
+<pinref part="PI_USB_OUT" gate="G$1" pin="4"/>
 <wire x1="260.35" y1="189.23" x2="265.43" y2="189.23" width="0.1524" layer="91"/>
 <wire x1="265.43" y1="189.23" x2="265.43" y2="171.45" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="2"/>
+<pinref part="PI_USB_OUT" gate="G$1" pin="2"/>
 <wire x1="255.27" y1="189.23" x2="255.27" y2="186.69" width="0.1524" layer="91"/>
 <wire x1="255.27" y1="186.69" x2="260.35" y2="186.69" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="D+"/>
@@ -12046,7 +12046,7 @@ Source: www.kingbright.com</description>
 <pinref part="U$4" gate="G$1" pin="D-"/>
 <wire x1="255.27" y1="168.91" x2="255.27" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="255.27" y1="185.42" x2="257.81" y2="185.42" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="3"/>
+<pinref part="PI_USB_OUT" gate="G$1" pin="3"/>
 <wire x1="257.81" y1="185.42" x2="257.81" y2="189.23" width="0.1524" layer="91"/>
 </segment>
 </net>
