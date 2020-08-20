@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.4.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -11491,16 +11491,6 @@ Source: www.kingbright.com</description>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C11" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="100 pF"/>
 <part name="C12" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="1 uF"/>
-<part name="L2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="L-EU" device="L3216C" package3d_urn="urn:adsk.eagle:package:23476/2">
-<spice>
-<pinmapping spiceprefix="L">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="IMPEDANCE" value=""/>
-<attribute name="SPICEPREFIX" value="20 nH"/>
-</part>
 <part name="3.3V1" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="U$3" library="HGS_Data_Parts" deviceset="1/4_WAVE_TRF" device=""/>
 <part name="PI_USB_OUT1" library="con-amp" library_urn="urn:adsk.eagle:library:127" deviceset="USB-787616" device="" package3d_urn="urn:adsk.eagle:package:8081650/1"/>
@@ -11518,6 +11508,29 @@ Source: www.kingbright.com</description>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C1" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="100 pF"/>
 <part name="C2" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="1 uF"/>
+<part name="3.3V3" library="oresat-supplies" deviceset="3.3V" device=""/>
+<part name="C4" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="100 pF"/>
+<part name="U$4" library="HGS_Data_Parts" deviceset="AR9721" device=""/>
+<part name="L2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="L-EU" device="L3216C" package3d_urn="urn:adsk.eagle:package:23476/2">
+<spice>
+<pinmapping spiceprefix="L">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="IMPEDANCE" value=""/>
+<attribute name="SPICEPREFIX" value="10 nH"/>
+</part>
+<part name="L3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="L-EU" device="L3216C" package3d_urn="urn:adsk.eagle:package:23476/2">
+<spice>
+<pinmapping spiceprefix="L">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="IMPEDANCE" value=""/>
+<attribute name="SPICEPREFIX" value="8 nH"/>
+</part>
 <part name="L1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="L-EU" device="L3216C" package3d_urn="urn:adsk.eagle:package:23476/2">
 <spice>
 <pinmapping spiceprefix="L">
@@ -11526,11 +11539,27 @@ Source: www.kingbright.com</description>
 </pinmapping>
 </spice>
 <attribute name="IMPEDANCE" value=""/>
-<attribute name="SPICEPREFIX" value="20 nH"/>
+<attribute name="SPICEPREFIX" value="10 nH"/>
 </part>
-<part name="3.3V3" library="oresat-supplies" deviceset="3.3V" device=""/>
-<part name="C4" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="100 pF"/>
-<part name="U$4" library="HGS_Data_Parts" deviceset="AR9721" device=""/>
+<part name="L4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="L-EU" device="L3216C" package3d_urn="urn:adsk.eagle:package:23476/2">
+<spice>
+<pinmapping spiceprefix="L">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="IMPEDANCE" value=""/>
+<attribute name="SPICEPREFIX" value="8 nH"/>
+</part>
+<part name="C5" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="C" device="" value="1 uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="_EXTERNAL_" value="1 uF"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -11624,12 +11653,6 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="135.636" y="144.145" size="1.778" layer="95"/>
 <attribute name="VALUE" x="135.636" y="139.319" size="1.778" layer="96"/>
 </instance>
-<instance part="L2" gate="G$1" x="116.84" y="132.08" smashed="yes" rot="R180">
-<attribute name="NAME" x="118.3386" y="135.89" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="113.538" y="135.89" size="1.778" layer="96" rot="R270"/>
-<attribute name="SPICEPREFIX" x="116.84" y="132.08" size="1.778" layer="96" rot="R180"/>
-<attribute name="IMPEDANCE" x="116.84" y="132.08" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="3.3V1" gate="G$1" x="123.19" y="157.48" smashed="yes">
 <attribute name="VALUE" x="120.65" y="157.48" size="1.778" layer="96"/>
 </instance>
@@ -11679,12 +11702,6 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="219.456" y="144.145" size="1.778" layer="95"/>
 <attribute name="VALUE" x="219.456" y="139.319" size="1.778" layer="96"/>
 </instance>
-<instance part="L1" gate="G$1" x="200.66" y="132.08" smashed="yes" rot="R180">
-<attribute name="NAME" x="202.1586" y="135.89" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="197.358" y="135.89" size="1.778" layer="96" rot="R270"/>
-<attribute name="SPICEPREFIX" x="200.66" y="132.08" size="1.778" layer="96" rot="R180"/>
-<attribute name="IMPEDANCE" x="200.66" y="132.08" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="3.3V3" gate="G$1" x="207.01" y="157.48" smashed="yes">
 <attribute name="VALUE" x="204.47" y="157.48" size="1.778" layer="96"/>
 </instance>
@@ -11693,6 +11710,34 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="207.391" y="114.046" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U$4" gate="G$1" x="246.38" y="143.51" smashed="yes"/>
+<instance part="L2" gate="G$1" x="116.84" y="132.08" smashed="yes" rot="R180">
+<attribute name="NAME" x="118.3386" y="135.89" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="113.538" y="135.89" size="1.778" layer="96" rot="R270"/>
+<attribute name="SPICEPREFIX" x="116.84" y="132.08" size="1.778" layer="96" rot="R180"/>
+<attribute name="IMPEDANCE" x="116.84" y="132.08" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="L3" gate="G$1" x="116.84" y="143.51" smashed="yes" rot="R180">
+<attribute name="NAME" x="118.3386" y="147.32" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="113.538" y="147.32" size="1.778" layer="96" rot="R270"/>
+<attribute name="SPICEPREFIX" x="116.84" y="143.51" size="1.778" layer="96" rot="R180"/>
+<attribute name="IMPEDANCE" x="116.84" y="143.51" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="L1" gate="G$1" x="200.66" y="132.08" smashed="yes" rot="R180">
+<attribute name="NAME" x="202.1586" y="135.89" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="197.358" y="135.89" size="1.778" layer="96" rot="R270"/>
+<attribute name="SPICEPREFIX" x="200.66" y="132.08" size="1.778" layer="96" rot="R180"/>
+<attribute name="IMPEDANCE" x="200.66" y="132.08" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="L4" gate="G$1" x="200.66" y="143.51" smashed="yes" rot="R180">
+<attribute name="NAME" x="202.1586" y="147.32" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="197.358" y="147.32" size="1.778" layer="96" rot="R270"/>
+<attribute name="SPICEPREFIX" x="200.66" y="143.51" size="1.778" layer="96" rot="R180"/>
+<attribute name="IMPEDANCE" x="200.66" y="143.51" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="C5" gate="G$1" x="43.18" y="179.07" smashed="yes">
+<attribute name="NAME" x="38.1" y="179.07" size="1.778" layer="95"/>
+<attribute name="VALUE" x="34.29" y="176.53" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11710,6 +11755,9 @@ Source: www.kingbright.com</description>
 <pinref part="U3" gate="G$1" pin="GND"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="57.15" y1="173.99" x2="57.15" y2="176.53" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="173.99" x2="57.15" y2="173.99" width="0.1524" layer="91"/>
+<junction x="57.15" y="173.99"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
@@ -11807,8 +11855,6 @@ Source: www.kingbright.com</description>
 <wire x1="101.6" y1="196.85" x2="101.6" y2="194.31" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="L2" gate="G$1" pin="2"/>
-<wire x1="116.84" y1="137.16" x2="116.84" y2="151.13" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="151.13" x2="123.19" y2="151.13" width="0.1524" layer="91"/>
 <wire x1="123.19" y1="151.13" x2="132.08" y2="151.13" width="0.1524" layer="91"/>
 <pinref part="3.3V1" gate="G$1" pin="3.3V"/>
@@ -11820,6 +11866,8 @@ Source: www.kingbright.com</description>
 <wire x1="132.08" y1="146.05" x2="134.62" y2="146.05" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="151.13" x2="132.08" y2="146.05" width="0.1524" layer="91"/>
 <junction x="132.08" y="146.05"/>
+<pinref part="L3" gate="G$1" pin="2"/>
+<wire x1="116.84" y1="148.59" x2="116.84" y2="151.13" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C9" gate="G$1" pin="1"/>
@@ -11831,8 +11879,6 @@ Source: www.kingbright.com</description>
 <pinref part="3.3V4" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="L1" gate="G$1" pin="2"/>
-<wire x1="200.66" y1="137.16" x2="200.66" y2="151.13" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="151.13" x2="207.01" y2="151.13" width="0.1524" layer="91"/>
 <wire x1="207.01" y1="151.13" x2="215.9" y2="151.13" width="0.1524" layer="91"/>
 <pinref part="3.3V3" gate="G$1" pin="3.3V"/>
@@ -11880,13 +11926,13 @@ Source: www.kingbright.com</description>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="L2" gate="G$1" pin="1"/>
-<wire x1="116.84" y1="127" x2="116.84" y2="113.03" width="0.1524" layer="91"/>
 <pinref part="C14" gate="CE" pin="1"/>
-<junction x="116.84" y="113.03"/>
 <pinref part="U$7" gate="G$1" pin="OUT"/>
 <wire x1="113.03" y1="107.95" x2="116.84" y2="107.95" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="107.95" x2="116.84" y2="113.03" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="113.03" x2="116.84" y2="127" width="0.1524" layer="91"/>
+<junction x="116.84" y="113.03"/>
+<pinref part="L2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -11926,6 +11972,8 @@ Source: www.kingbright.com</description>
 <pinref part="3V-1" gate="G$1" pin="5V"/>
 <wire x1="43.18" y1="189.23" x2="43.18" y2="194.31" width="0.1524" layer="91"/>
 <junction x="43.18" y="189.23"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<junction x="43.18" y="181.61"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -11944,12 +11992,9 @@ Source: www.kingbright.com</description>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="200.66" y1="127" x2="200.66" y2="113.03" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="113.03" x2="200.66" y2="107.95" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="107.95" x2="196.85" y2="107.95" width="0.1524" layer="91"/>
 <pinref part="C4" gate="CE" pin="1"/>
-<junction x="200.66" y="113.03"/>
 <pinref part="U$6" gate="G$1" pin="OUT"/>
 </segment>
 </net>
@@ -11984,6 +12029,32 @@ Source: www.kingbright.com</description>
 <wire x1="125.73" y1="113.03" x2="125.73" y2="113" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="L3" gate="G$1" pin="1"/>
+<pinref part="L2" gate="G$1" pin="2"/>
+<wire x1="116.84" y1="138.43" x2="116.84" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="3.3V1" class="0">
+<segment>
+<pinref part="L4" gate="G$1" pin="2"/>
+<wire x1="200.66" y1="148.59" x2="200.66" y2="151.13" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<wire x1="200.66" y1="113.03" x2="200.66" y2="127" width="0.1524" layer="91"/>
+<pinref part="L1" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="L4" gate="G$1" pin="1"/>
+<pinref part="L1" gate="G$1" pin="2"/>
+<wire x1="200.66" y1="138.43" x2="200.66" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -11991,17 +12062,25 @@ Source: www.kingbright.com</description>
 <approved hash="104,1,46.99,189.23,U3,VIN,5V,,,"/>
 <approved hash="104,1,72.39,189.23,U3,VOUT,3.3V,,,"/>
 <approved hash="104,1,72.39,181.61,U3,BYPASS,N$1,,,"/>
-<approved hash="104,1,144.78,100.33,U$1,GND_3,GND,,,"/>
-<approved hash="104,1,132.08,100.33,U$1,GND_1,GND,,,"/>
 <approved hash="104,1,85.09,102.87,U$7,SHTDN,GND,,,"/>
 <approved hash="104,1,168.91,102.87,U$6,SHTDN,GND,,,"/>
-<approved hash="104,1,228.6,100.33,U$2,GND_3,GND,,,"/>
-<approved hash="104,1,215.9,100.33,U$2,GND_1,GND,,,"/>
 <approved hash="104,1,238.76,153.67,U$4,GND,1,,,"/>
+<approved hash="206,1,139.7,100.33,GND,,,,,"/>
+<approved hash="206,1,224.79,100.33,GND,,,,,"/>
+<approved hash="208,1,248.92,99.06,GND,sup,,,,"/>
 <approved hash="208,1,57.15,173.99,GND,sup,,,,"/>
 <approved hash="208,1,101.6,173.99,GND,sup,,,,"/>
+<approved hash="208,1,139.7,99.06,GND,sup,,,,"/>
+<approved hash="208,1,139.7,100.33,GND,out,,,,"/>
 <approved hash="208,1,90.17,173.99,GND,sup,,,,"/>
-<approved hash="106,1,124.46,113.03,N$6,,,,,"/>
+<approved hash="208,1,132.08,133.35,GND,sup,,,,"/>
+<approved hash="208,1,99.06,93.98,GND,sup,,,,"/>
+<approved hash="208,1,85.09,93.98,GND,sup,,,,"/>
+<approved hash="208,1,182.88,93.98,GND,sup,,,,"/>
+<approved hash="208,1,168.91,93.98,GND,sup,,,,"/>
+<approved hash="208,1,224.79,99.06,GND,sup,,,,"/>
+<approved hash="208,1,224.79,100.33,GND,out,,,,"/>
+<approved hash="208,1,215.9,133.35,GND,sup,,,,"/>
 <approved hash="108,1,241.3,173.99,1,,,,,"/>
 <approved hash="108,1,243.84,173.99,N$18,,,,,"/>
 <approved hash="108,1,246.38,173.99,N$19,,,,,"/>
