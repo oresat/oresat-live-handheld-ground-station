@@ -10907,15 +10907,6 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 
 Noel Case - Created 6/16/20</description>
 <packages>
-<package name="QPQ1907">
-<rectangle x1="0" y1="-1.2" x2="1.4" y2="0" layer="21"/>
-<pad name="2" x="0.4" y="0" drill="0.15"/>
-<pad name="3" x="1.4" y="-0.3" drill="0.15" rot="R180"/>
-<pad name="4" x="1.4" y="-1" drill="0.15" rot="R180"/>
-<pad name="5" x="0.6" y="-1.2" drill="0.15" rot="R180"/>
-<pad name="1" x="0" y="-0.6" drill="0.15"/>
-<rectangle x1="0" y1="-1.27" x2="1.27" y2="0" layer="39"/>
-</package>
 <package name="1/4_WAVE_TRF">
 <smd name="Z1" x="0" y="0" dx="0.408940625" dy="0.0635" layer="1"/>
 <pad name="3" x="0.2032" y="0.0254" drill="0.0254" diameter="0.03175" shape="square"/>
@@ -10949,19 +10940,6 @@ Noel Case - Created 6/16/20</description>
 </package>
 </packages>
 <symbols>
-<symbol name="BPF(QPQ1907)">
-<pin name="RF_IN" x="-13.97" y="2.51" length="short" direction="in"/>
-<pin name="GND_3" x="6.35" y="-10.16" length="short" direction="pwr" rot="R90"/>
-<pin name="RF-OUT" x="13.97" y="2.54" length="short" direction="out" rot="R180"/>
-<pin name="GND_1" x="-6.35" y="-10.16" length="short" direction="pwr" rot="R90"/>
-<wire x1="-11.43" y1="-7.62" x2="-11.43" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-11.43" y1="7.62" x2="11.43" y2="7.62" width="0.254" layer="94"/>
-<wire x1="11.43" y1="7.62" x2="11.43" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="11.43" y1="-7.62" x2="-11.43" y2="-7.62" width="0.254" layer="94"/>
-<pin name="GND_2" x="0" y="-10.16" length="short" direction="out" rot="R90"/>
-<text x="8.89" y="-12.7" size="1.778" layer="95">&gt;NAME</text>
-<text x="8.89" y="-15.24" size="1.778" layer="95">QPQ1907</text>
-</symbol>
 <symbol name="1/4_WAVE_TRANSF">
 <text x="7.62" y="-12.7" size="1.778" layer="95">1/4 Wave Transformer</text>
 <pin name="Z_INPUT" x="-15.24" y="0" length="middle" direction="in"/>
@@ -11002,25 +10980,6 @@ The large circular pin in the center is the connection to the RF cable providing
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BPF">
-<gates>
-<gate name="G$1" symbol="BPF(QPQ1907)" x="-15.24" y="7.62"/>
-</gates>
-<devices>
-<device name="QPQ1907" package="QPQ1907">
-<connects>
-<connect gate="G$1" pin="GND_1" pad="2"/>
-<connect gate="G$1" pin="GND_2" pad="3"/>
-<connect gate="G$1" pin="GND_3" pad="5"/>
-<connect gate="G$1" pin="RF-OUT" pad="4"/>
-<connect gate="G$1" pin="RF_IN" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="1/4_WAVE_TRF">
 <gates>
 <gate name="G$1" symbol="1/4_WAVE_TRANSF" x="0" y="0"/>
@@ -11456,6 +11415,71 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="QPQ1907_BPF">
+<description>This library contains the symbols and footprints for the custom parts on the Handheld Ground Station backplane board. These parts interface in the way described on the associated block diagram.
+
+
+
+
+
+
+
+
+
+Noel Case - Created 6/16/20</description>
+<packages>
+<package name="QPQ_1907">
+<smd name="INPUT" x="0.495" y="0" dx="0.254" dy="0.33" layer="1"/>
+<smd name="GND" x="-0.495" y="-0.2855" dx="0.254" dy="0.33" layer="1"/>
+<smd name="GND3" x="0" y="-0.2855" dx="0.254" dy="0.33" layer="1"/>
+<smd name="GND2" x="0" y="0.2855" dx="0.254" dy="0.33" layer="1"/>
+<smd name="OUTPUT" x="-0.495" y="0.2855" dx="0.254" dy="0.33" layer="1"/>
+<text x="0.446" y="0.69733125" size="1.778" layer="25">&gt;NAME</text>
+<text x="0.446" y="-2.90433125" size="1.778" layer="27">&gt;VALUE</text>
+<wire x1="-0.7" y1="0.435" x2="0.7" y2="0.435" width="0.075" layer="21"/>
+<wire x1="0.7" y1="0.435" x2="0.7" y2="-0.435" width="0.075" layer="21"/>
+<wire x1="0.7" y1="-0.435" x2="-0.7" y2="-0.435" width="0.075" layer="21"/>
+<wire x1="-0.7" y1="-0.435" x2="-0.7" y2="0.435" width="0.075" layer="21"/>
+<rectangle x1="-0.7" y1="-0.435" x2="0.7" y2="0.435" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BPF(QPQ1907)">
+<pin name="RF_IN" x="-13.97" y="2.51" length="short" direction="in"/>
+<pin name="GND_3" x="6.35" y="-10.16" length="short" direction="pwr" rot="R90"/>
+<pin name="RF-OUT" x="13.97" y="2.54" length="short" direction="out" rot="R180"/>
+<pin name="GND_1" x="-6.35" y="-10.16" length="short" direction="pwr" rot="R90"/>
+<wire x1="-11.43" y1="-7.62" x2="-11.43" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-11.43" y1="7.62" x2="11.43" y2="7.62" width="0.254" layer="94"/>
+<wire x1="11.43" y1="7.62" x2="11.43" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="11.43" y1="-7.62" x2="-11.43" y2="-7.62" width="0.254" layer="94"/>
+<pin name="GND_2" x="0" y="-10.16" length="short" direction="out" rot="R90"/>
+<text x="8.89" y="-12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="8.89" y="-15.24" size="1.778" layer="95">QPQ1907</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BPF">
+<gates>
+<gate name="G$1" symbol="BPF(QPQ1907)" x="-15.24" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="QPQ_1907">
+<connects>
+<connect gate="G$1" pin="GND_1" pad="GND"/>
+<connect gate="G$1" pin="GND_2" pad="GND2"/>
+<connect gate="G$1" pin="GND_3" pad="GND3"/>
+<connect gate="G$1" pin="RF-OUT" pad="OUTPUT"/>
+<connect gate="G$1" pin="RF_IN" pad="INPUT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11481,7 +11505,6 @@ Source: www.kingbright.com</description>
 <part name="C8" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="C" device="" value="10 nF"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C9" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="C" device="" value="2.2 uF"/>
-<part name="U$1" library="HGS_Data_Parts" deviceset="BPF" device="QPQ1907"/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device="">
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
@@ -11504,7 +11527,6 @@ Source: www.kingbright.com</description>
 </part>
 <part name="U$6" library="HGS_Data_Parts" deviceset="LNA-TP3M9037" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$2" library="HGS_Data_Parts" deviceset="BPF" device="QPQ1907"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C1" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="100 pF"/>
 <part name="C2" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="1 uF"/>
@@ -11560,6 +11582,8 @@ Source: www.kingbright.com</description>
 </spice>
 <attribute name="_EXTERNAL_" value="1 uF"/>
 </part>
+<part name="U$1" library="QPQ1907_BPF" deviceset="BPF" device=""/>
+<part name="U$2" library="QPQ1907_BPF" deviceset="BPF" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11624,9 +11648,6 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="82.55" y="191.77" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="85.09" y="191.77" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U$1" gate="G$1" x="139.7" y="110.49" smashed="yes">
-<attribute name="NAME" x="148.59" y="97.79" size="1.778" layer="95"/>
-</instance>
 <instance part="GND15" gate="1" x="85.09" y="91.44" smashed="yes">
 <attribute name="VALUE" x="82.55" y="88.9" size="1.778" layer="96"/>
 </instance>
@@ -11688,9 +11709,6 @@ Source: www.kingbright.com</description>
 <instance part="GND4" gate="1" x="224.79" y="96.52" smashed="yes">
 <attribute name="VALUE" x="222.25" y="93.98" size="1.778" layer="96"/>
 </instance>
-<instance part="U$2" gate="G$1" x="224.79" y="110.49" smashed="yes">
-<attribute name="NAME" x="233.68" y="97.79" size="1.778" layer="95"/>
-</instance>
 <instance part="GND7" gate="1" x="215.9" y="130.81" smashed="yes">
 <attribute name="VALUE" x="213.36" y="128.27" size="1.778" layer="96"/>
 </instance>
@@ -11737,6 +11755,12 @@ Source: www.kingbright.com</description>
 <instance part="C5" gate="G$1" x="43.18" y="179.07" smashed="yes">
 <attribute name="NAME" x="38.1" y="179.07" size="1.778" layer="95"/>
 <attribute name="VALUE" x="34.29" y="176.53" size="1.778" layer="96"/>
+</instance>
+<instance part="U$1" gate="G$1" x="139.7" y="110.49" smashed="yes">
+<attribute name="NAME" x="148.59" y="97.79" size="1.778" layer="95"/>
+</instance>
+<instance part="U$2" gate="G$1" x="224.79" y="110.49" smashed="yes">
+<attribute name="NAME" x="233.68" y="97.79" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -11979,8 +12003,8 @@ Source: www.kingbright.com</description>
 <net name="N$4" class="0">
 <segment>
 <pinref part="C3" gate="CE" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="RF-OUT"/>
 <wire x1="156.21" y1="113.03" x2="153.67" y2="113.03" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="RF-OUT"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -12001,8 +12025,8 @@ Source: www.kingbright.com</description>
 <net name="N$5" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="SIGNAL"/>
-<pinref part="U$2" gate="G$1" pin="RF-OUT"/>
 <wire x1="241.3" y1="113.03" x2="238.76" y2="113.03" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="RF-OUT"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -12017,16 +12041,16 @@ Source: www.kingbright.com</description>
 <net name="N$3" class="0">
 <segment>
 <pinref part="C4" gate="CE" pin="2"/>
-<pinref part="U$2" gate="G$1" pin="RF_IN"/>
 <wire x1="208.28" y1="113.03" x2="210.82" y2="113" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="RF_IN"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="C14" gate="CE" pin="2"/>
-<pinref part="U$1" gate="G$1" pin="RF_IN"/>
 <wire x1="124.46" y1="113.03" x2="125.73" y2="113.03" width="0.1524" layer="91"/>
 <wire x1="125.73" y1="113.03" x2="125.73" y2="113" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="RF_IN"/>
 </segment>
 </net>
 <net name="N$7" class="0">
