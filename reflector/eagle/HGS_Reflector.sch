@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -10926,18 +10926,6 @@ Noel Case - Created 6/16/20</description>
 <pad name="GND" x="0" y="5.08" drill="0.6"/>
 <pad name="VDD" x="2.54" y="5.08" drill="0.6"/>
 </package>
-<package name="AR9721">
-<pad name="P$2" x="-13.838996875" y="0.015234375" drill="2" diameter="5"/>
-<rectangle x1="-23.118" y1="-6" x2="-4.468" y2="6" layer="1"/>
-<wire x1="-4.341" y1="5.904" x2="23.245" y2="5.904" width="0.1524" layer="1"/>
-<wire x1="23.245" y1="5.904" x2="23.245" y2="-5.904" width="0.1524" layer="1"/>
-<wire x1="23.245" y1="-5.904" x2="-4.341" y2="-5.904" width="0.1524" layer="1"/>
-<pad name="GND" x="22" y="3.5" drill="1.5" diameter="1.5" shape="square"/>
-<pad name="D-" x="22" y="1" drill="1.5" diameter="1.5" shape="square"/>
-<pad name="D+" x="22" y="-1" drill="1.5" diameter="1.5" shape="square"/>
-<pad name="VCC" x="22" y="-3.5" drill="1.5" diameter="1.5" shape="square"/>
-<rectangle x1="-23.188" y1="-6" x2="23.188" y2="6" layer="39"/>
-</package>
 </packages>
 <symbols>
 <symbol name="1/4_WAVE_TRANSF">
@@ -10960,23 +10948,6 @@ Noel Case - Created 6/16/20</description>
 <wire x1="13.97" y1="0" x2="-8.89" y2="12.7" width="0.1524" layer="94"/>
 <text x="11.43" y="-10.16" size="1.778" layer="95">&gt;NAME</text>
 <text x="11.43" y="-12.7" size="1.778" layer="95">TP3M9037</text>
-</symbol>
-<symbol name="ATHEROS_CARD">
-<description>This is a Qualcomm Atheros AR9721 USB adapter. Its primary function is to translate 2.45 GHz RF to a digital USB A signal.
-
-The large circular pin in the center is the connection to the RF cable providing the RF input.</description>
-<wire x1="-11.43" y1="-7.62" x2="-11.43" y2="7.62" width="0.1524" layer="94"/>
-<wire x1="-11.43" y1="7.62" x2="11.43" y2="7.62" width="0.1524" layer="94"/>
-<wire x1="11.43" y1="7.62" x2="11.43" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="11.43" y1="-7.62" x2="-11.43" y2="-7.62" width="0.1524" layer="94"/>
-<pin name="GND" x="-7.62" y="10.16" length="short" direction="pwr" rot="R270"/>
-<pin name="D-" x="-2.54" y="10.16" length="short" rot="R270"/>
-<pin name="VCC" x="7.62" y="10.16" length="short" direction="sup" rot="R270"/>
-<pin name="D+" x="2.54" y="10.16" length="short" rot="R270"/>
-<text x="6.35" y="-10.16" size="2.032" layer="95">AR9721</text>
-<circle x="0" y="-3.81" radius="2.54" width="0.1524" layer="94"/>
-<pin name="RF_IN" x="0" y="-3.81" visible="pin" length="point"/>
-<circle x="0" y="-3.81" radius="1.27" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -11007,25 +10978,6 @@ The large circular pin in the center is the connection to the RF cable providing
 <connect gate="G$1" pin="IN" pad="RF_IN"/>
 <connect gate="G$1" pin="OUT" pad="RF_OUT"/>
 <connect gate="G$1" pin="SHTDN" pad="J7 SHTDN VDD"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="AR9721">
-<gates>
-<gate name="G$1" symbol="ATHEROS_CARD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="AR9721">
-<connects>
-<connect gate="G$1" pin="D+" pad="D+"/>
-<connect gate="G$1" pin="D-" pad="D-"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="RF_IN" pad="P$2"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11480,6 +11432,74 @@ Noel Case - Created 6/16/20</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="AR9721">
+<description>This library contains the symbols and footprints for the custom parts on the Handheld Ground Station backplane board. These parts interface in the way described on the associated block diagram.
+
+
+
+
+
+
+
+
+
+Noel Case - Created 6/16/20</description>
+<packages>
+<package name="AR9721">
+<pad name="P$2" x="0.161003125" y="0.015234375" drill="2" diameter="5"/>
+<pad name="GND" x="-3.5" y="-29" drill="1.5" diameter="1.5" shape="square" rot="R90"/>
+<pad name="D-" x="-1" y="-29" drill="1.5" diameter="1.5" shape="square" rot="R90"/>
+<pad name="D+" x="1" y="-29" drill="1.5" diameter="1.5" shape="square" rot="R90"/>
+<pad name="VCC" x="3.5" y="-29" drill="1.5" diameter="1.5" shape="square" rot="R90"/>
+<wire x1="-20" y1="30" x2="-20" y2="-30" width="0.1524" layer="21"/>
+<wire x1="-20" y1="-30" x2="20" y2="-30" width="0.1524" layer="21"/>
+<wire x1="20" y1="-30" x2="20" y2="30" width="0.1524" layer="21"/>
+<wire x1="20" y1="30" x2="-20" y2="30" width="0.1524" layer="21"/>
+<rectangle x1="-20" y1="-30" x2="20" y2="30" layer="39"/>
+<dimension x1="-20" y1="-30" x2="-20" y2="30" x3="-27.94" y3="0" textsize="1.778" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ATHEROS_CARD">
+<description>This is a Qualcomm Atheros AR9721 USB adapter. Its primary function is to translate 2.45 GHz RF to a digital USB A signal.
+
+The large circular pin in the center is the connection to the RF cable providing the RF input.</description>
+<wire x1="-11.43" y1="-7.62" x2="-11.43" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-11.43" y1="7.62" x2="11.43" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="11.43" y1="7.62" x2="11.43" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="11.43" y1="-7.62" x2="-11.43" y2="-7.62" width="0.1524" layer="94"/>
+<pin name="GND" x="-7.62" y="10.16" length="short" direction="pwr" rot="R270"/>
+<pin name="D-" x="-2.54" y="10.16" length="short" rot="R270"/>
+<pin name="VCC" x="7.62" y="10.16" length="short" direction="sup" rot="R270"/>
+<pin name="D+" x="2.54" y="10.16" length="short" rot="R270"/>
+<text x="6.35" y="-10.16" size="2.032" layer="95">AR9721</text>
+<circle x="0" y="-3.81" radius="2.54" width="0.1524" layer="94"/>
+<pin name="RF_IN" x="0" y="-3.81" visible="pin" length="point"/>
+<circle x="0" y="-3.81" radius="1.27" width="0.1524" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AR9721">
+<gates>
+<gate name="G$1" symbol="ATHEROS_CARD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="AR9721">
+<connects>
+<connect gate="G$1" pin="D+" pad="D+"/>
+<connect gate="G$1" pin="D-" pad="D-"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="RF_IN" pad="P$2"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11516,7 +11536,6 @@ Noel Case - Created 6/16/20</description>
 <part name="C12" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="1 uF"/>
 <part name="3.3V1" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="U$3" library="HGS_Data_Parts" deviceset="1/4_WAVE_TRF" device=""/>
-<part name="PI_USB_OUT1" library="con-amp" library_urn="urn:adsk.eagle:library:127" deviceset="USB-787616" device="" package3d_urn="urn:adsk.eagle:package:8081650/1"/>
 <part name="3.3V4" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="C14" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="100 pF"/>
 <part name="U$7" library="HGS_Data_Parts" deviceset="LNA-TP3M9037" device=""/>
@@ -11532,7 +11551,6 @@ Noel Case - Created 6/16/20</description>
 <part name="C2" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="1 uF"/>
 <part name="3.3V3" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="C4" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="100 pF"/>
-<part name="U$4" library="HGS_Data_Parts" deviceset="AR9721" device=""/>
 <part name="L2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="L-EU" device="L3216C" package3d_urn="urn:adsk.eagle:package:23476/2">
 <spice>
 <pinmapping spiceprefix="L">
@@ -11584,6 +11602,7 @@ Noel Case - Created 6/16/20</description>
 </part>
 <part name="U$1" library="QPQ1907_BPF" deviceset="BPF" device=""/>
 <part name="U$2" library="QPQ1907_BPF" deviceset="BPF" device=""/>
+<part name="U$4" library="AR9721" deviceset="AR9721" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11680,9 +11699,6 @@ Noel Case - Created 6/16/20</description>
 <instance part="U$3" gate="G$1" x="48.26" y="113.03" smashed="yes">
 <attribute name="NAME" x="55.88" y="102.87" size="1.778" layer="95"/>
 </instance>
-<instance part="PI_USB_OUT1" gate="G$1" x="246.38" y="179.07" smashed="yes" rot="R90">
-<attribute name="VALUE" x="254" y="175.26" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="3.3V4" gate="G$1" x="76.2" y="196.85" smashed="yes">
 <attribute name="VALUE" x="73.66" y="196.85" size="1.778" layer="96"/>
 </instance>
@@ -11727,7 +11743,6 @@ Noel Case - Created 6/16/20</description>
 <attribute name="NAME" x="202.565" y="114.046" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="207.391" y="114.046" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U$4" gate="G$1" x="246.38" y="143.51" smashed="yes"/>
 <instance part="L2" gate="G$1" x="116.84" y="132.08" smashed="yes" rot="R180">
 <attribute name="NAME" x="118.3386" y="135.89" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="113.538" y="135.89" size="1.778" layer="96" rot="R270"/>
@@ -11762,6 +11777,7 @@ Noel Case - Created 6/16/20</description>
 <instance part="U$2" gate="G$1" x="224.79" y="110.49" smashed="yes">
 <attribute name="NAME" x="233.68" y="97.79" size="1.778" layer="95"/>
 </instance>
+<instance part="U$4" gate="G$1" x="246.38" y="143.51" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -11941,7 +11957,6 @@ Noel Case - Created 6/16/20</description>
 <segment>
 <pinref part="PI_USB_OUT" gate="G$1" pin="1"/>
 <label x="241.3" y="171.45" size="1.778" layer="95" rot="R90"/>
-<pinref part="PI_USB_OUT1" gate="G$1" pin="1"/>
 <label x="241.3" y="171.45" size="1.778" layer="95" rot="R90"/>
 <wire x1="238.76" y1="153.67" x2="238.76" y2="173.99" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="173.99" x2="241.3" y2="173.99" width="0.1524" layer="91"/>
@@ -11968,7 +11983,6 @@ Noel Case - Created 6/16/20</description>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="PI_USB_OUT1" gate="G$1" pin="2"/>
 <pinref part="PI_USB_OUT" gate="G$1" pin="2"/>
 <wire x1="243.84" y1="173.99" x2="243.84" y2="171.45" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="171.45" x2="248.92" y2="171.45" width="0.1524" layer="91"/>
@@ -11978,7 +11992,6 @@ Noel Case - Created 6/16/20</description>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="PI_USB_OUT1" gate="G$1" pin="3"/>
 <wire x1="243.84" y1="153.67" x2="243.84" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="170.18" x2="246.38" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="PI_USB_OUT" gate="G$1" pin="3"/>
@@ -12029,15 +12042,6 @@ Noel Case - Created 6/16/20</description>
 <pinref part="U$2" gate="G$1" pin="RF-OUT"/>
 </segment>
 </net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="PI_USB_OUT1" gate="G$1" pin="4"/>
-<pinref part="PI_USB_OUT" gate="G$1" pin="4"/>
-<wire x1="248.92" y1="173.99" x2="254" y2="173.99" width="0.1524" layer="91"/>
-<wire x1="254" y1="173.99" x2="254" y2="153.67" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="VCC"/>
-</segment>
-</net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="C4" gate="CE" pin="2"/>
@@ -12077,6 +12081,14 @@ Noel Case - Created 6/16/20</description>
 <pinref part="L4" gate="G$1" pin="1"/>
 <pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="138.43" x2="200.66" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="PI_USB_OUT" gate="G$1" pin="4"/>
+<wire x1="248.92" y1="173.99" x2="254" y2="173.99" width="0.1524" layer="91"/>
+<wire x1="254" y1="173.99" x2="254" y2="153.67" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 </nets>
