@@ -3058,7 +3058,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="L-EU" urn="urn:adsk.eagle:component:23789/8" prefix="L" uservalue="yes" library_version="10">
+<deviceset name="L-EU" urn="urn:adsk.eagle:component:23789/9" prefix="L" uservalue="yes" library_version="11">
 <description>&lt;B&gt;INDUCTOR&lt;/B&gt;, European symbol</description>
 <gates>
 <gate name="G$1" symbol="L-EU" x="0" y="0"/>
@@ -3074,6 +3074,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3088,6 +3089,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3102,6 +3104,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3116,6 +3119,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3130,6 +3134,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3144,6 +3149,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3158,6 +3164,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3172,6 +3179,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3186,6 +3194,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3200,6 +3209,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3214,6 +3224,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3228,6 +3239,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3242,6 +3254,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3256,6 +3269,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3270,6 +3284,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3284,6 +3299,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3298,6 +3314,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="4" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3312,6 +3329,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3326,6 +3344,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3340,6 +3359,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3354,6 +3374,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3368,6 +3389,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3382,6 +3404,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="18" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3396,6 +3419,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3410,6 +3434,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3424,6 +3449,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3438,6 +3464,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3452,6 +3479,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3466,6 +3494,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3480,6 +3509,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3494,6 +3524,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3508,6 +3539,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3522,6 +3554,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3536,6 +3569,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3550,6 +3584,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3564,6 +3599,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3578,6 +3614,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3592,6 +3629,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3606,6 +3644,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3620,6 +3659,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3634,6 +3674,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3648,6 +3689,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3662,6 +3704,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3676,6 +3719,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="5" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3690,6 +3734,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3704,6 +3749,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3718,6 +3764,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3732,6 +3779,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3746,6 +3794,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3760,6 +3809,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3774,6 +3824,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3788,6 +3839,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3802,6 +3854,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3816,6 +3869,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3830,6 +3884,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3844,6 +3899,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3858,6 +3914,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3872,6 +3929,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3886,6 +3944,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3900,6 +3959,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3914,6 +3974,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3928,6 +3989,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3942,6 +4004,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -3956,6 +4019,7 @@ Source: http://www.niccomp.com/Catalog/nis.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
 <attribute name="SPICEPREFIX" value="L" constant="no"/>
 </technology>
 </technologies>
@@ -10918,14 +10982,6 @@ Noel Case - Created 6/16/20</description>
 <wire x1="0.2032" y1="-0.0508" x2="-0.2032" y2="-0.0508" width="0.00635" layer="21"/>
 <wire x1="-0.2032" y1="-0.0508" x2="-0.2032" y2="0.0508" width="0.00635" layer="21"/>
 </package>
-<package name="TP3M9037">
-<pad name="RF_IN" x="-3.81" y="0" drill="0.6"/>
-<pad name="RF_OUT" x="3.81" y="0" drill="0.6"/>
-<pad name="J7" x="2.54" y="-3.81" drill="0.6"/>
-<pad name="SHTDN" x="-2.54" y="-3.81" drill="0.6"/>
-<pad name="GND" x="0" y="5.08" drill="0.6"/>
-<pad name="VDD" x="2.54" y="5.08" drill="0.6"/>
-</package>
 </packages>
 <symbols>
 <symbol name="1/4_WAVE_TRANSF">
@@ -10938,17 +10994,6 @@ Noel Case - Created 6/16/20</description>
 <wire x1="15.24" y1="-5.08" x2="15.24" y2="5.08" width="0.254" layer="94"/>
 <wire x1="15.24" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
 </symbol>
-<symbol name="TQP3M9037">
-<wire x1="-8.89" y1="-12.7" x2="-8.89" y2="12.7" width="0.1524" layer="94"/>
-<pin name="IN" x="-11.43" y="5.08" length="short"/>
-<pin name="OUT" x="16.51" y="0" length="short" rot="R180"/>
-<pin name="GND" x="2.54" y="-11.43" length="middle" direction="pwr" rot="R90"/>
-<pin name="SHTDN" x="-11.43" y="-5.08" length="short" direction="pwr"/>
-<wire x1="-8.89" y1="-12.7" x2="13.97" y2="0" width="0.1524" layer="94"/>
-<wire x1="13.97" y1="0" x2="-8.89" y2="12.7" width="0.1524" layer="94"/>
-<text x="11.43" y="-10.16" size="1.778" layer="95">&gt;NAME</text>
-<text x="11.43" y="-12.7" size="1.778" layer="95">TP3M9037</text>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="1/4_WAVE_TRF">
@@ -10960,24 +11005,6 @@ Noel Case - Created 6/16/20</description>
 <connects>
 <connect gate="G$1" pin="Z_INPUT" pad="1"/>
 <connect gate="G$1" pin="Z_OUTPUT" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="LNA-TP3M9037">
-<gates>
-<gate name="G$1" symbol="TQP3M9037" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TP3M9037">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="IN" pad="RF_IN"/>
-<connect gate="G$1" pin="OUT" pad="RF_OUT"/>
-<connect gate="G$1" pin="SHTDN" pad="J7 SHTDN VDD"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11019,7 +11046,7 @@ Noel Case - Created 6/16/20</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ANTENNA" urn="urn:adsk.eagle:component:12934/1" prefix="ANT" uservalue="yes" library_version="1">
+<deviceset name="ANTENNA" urn="urn:adsk.eagle:component:12934/2" prefix="ANT" uservalue="yes" library_version="2">
 <description>&lt;b&gt;Antenna&lt;/b&gt;</description>
 <gates>
 <gate name="A" symbol="ANTENNA" x="0" y="10.16"/>
@@ -11033,118 +11060,9 @@ Noel Case - Created 6/16/20</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:12928/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="con-amp" urn="urn:adsk.eagle:library:127">
-<description>&lt;b&gt;AMP Connectors&lt;/b&gt;&lt;p&gt;
-RJ45 Jack connectors&lt;br&gt;
- Based on the previous libraris:
- &lt;ul&gt;
- &lt;li&gt;amp.lbr
- &lt;li&gt;amp-j.lbr
- &lt;li&gt;amp-mta.lbr
- &lt;li&gt;amp-nlok.lbr
- &lt;li&gt;amp-sim.lbr
- &lt;li&gt;amp-micro-match.lbr
- &lt;/ul&gt;
- Sources :
- &lt;ul&gt;
- &lt;li&gt;Catalog 82066 Revised 11-95 
- &lt;li&gt;Product Guide 296785 Rev. 8-99
- &lt;li&gt;Product Guide CD-ROM 1999
- &lt;li&gt;www.amp.com
- &lt;/ul&gt;
- &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="USB" urn="urn:adsk.eagle:footprint:8080385/1" library_version="2">
-<description>&lt;b&gt;USB connector&lt;/b&gt;</description>
-<wire x1="-6.5" y1="0.3" x2="-6.4999" y2="0.3" width="0.2032" layer="21"/>
-<wire x1="-6.4999" y1="0.3" x2="-6.2" y2="0.3" width="0.2032" layer="21"/>
-<wire x1="-5.9" y1="0" x2="5.9" y2="0" width="0.2032" layer="21"/>
-<wire x1="6.2" y1="0.3" x2="6.5" y2="0.3" width="0.2032" layer="21"/>
-<wire x1="6.5" y1="0.3" x2="6.5" y2="9" width="0.2032" layer="21"/>
-<wire x1="6.5" y1="9" x2="6.5" y2="11.5" width="0.2032" layer="21"/>
-<wire x1="6.5" y1="11.5" x2="6.5" y2="13.9" width="0.2032" layer="21"/>
-<wire x1="6.5" y1="13.9" x2="-6.5" y2="13.9" width="0.2032" layer="21"/>
-<wire x1="-6.5" y1="13.9" x2="-6.5" y2="11.5" width="0.2032" layer="21"/>
-<wire x1="-6.5" y1="11.5" x2="-6.5" y2="9" width="0.2032" layer="21"/>
-<wire x1="-6.5" y1="9" x2="-6.5" y2="0.3" width="0.2032" layer="21"/>
-<wire x1="-6.7999" y1="0" x2="-6.4999" y2="0.3" width="0.2032" layer="21" curve="90"/>
-<wire x1="-6.8" y1="0" x2="-7" y2="0" width="0.2032" layer="21"/>
-<wire x1="-6.2" y1="0.3" x2="-5.9" y2="0" width="0.2032" layer="21" curve="-90"/>
-<wire x1="6.5" y1="0.3" x2="6.8" y2="0" width="0.2032" layer="21" curve="90"/>
-<wire x1="5.9" y1="0" x2="6.2" y2="0.3001" width="0.2032" layer="21" curve="-89.980911"/>
-<wire x1="-5" y1="8" x2="-4" y2="2" width="0.2032" layer="21"/>
-<wire x1="-4" y1="2" x2="-3" y2="2" width="0.2032" layer="21"/>
-<wire x1="-3" y1="2" x2="-2" y2="8" width="0.2032" layer="21"/>
-<wire x1="5" y1="8" x2="4" y2="2" width="0.2032" layer="21"/>
-<wire x1="4" y1="2" x2="3" y2="2" width="0.2032" layer="21"/>
-<wire x1="3" y1="2" x2="2" y2="8" width="0.2032" layer="21"/>
-<wire x1="-6.5" y1="11.5" x2="-8" y2="11" width="0.2032" layer="21"/>
-<wire x1="-8" y1="11" x2="-8" y2="9.5" width="0.2032" layer="21"/>
-<wire x1="-8" y1="9.5" x2="-6.5" y2="9" width="0.2032" layer="21"/>
-<wire x1="6.5" y1="11.5" x2="8" y2="11" width="0.2032" layer="21"/>
-<wire x1="8" y1="11" x2="8" y2="9.5" width="0.2032" layer="21"/>
-<wire x1="8" y1="9.5" x2="6.5" y2="9" width="0.2032" layer="21"/>
-<wire x1="6.8" y1="0" x2="7" y2="0" width="0.2032" layer="21"/>
-<pad name="1" x="-3.5001" y="12.9901" drill="1"/>
-<pad name="2" x="-1" y="12.9901" drill="1"/>
-<pad name="3" x="1" y="12.9901" drill="1"/>
-<pad name="4" x="3.5001" y="12.9901" drill="1"/>
-<text x="-6.5001" y="14.5001" size="1.27" layer="25">&gt;NAME</text>
-<text x="-4.5001" y="10" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-5.08" y="0.635" size="1.016" layer="21">AMP 787616-1</text>
-<hole x="-6.57" y="10.2799" drill="2.3"/>
-<hole x="6.57" y="10.2799" drill="2.3"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="USB" urn="urn:adsk.eagle:package:8081650/1" type="box" library_version="2">
-<description>&lt;b&gt;USB connector&lt;/b&gt;</description>
-<packageinstances>
-<packageinstance name="USB"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="USB-4" urn="urn:adsk.eagle:symbol:8079841/1" library_version="2">
-<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="2.54" y2="7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
-<text x="1.27" y="-2.032" size="2.54" layer="94" rot="R90">USB</text>
-<text x="-3.81" y="8.89" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-5.08" y="5.08" visible="pad" length="short" direction="pas"/>
-<pin name="2" x="-5.08" y="2.54" visible="pad" length="short" direction="pas"/>
-<pin name="3" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
-<pin name="4" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="USB-787616" urn="urn:adsk.eagle:component:8082824/1" prefix="X" uservalue="yes" library_version="2">
-<description>&lt;b&gt;AMP connector&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="USB-4" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="USB">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:8081650/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="11" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -11381,11 +11299,11 @@ Source: www.kingbright.com</description>
 Noel Case - Created 6/16/20</description>
 <packages>
 <package name="QPQ_1907">
-<smd name="INPUT" x="0.495" y="0" dx="0.254" dy="0.33" layer="1"/>
-<smd name="GND" x="-0.495" y="-0.2855" dx="0.254" dy="0.33" layer="1"/>
-<smd name="GND3" x="0" y="-0.2855" dx="0.254" dy="0.33" layer="1"/>
-<smd name="GND2" x="0" y="0.2855" dx="0.254" dy="0.33" layer="1"/>
-<smd name="OUTPUT" x="-0.495" y="0.2855" dx="0.254" dy="0.33" layer="1"/>
+<smd name="INPUT" x="0.495" y="0" dx="0.254" dy="0.33" layer="1" roundness="4"/>
+<smd name="GND" x="-0.495" y="-0.2855" dx="0.254" dy="0.33" layer="1" roundness="4"/>
+<smd name="GND3" x="0" y="-0.2855" dx="0.254" dy="0.33" layer="1" roundness="4"/>
+<smd name="GND2" x="0" y="0.2855" dx="0.254" dy="0.33" layer="1" roundness="4" thermals="no"/>
+<smd name="OUTPUT" x="-0.495" y="0.2855" dx="0.254" dy="0.33" layer="1" roundness="4"/>
 <text x="0.446" y="0.69733125" size="1.778" layer="25">&gt;NAME</text>
 <text x="0.446" y="-2.90433125" size="1.778" layer="27">&gt;VALUE</text>
 <wire x1="-0.7" y1="0.435" x2="0.7" y2="0.435" width="0.075" layer="21"/>
@@ -11446,17 +11364,16 @@ Noel Case - Created 6/16/20</description>
 Noel Case - Created 6/16/20</description>
 <packages>
 <package name="AR9721">
-<pad name="P$2" x="0.161003125" y="0.015234375" drill="2" diameter="5"/>
+<pad name="P$2" x="0" y="0" drill="2" diameter="5"/>
 <pad name="GND" x="-3.5" y="-29" drill="1.5" diameter="1.5" shape="square" rot="R90"/>
 <pad name="D-" x="-1" y="-29" drill="1.5" diameter="1.5" shape="square" rot="R90"/>
 <pad name="D+" x="1" y="-29" drill="1.5" diameter="1.5" shape="square" rot="R90"/>
 <pad name="VCC" x="3.5" y="-29" drill="1.5" diameter="1.5" shape="square" rot="R90"/>
-<wire x1="-20" y1="30" x2="-20" y2="-30" width="0.1524" layer="21"/>
-<wire x1="-20" y1="-30" x2="20" y2="-30" width="0.1524" layer="21"/>
-<wire x1="20" y1="-30" x2="20" y2="30" width="0.1524" layer="21"/>
-<wire x1="20" y1="30" x2="-20" y2="30" width="0.1524" layer="21"/>
-<rectangle x1="-20" y1="-30" x2="20" y2="30" layer="39"/>
-<dimension x1="-20" y1="-30" x2="-20" y2="30" x3="-27.94" y3="0" textsize="1.778" layer="21"/>
+<wire x1="-10" y1="30" x2="10" y2="30" width="0.1524" layer="21"/>
+<wire x1="10" y1="30" x2="10" y2="-30" width="0.1524" layer="21"/>
+<wire x1="10" y1="-30" x2="-10" y2="-30" width="0.1524" layer="21"/>
+<wire x1="-10" y1="-30" x2="-10" y2="30" width="0.1524" layer="21"/>
+<rectangle x1="-10" y1="-30" x2="10" y2="30" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -11500,6 +11417,170 @@ The large circular pin in the center is the connection to the RF cable providing
 </deviceset>
 </devicesets>
 </library>
+<library name="TP3M9037_LNA">
+<description>This library contains the symbols and footprints for the custom parts on the Handheld Ground Station backplane board. These parts interface in the way described on the associated block diagram.
+
+
+
+
+
+
+
+
+
+Noel Case - Created 6/16/20</description>
+<packages>
+<package name="TP3M9037">
+<smd name="P$1" x="0" y="0" dx="1.27" dy="0.635" layer="1"/>
+<smd name="2X2_DFN_8PIN1" x="-0.8" y="-0.734996875" dx="0.3" dy="0.67" layer="1"/>
+<smd name="2X2_DFN_8PIN2" x="-0.3" y="-0.734996875" dx="0.3" dy="0.67" layer="1"/>
+<smd name="2X2_DFN_8PIN3" x="0.2" y="-0.734996875" dx="0.3" dy="0.67" layer="1"/>
+<smd name="2X2_DFN_8PIN4" x="0.7" y="-0.734996875" dx="0.3" dy="0.67" layer="1"/>
+<smd name="2X2_DFN_8PIN5" x="0.7" y="0.7" dx="0.3" dy="0.67" layer="1"/>
+<smd name="2X2_DFN_8PIN6" x="0.2" y="0.7" dx="0.3" dy="0.67" layer="1"/>
+<smd name="2X2_DFN_8PIN7" x="-0.3" y="0.7" dx="0.3" dy="0.67" layer="1"/>
+<smd name="2X2_DFN_8PIN8" x="-0.8" y="0.7" dx="0.3" dy="0.67" layer="1"/>
+<wire x1="-1.1" y1="1.37" x2="1" y2="1.37" width="0.1524" layer="21"/>
+<wire x1="1" y1="1.37" x2="1" y2="-1.404996875" width="0.1524" layer="21"/>
+<wire x1="1" y1="-1.404996875" x2="-1.1" y2="-1.404996875" width="0.1524" layer="21"/>
+<wire x1="-1.1" y1="-1.404996875" x2="-1.1" y2="1.37" width="0.1524" layer="21"/>
+<text x="-1.1" y="1.66633125" size="1.778" layer="25">&gt;NAME</text>
+<text x="-1.1" y="-3.479328125" size="1.778" layer="27">&gt;VALUE</text>
+<circle x="-1.5" y="-0.7" radius="0.2" width="0.1524" layer="21"/>
+<rectangle x1="-1.1" y1="-1.4" x2="1" y2="1.4" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TQP3M9037">
+<wire x1="-8.89" y1="-12.7" x2="-8.89" y2="12.7" width="0.1524" layer="94"/>
+<pin name="IN" x="-11.43" y="5.08" length="short"/>
+<pin name="OUT" x="16.51" y="0" length="short" rot="R180"/>
+<pin name="GND" x="2.54" y="-11.43" length="middle" direction="pwr" rot="R90"/>
+<pin name="SHTDN" x="-11.43" y="-5.08" length="short" direction="pwr"/>
+<wire x1="-8.89" y1="-12.7" x2="13.97" y2="0" width="0.1524" layer="94"/>
+<wire x1="13.97" y1="0" x2="-8.89" y2="12.7" width="0.1524" layer="94"/>
+<text x="11.43" y="-10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="11.43" y="-12.7" size="1.778" layer="95">TP3M9037</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LNA-TP3M9037">
+<gates>
+<gate name="G$1" symbol="TQP3M9037" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TP3M9037">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$1"/>
+<connect gate="G$1" pin="IN" pad="2X2_DFN_8PIN2"/>
+<connect gate="G$1" pin="OUT" pad="2X2_DFN_8PIN7"/>
+<connect gate="G$1" pin="SHTDN" pad="2X2_DFN_8PIN6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="Rasp_Pi_0W">
+<packages>
+<package name="RASP_PI_0W">
+<wire x1="-25.5" y1="14" x2="25.5" y2="14" width="0.5" layer="21"/>
+<wire x1="25.5" y1="14" x2="25.5" y2="9" width="0.5" layer="21"/>
+<wire x1="25.5" y1="9" x2="-25.5" y2="9" width="0.5" layer="21"/>
+<wire x1="-25.5" y1="9" x2="-25.5" y2="14" width="0.5" layer="21"/>
+<pad name="P$1" x="-24" y="12.75" drill="1"/>
+<pad name="P$2" x="-21.5" y="12.75" drill="1"/>
+<pad name="P$3" x="-19" y="12.75" drill="1"/>
+<pad name="P$4" x="-16.5" y="12.75" drill="1"/>
+<pad name="P$5" x="-14" y="12.75" drill="1"/>
+<pad name="P$6" x="-11.5" y="12.75" drill="1"/>
+<pad name="P$7" x="-9" y="12.75" drill="1"/>
+<pad name="P$8" x="-6.5" y="12.75" drill="1"/>
+<pad name="P$9" x="-4" y="12.75" drill="1"/>
+<pad name="P$10" x="-1.5" y="12.75" drill="1"/>
+<pad name="P$11" x="1" y="12.75" drill="1"/>
+<pad name="P$12" x="3.5" y="12.75" drill="1"/>
+<pad name="P$13" x="6" y="12.75" drill="1"/>
+<pad name="P$14" x="8.5" y="12.75" drill="1"/>
+<pad name="P$15" x="11" y="12.75" drill="1"/>
+<pad name="P$16" x="13.5" y="12.75" drill="1"/>
+<pad name="P$17" x="16" y="12.75" drill="1"/>
+<pad name="P$18" x="18.5" y="12.75" drill="1"/>
+<pad name="P$19" x="21" y="12.75" drill="1"/>
+<pad name="P$20" x="23.5" y="12.75" drill="1"/>
+<pad name="GND$1" x="-24" y="10.25" drill="1" shape="square"/>
+<pad name="P$22" x="-21.5" y="10.25" drill="1"/>
+<pad name="P$23" x="-19" y="10.25" drill="1"/>
+<pad name="P$24" x="-16.5" y="10.25" drill="1"/>
+<pad name="P$25" x="-14" y="10.25" drill="1"/>
+<pad name="P$26" x="-11.5" y="10.25" drill="1"/>
+<pad name="P$27" x="-9" y="10.25" drill="1"/>
+<pad name="P$28" x="-6.5" y="10.25" drill="1"/>
+<pad name="P$29" x="-4" y="10.25" drill="1"/>
+<pad name="P$30" x="-1.5" y="10.25" drill="1"/>
+<pad name="P$31" x="1" y="10.25" drill="1"/>
+<pad name="P$32" x="3.5" y="10.25" drill="1"/>
+<pad name="P$33" x="6" y="10.25" drill="1"/>
+<pad name="P$34" x="8.5" y="10.25" drill="1"/>
+<pad name="P$35" x="11" y="10.25" drill="1"/>
+<pad name="P$36" x="13.5" y="10.25" drill="1"/>
+<pad name="P$37" x="16" y="10.25" drill="1"/>
+<pad name="P$38" x="18.5" y="10.25" drill="1"/>
+<pad name="P$39" x="21" y="10.25" drill="1"/>
+<pad name="P$40" x="23.5" y="10.25" drill="1"/>
+<text x="0.5" y="-8" size="1.3" layer="25">microUSB A port</text>
+<text x="-10.5" y="17" size="2" layer="25">Raspberry Pi 0W</text>
+<rectangle x1="3.5" y1="-16" x2="11.5" y2="-9" layer="21"/>
+<pad name="GND" x="4.5" y="-13.5" drill="0.5"/>
+<pad name="VCC" x="10.5" y="-13.5" drill="0.5"/>
+<pad name="D-" x="8.5" y="-13.5" drill="0.5"/>
+<pad name="D+" x="6.5" y="-13.5" drill="0.5"/>
+<wire x1="-32.5" y1="15" x2="32.5" y2="15" width="0.1" layer="21"/>
+<wire x1="32.5" y1="15" x2="32.5" y2="-15" width="0.1" layer="21"/>
+<wire x1="32.5" y1="-15" x2="-32.5" y2="-15" width="0.1" layer="21"/>
+<wire x1="-32.5" y1="-15" x2="-32.5" y2="15" width="0.1" layer="21"/>
+<rectangle x1="-32.5" y1="-15" x2="32.5" y2="15" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="USB-4">
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<text x="2.54" y="-2.286" size="1.4224" layer="94" rot="R90">microUSB</text>
+<text x="-2.54" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="D+" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="D-" x="-2.54" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="VCC" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RASP_PI_0W" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="USB-4" x="-1.27" y="-1.27"/>
+</gates>
+<devices>
+<device name="" package="RASP_PI_0W">
+<connects>
+<connect gate="G$1" pin="D+" pad="D+"/>
+<connect gate="G$1" pin="D-" pad="D-"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11529,7 +11610,6 @@ The large circular pin in the center is the connection to the RF cable providing
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
 <part name="ANT1" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="ANTENNA" device="" package3d_urn="urn:adsk.eagle:package:12928/1"/>
-<part name="PI_USB_OUT" library="con-amp" library_urn="urn:adsk.eagle:library:127" deviceset="USB-787616" device="" package3d_urn="urn:adsk.eagle:package:8081650/1"/>
 <part name="LED1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="" package3d_urn="urn:adsk.eagle:package:13319/2"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C11" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="100 pF"/>
@@ -11538,13 +11618,13 @@ The large circular pin in the center is the connection to the RF cable providing
 <part name="U$3" library="HGS_Data_Parts" deviceset="1/4_WAVE_TRF" device=""/>
 <part name="3.3V4" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="C14" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="100 pF"/>
-<part name="U$7" library="HGS_Data_Parts" deviceset="LNA-TP3M9037" device=""/>
+<part name="U$7" library="TP3M9037_LNA" deviceset="LNA-TP3M9037" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C3" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="100 pF"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device="">
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
-<part name="U$6" library="HGS_Data_Parts" deviceset="LNA-TP3M9037" device=""/>
+<part name="U$6" library="TP3M9037_LNA" deviceset="LNA-TP3M9037" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C1" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="100 pF"/>
@@ -11603,6 +11683,7 @@ The large circular pin in the center is the connection to the RF cable providing
 <part name="U$1" library="QPQ1907_BPF" deviceset="BPF" device=""/>
 <part name="U$2" library="QPQ1907_BPF" deviceset="BPF" device=""/>
 <part name="U$4" library="AR9721" deviceset="AR9721" device=""/>
+<part name="U$5" library="Rasp_Pi_0W" deviceset="RASP_PI_0W" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11673,10 +11754,6 @@ The large circular pin in the center is the connection to the RF cable providing
 <instance part="ANT1" gate="A" x="31.75" y="118.11" smashed="yes">
 <attribute name="NAME" x="29.21" y="119.38" size="1.778" layer="95"/>
 <attribute name="VALUE" x="34.29" y="113.03" size="1.778" layer="96"/>
-</instance>
-<instance part="PI_USB_OUT" gate="G$1" x="246.38" y="179.07" smashed="yes" rot="R90">
-<attribute name="NAME" x="252.73" y="184.15" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="254" y="175.26" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="LED1" gate="G$1" x="101.6" y="179.07" smashed="yes">
 <attribute name="NAME" x="105.156" y="174.498" size="1.778" layer="95" rot="R90"/>
@@ -11778,6 +11855,10 @@ The large circular pin in the center is the connection to the RF cable providing
 <attribute name="NAME" x="233.68" y="97.79" size="1.778" layer="95"/>
 </instance>
 <instance part="U$4" gate="G$1" x="246.38" y="143.51" smashed="yes"/>
+<instance part="U$5" gate="G$1" x="246.38" y="179.07" smashed="yes" rot="R90">
+<attribute name="NAME" x="237.49" y="176.53" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="254" y="176.53" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11910,26 +11991,28 @@ The large circular pin in the center is the connection to the RF cable providing
 <wire x1="116.84" y1="148.59" x2="116.84" y2="151.13" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="82.55" y1="189.23" x2="76.2" y2="189.23" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="VOUT"/>
-<wire x1="76.2" y1="189.23" x2="72.39" y2="189.23" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="189.23" x2="76.2" y2="194.31" width="0.1524" layer="91"/>
-<junction x="76.2" y="189.23"/>
-<pinref part="3.3V4" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
-<wire x1="200.66" y1="151.13" x2="207.01" y2="151.13" width="0.1524" layer="91"/>
-<wire x1="207.01" y1="151.13" x2="215.9" y2="151.13" width="0.1524" layer="91"/>
 <pinref part="3.3V3" gate="G$1" pin="3.3V"/>
 <wire x1="207.01" y1="154.94" x2="207.01" y2="151.13" width="0.1524" layer="91"/>
-<junction x="207.01" y="151.13"/>
+<pinref part="L4" gate="G$1" pin="2"/>
+<wire x1="200.66" y1="148.59" x2="200.66" y2="151.13" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="151.13" x2="207.01" y2="151.13" width="0.1524" layer="91"/>
 <pinref part="C2" gate="CE" pin="1"/>
 <pinref part="C1" gate="CE" pin="1"/>
 <wire x1="213.36" y1="146.05" x2="215.9" y2="146.05" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="146.05" x2="218.44" y2="146.05" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="151.13" x2="215.9" y2="146.05" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="146.05" x2="215.9" y2="151.13" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="151.13" x2="207.01" y2="151.13" width="0.1524" layer="91"/>
 <junction x="215.9" y="146.05"/>
+<junction x="207.01" y="151.13"/>
+</segment>
+<segment>
+<pinref part="3.3V4" gate="G$1" pin="3.3V"/>
+<wire x1="76.2" y1="194.31" x2="76.2" y2="189.23" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="76.2" y1="189.23" x2="82.55" y2="189.23" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="VOUT"/>
+<wire x1="76.2" y1="189.23" x2="72.39" y2="189.23" width="0.1524" layer="91"/>
+<junction x="76.2" y="189.23"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -11955,9 +12038,6 @@ The large circular pin in the center is the connection to the RF cable providing
 </net>
 <net name="1" class="0">
 <segment>
-<pinref part="PI_USB_OUT" gate="G$1" pin="1"/>
-<label x="241.3" y="171.45" size="1.778" layer="95" rot="R90"/>
-<label x="241.3" y="171.45" size="1.778" layer="95" rot="R90"/>
 <wire x1="238.76" y1="153.67" x2="238.76" y2="173.99" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="173.99" x2="241.3" y2="173.99" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="GND"/>
@@ -11966,12 +12046,11 @@ The large circular pin in the center is the connection to the RF cable providing
 <net name="N$16" class="0">
 <segment>
 <pinref part="C14" gate="CE" pin="1"/>
-<pinref part="U$7" gate="G$1" pin="OUT"/>
-<wire x1="113.03" y1="107.95" x2="116.84" y2="107.95" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="107.95" x2="116.84" y2="113.03" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="113.03" x2="116.84" y2="127" width="0.1524" layer="91"/>
-<junction x="116.84" y="113.03"/>
 <pinref part="L2" gate="G$1" pin="1"/>
+<pinref part="U$7" gate="G$1" pin="OUT"/>
+<wire x1="113.03" y1="107.95" x2="116.84" y2="113.03" width="0.1524" layer="91"/>
+<junction x="116.84" y="113.03"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -11983,7 +12062,6 @@ The large circular pin in the center is the connection to the RF cable providing
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="PI_USB_OUT" gate="G$1" pin="2"/>
 <wire x1="243.84" y1="173.99" x2="243.84" y2="171.45" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="171.45" x2="248.92" y2="171.45" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="171.45" x2="248.92" y2="153.67" width="0.1524" layer="91"/>
@@ -11994,7 +12072,6 @@ The large circular pin in the center is the connection to the RF cable providing
 <segment>
 <wire x1="243.84" y1="153.67" x2="243.84" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="170.18" x2="246.38" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="PI_USB_OUT" gate="G$1" pin="3"/>
 <wire x1="246.38" y1="170.18" x2="246.38" y2="173.99" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="D-"/>
 </segment>
@@ -12027,14 +12104,6 @@ The large circular pin in the center is the connection to the RF cable providing
 <pinref part="U$6" gate="G$1" pin="IN"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<wire x1="200.66" y1="113.03" x2="200.66" y2="107.95" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="107.95" x2="196.85" y2="107.95" width="0.1524" layer="91"/>
-<pinref part="C4" gate="CE" pin="1"/>
-<pinref part="U$6" gate="G$1" pin="OUT"/>
-</segment>
-</net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="SIGNAL"/>
@@ -12064,16 +12133,14 @@ The large circular pin in the center is the connection to the RF cable providing
 <wire x1="116.84" y1="138.43" x2="116.84" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="3.3V1" class="0">
-<segment>
-<pinref part="L4" gate="G$1" pin="2"/>
-<wire x1="200.66" y1="148.59" x2="200.66" y2="151.13" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$13" class="0">
 <segment>
 <wire x1="200.66" y1="113.03" x2="200.66" y2="127" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="1"/>
+<pinref part="U$6" gate="G$1" pin="OUT"/>
+<wire x1="196.85" y1="107.95" x2="200.66" y2="113.03" width="0.1524" layer="91"/>
+<pinref part="C4" gate="CE" pin="1"/>
+<junction x="200.66" y="113.03"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -12085,7 +12152,6 @@ The large circular pin in the center is the connection to the RF cable providing
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="PI_USB_OUT" gate="G$1" pin="4"/>
 <wire x1="248.92" y1="173.99" x2="254" y2="173.99" width="0.1524" layer="91"/>
 <wire x1="254" y1="173.99" x2="254" y2="153.67" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="VCC"/>
@@ -12117,17 +12183,9 @@ The large circular pin in the center is the connection to the RF cable providing
 <approved hash="208,1,224.79,99.06,GND,sup,,,,"/>
 <approved hash="208,1,224.79,100.33,GND,out,,,,"/>
 <approved hash="208,1,215.9,133.35,GND,sup,,,,"/>
-<approved hash="108,1,241.3,173.99,1,,,,,"/>
-<approved hash="108,1,243.84,173.99,N$18,,,,,"/>
-<approved hash="108,1,246.38,173.99,N$19,,,,,"/>
-<approved hash="108,1,248.92,173.99,VCC,,,,,"/>
-<approved hash="112,1,241.3,175.26,,,,,,"/>
-<approved hash="112,1,243.84,175.26,,,,,,"/>
-<approved hash="112,1,246.38,175.26,,,,,,"/>
-<approved hash="112,1,248.92,175.26,,,,,,"/>
+<approved hash="111,1,241.3,173.99,1,,,,,"/>
 <approved hash="113,1,139.596,107.846,FRAME1,,,,,"/>
 <approved hash="113,1,101.922,177.8,LED1,,,,,"/>
-<approved hash="113,1,245.11,175.704,PI_USB_OUT1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
