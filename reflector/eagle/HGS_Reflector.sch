@@ -10958,62 +10958,6 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 </deviceset>
 </devicesets>
 </library>
-<library name="HGS_Data_Parts">
-<description>This library contains the symbols and footprints for the custom parts on the Handheld Ground Station backplane board. These parts interface in the way described on the associated block diagram.
-
-
-
-
-
-
-
-
-
-Noel Case - Created 6/16/20</description>
-<packages>
-<package name="1/4_WAVE_TRF">
-<smd name="Z1" x="0" y="0" dx="0.408940625" dy="0.0635" layer="1"/>
-<pad name="3" x="0.2032" y="0.0254" drill="0.0254" diameter="0.03175" shape="square"/>
-<pad name="4" x="0.2032" y="-0.0254" drill="0.0254" diameter="0.03175" shape="square"/>
-<pad name="1" x="-0.2032" y="0.0254" drill="0.0254" diameter="0.03175" shape="square"/>
-<pad name="2" x="-0.2032" y="-0.0254" drill="0.0254" diameter="0.03175" shape="square"/>
-<wire x1="-0.2032" y1="0.0508" x2="0.2032" y2="0.0508" width="0.00635" layer="21"/>
-<wire x1="0.2032" y1="0.0508" x2="0.2032" y2="-0.0508" width="0.00635" layer="21"/>
-<wire x1="0.2032" y1="-0.0508" x2="-0.2032" y2="-0.0508" width="0.00635" layer="21"/>
-<wire x1="-0.2032" y1="-0.0508" x2="-0.2032" y2="0.0508" width="0.00635" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="1/4_WAVE_TRANSF">
-<text x="7.62" y="-12.7" size="1.778" layer="95">1/4 Wave Transformer</text>
-<pin name="Z_INPUT" x="-15.24" y="0" length="middle" direction="in"/>
-<pin name="Z_OUTPUT" x="20.32" y="0" length="middle" direction="out" rot="R180"/>
-<text x="7.62" y="-10.16" size="1.778" layer="95">&gt;NAME</text>
-<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-5.08" x2="15.24" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-5.08" x2="15.24" y2="5.08" width="0.254" layer="94"/>
-<wire x1="15.24" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="1/4_WAVE_TRF">
-<gates>
-<gate name="G$1" symbol="1/4_WAVE_TRANSF" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1/4_WAVE_TRF">
-<connects>
-<connect gate="G$1" pin="Z_INPUT" pad="1"/>
-<connect gate="G$1" pin="Z_OUTPUT" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="discrete" urn="urn:adsk.eagle:library:211">
 <description>Discrete devices (Antenna, Arrrester, Thermistor)</description>
 <packages>
@@ -11581,6 +11525,57 @@ Noel Case - Created 6/16/20</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="TM-QWT-2.422GHz">
+<packages>
+<package name="QWT_2.422G">
+<polygon width="0.0001" layer="1">
+<vertex x="-9.417" y="0.4765"/>
+<vertex x="-9.417" y="-0.4765"/>
+<vertex x="9.417" y="-0.4765"/>
+<vertex x="9.417" y="0.4765"/>
+</polygon>
+<smd name="P$1" x="-10.7045" y="0" dx="2.575" dy="2.575" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
+<smd name="P$2" x="9.4915" y="0" dx="0.149" dy="0.149" layer="1" stop="no" thermals="no" cream="no"/>
+<wire x1="-12" y1="9" x2="10" y2="8" width="0.1524" layer="51"/>
+<wire x1="-12" y1="-9" x2="10" y2="-8" width="0.1524" layer="51"/>
+<text x="-11.43" y="2.54" size="0.254" layer="21" font="vector">2.575mm</text>
+<text x="8.89" y="1.27" size="0.254" layer="21" font="vector">0.149mm</text>
+</package>
+</packages>
+<symbols>
+<symbol name="QWT">
+<pin name="P$1" x="-17.78" y="0" length="middle"/>
+<pin name="P$2" x="17.78" y="0" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="2.54" x2="-12.7" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-12.7" y1="-2.54" x2="12.7" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-2.54" x2="12.7" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="2.54" x2="-12.7" y2="2.54" width="0.1524" layer="94"/>
+<text x="-10.16" y="-5.08" size="1.778" layer="96">1/4 λ</text>
+<text x="0" y="-5.08" size="1.778" layer="96">2.422 GHz</text>
+<text x="-12.7" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-17.78" y="2.54" size="1.778" layer="97">50</text>
+<text x="15.24" y="2.54" size="1.778" layer="97">144</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="QWT2.422">
+<gates>
+<gate name="G$1" symbol="QWT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QWT_2.422G">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11615,7 +11610,6 @@ Noel Case - Created 6/16/20</description>
 <part name="C11" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="100 pF"/>
 <part name="C12" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="1 uF"/>
 <part name="3.3V1" library="oresat-supplies" deviceset="3.3V" device=""/>
-<part name="U$3" library="HGS_Data_Parts" deviceset="1/4_WAVE_TRF" device=""/>
 <part name="3.3V4" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="C14" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="100 pF"/>
 <part name="U$7" library="TP3M9037_LNA" deviceset="LNA-TP3M9037" device=""/>
@@ -11684,6 +11678,7 @@ Noel Case - Created 6/16/20</description>
 <part name="U$2" library="QPQ1907_BPF" deviceset="BPF" device=""/>
 <part name="U$4" library="AR9721" deviceset="AR9721" device=""/>
 <part name="U$5" library="Rasp_Pi_0W" deviceset="RASP_PI_0W" device=""/>
+<part name="U$3" library="TM-QWT-2.422GHz" deviceset="QWT2.422" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11773,9 +11768,6 @@ Noel Case - Created 6/16/20</description>
 <instance part="3.3V1" gate="G$1" x="123.19" y="157.48" smashed="yes">
 <attribute name="VALUE" x="120.65" y="157.48" size="1.778" layer="96"/>
 </instance>
-<instance part="U$3" gate="G$1" x="48.26" y="113.03" smashed="yes">
-<attribute name="NAME" x="55.88" y="102.87" size="1.778" layer="95"/>
-</instance>
 <instance part="3.3V4" gate="G$1" x="76.2" y="196.85" smashed="yes">
 <attribute name="VALUE" x="73.66" y="196.85" size="1.778" layer="96"/>
 </instance>
@@ -11858,6 +11850,9 @@ Noel Case - Created 6/16/20</description>
 <instance part="U$5" gate="G$1" x="246.38" y="179.07" smashed="yes" rot="R90">
 <attribute name="NAME" x="237.49" y="176.53" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="254" y="176.53" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="U$3" gate="G$1" x="50.8" y="113.03" smashed="yes">
+<attribute name="NAME" x="38.1" y="118.11" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -12026,7 +12021,7 @@ Noel Case - Created 6/16/20</description>
 <segment>
 <pinref part="C6" gate="CE" pin="1"/>
 <wire x1="68.58" y1="113.03" x2="72.39" y2="113.03" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="Z_OUTPUT"/>
+<pinref part="U$3" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -12057,7 +12052,7 @@ Noel Case - Created 6/16/20</description>
 <segment>
 <pinref part="ANT1" gate="A" pin="1"/>
 <wire x1="31.75" y1="113.03" x2="33.02" y2="113.03" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="Z_INPUT"/>
+<pinref part="U$3" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -12166,7 +12161,12 @@ Noel Case - Created 6/16/20</description>
 <approved hash="104,1,72.39,181.61,U3,BYPASS,N$1,,,"/>
 <approved hash="104,1,85.09,102.87,U$7,SHTDN,GND,,,"/>
 <approved hash="104,1,168.91,102.87,U$6,SHTDN,GND,,,"/>
+<approved hash="104,1,146.05,100.33,U$1,GND_3,GND,,,"/>
+<approved hash="104,1,133.35,100.33,U$1,GND_1,GND,,,"/>
+<approved hash="104,1,231.14,100.33,U$2,GND_3,GND,,,"/>
+<approved hash="104,1,218.44,100.33,U$2,GND_1,GND,,,"/>
 <approved hash="104,1,238.76,153.67,U$4,GND,1,,,"/>
+<approved hash="106,1,238.76,153.67,1,,,,,"/>
 <approved hash="206,1,139.7,100.33,GND,,,,,"/>
 <approved hash="206,1,224.79,100.33,GND,,,,,"/>
 <approved hash="208,1,248.92,99.06,GND,sup,,,,"/>
@@ -12183,7 +12183,13 @@ Noel Case - Created 6/16/20</description>
 <approved hash="208,1,224.79,99.06,GND,sup,,,,"/>
 <approved hash="208,1,224.79,100.33,GND,out,,,,"/>
 <approved hash="208,1,215.9,133.35,GND,sup,,,,"/>
+<approved hash="106,1,248.92,153.67,N$18,,,,,"/>
+<approved hash="106,1,243.84,153.67,N$19,,,,,"/>
+<approved hash="106,1,254,153.67,VCC,,,,,"/>
 <approved hash="111,1,241.3,173.99,1,,,,,"/>
+<approved hash="111,1,243.84,173.99,N$18,,,,,"/>
+<approved hash="111,1,246.38,173.99,N$19,,,,,"/>
+<approved hash="111,1,248.92,173.99,VCC,,,,,"/>
 <approved hash="113,1,139.596,107.846,FRAME1,,,,,"/>
 <approved hash="113,1,101.922,177.8,LED1,,,,,"/>
 </errors>
