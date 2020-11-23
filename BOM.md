@@ -12,11 +12,13 @@
 
 Optional items for easy clamping while gluing or for assembly without glue:
 
-| Qty | Description                       | Source     | Manufacturer | Part Number  |
-|-----|-----------------------------------|------------|--------------|--------------|
-| 1   | #8-32 x 18 in threaded rod        | Home Depot |              |              |
-| 1   | 1/8in x 1 in fender washer        | Home Depot | Everbilt     | 210 364      |
-| 1   | #8-32 wing nuts                   | Home Depot | Everbilt     | 934 917      |
+| Qty | Description                       | Source        | Manufacturer | Part Number  |
+|-----|-----------------------------------|---------------|--------------|--------------|
+| 2   | #8-32 x 3 in Threaded Rod         | Mcmaster-Carr | N/A          | 91565A838    |
+| 2   | #8-32 x 4 in Threaded Rod         | Mcmaster-Carr | N/A          | 91565A839    |
+| 1   | #8-32 x 6 in Threaded Rod         | Mcmaster-Carr | N/A          | 91565A340    |
+| 4   | #8-32 Female Threaded Standoff    | Mcmaster-Carr | N/A          | 91115A204    |
+| 1   | #8-32 Steel Hex Nut               | Mcmaster-Carr | N/A          | 90480A009    |
 
 If you wish to use metric fasteners you can substitute #2-56 for M2 and #8-32 for M4
 
@@ -40,7 +42,7 @@ Phone Holder Slide
 
 Battery Holder
 
-Antenna Sections (4)
+Antenna Sections (6)
 
 Antenna Top Cap
 
