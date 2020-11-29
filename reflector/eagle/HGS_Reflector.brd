@@ -3048,11 +3048,20 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="C7" pad="1"/>
 <contactref element="C8" pad="2"/>
 <contactref element="C5" pad="2"/>
-<wire x1="56.02" y1="86.8" x2="56.02" y2="88.48" width="0.25" layer="1"/>
-<wire x1="56.02" y1="88.48" x2="56" y2="88.5" width="0.25" layer="1"/>
-<via x="56" y="88.5" extent="1-16" drill="0.35"/>
+<polygon width="1.5" layer="15" spacing="1" pour="hatch" isolate="2.54" rank="2">
+<vertex x="1" y="23"/>
+<vertex x="1" y="99"/>
+<vertex x="60" y="99"/>
+<vertex x="60" y="23"/>
+</polygon>
+<wire x1="56.02" y1="86.8" x2="56.02" y2="88.02" width="0.25" layer="1"/>
+<wire x1="56.02" y1="88.02" x2="56.5" y2="88.5" width="0.25" layer="1"/>
+<via x="56.5" y="88.5" extent="1-16" drill="0.35"/>
+<wire x1="55.82" y1="86.1" x2="57.1" y2="86.1" width="0.25" layer="1"/>
+<wire x1="57.1" y1="86.1" x2="57.5" y2="86.5" width="0.25" layer="1"/>
+<via x="57.5" y="86.5" extent="1-16" drill="0.35"/>
 <wire x1="55.82" y1="86.1" x2="56.02" y2="86.8" width="0" layer="19" extent="1-1"/>
-<wire x1="-14.54" y1="125.73" x2="56" y2="88.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.54" y1="125.73" x2="56.5" y2="88.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-18.35" y1="125.73" x2="-14.54" y2="125.73" width="0" layer="19" extent="1-1"/>
 <wire x1="-19.05" y1="119.6655" x2="-18.35" y2="125.73" width="0" layer="19" extent="1-1"/>
 <wire x1="-19.05" y1="119.0945" x2="-19.05" y2="119.6655" width="0" layer="19" extent="1-1"/>
@@ -3087,11 +3096,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="C1" pad="1"/>
 <contactref element="U3" pad="5"/>
 <contactref element="C8" pad="1"/>
+<wire x1="-15.94" y1="125.73" x2="49.11" y2="86.88" width="0" layer="19" extent="1-1"/>
 <wire x1="-19.75" y1="125.73" x2="-15.94" y2="125.73" width="0" layer="19" extent="1-1"/>
 <wire x1="-22.16" y1="125.73" x2="-19.75" y2="125.73" width="0" layer="19" extent="1-1"/>
 <wire x1="-39.34" y1="121.6" x2="-22.16" y2="125.73" width="0" layer="19" extent="1-1"/>
-<wire x1="49.11" y1="86.88" x2="-39.34" y2="121.6" width="0" layer="19" extent="1-1"/>
-<wire x1="-59.46" y1="118.11" x2="49.11" y2="86.88" width="0" layer="19" extent="1-1"/>
+<wire x1="-59.46" y1="118.11" x2="-39.34" y2="121.6" width="0" layer="19" extent="1-1"/>
 <wire x1="-74.36" y1="118.11" x2="-59.46" y2="118.11" width="0" layer="19" extent="1-1"/>
 <wire x1="-79.44" y1="118.11" x2="-74.36" y2="118.11" width="0" layer="19" extent="1-1"/>
 <wire x1="-81.2" y1="-8.75" x2="-79.44" y2="118.11" width="0" layer="19" extent="1-1"/>
