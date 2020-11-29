@@ -10915,49 +10915,6 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 </deviceset>
 </devicesets>
 </library>
-<library name="ngspice-simulation" urn="urn:adsk.eagle:library:527439">
-<description>SPICE compatible library parts</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="C" urn="urn:adsk.eagle:symbol:527449/4" library_version="18">
-<description>Capacitor</description>
-<rectangle x1="-2.032" y1="-2.032" x2="2.032" y2="-1.524" layer="94"/>
-<rectangle x1="-2.032" y1="-1.016" x2="2.032" y2="-0.508" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-0.508" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-2.032" width="0.1524" layer="94"/>
-<pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-<text x="2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.54" size="1.778" layer="97">&gt;SPICEMODEL</text>
-<text x="2.54" y="0" size="1.778" layer="96">&gt;VALUE</text>
-<text x="2.54" y="-5.08" size="1.778" layer="97">&gt;SPICEEXTRA</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="C" urn="urn:adsk.eagle:component:527468/6" prefix="C" uservalue="yes" library_version="18">
-<description>CAPACITOR</description>
-<gates>
-<gate name="G$1" symbol="C" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
-<attribute name="_EXTERNAL_" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-<spice>
-<pinmapping spiceprefix="C">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-</deviceset>
-</devicesets>
-</library>
 <library name="discrete" urn="urn:adsk.eagle:library:211">
 <description>Discrete devices (Antenna, Arrrester, Thermistor)</description>
 <packages>
@@ -11598,9 +11555,7 @@ Noel Case - Created 6/16/20</description>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C6" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="100 pF"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C8" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="C" device="" value="10 nF"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C9" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="C" device="" value="2.2 uF"/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device="">
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
@@ -11642,8 +11597,8 @@ Noel Case - Created 6/16/20</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="IMPEDANCE" value=""/>
-<attribute name="SPICEPREFIX" value="8 nH"/>
+<attribute name="IMPEDANCE" value="8 nH"/>
+<attribute name="SPICEPREFIX" value=""/>
 </part>
 <part name="L1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="L-EU" device="L3216C" package3d_urn="urn:adsk.eagle:package:23476/2">
 <spice>
@@ -11652,8 +11607,8 @@ Noel Case - Created 6/16/20</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="IMPEDANCE" value=""/>
-<attribute name="SPICEPREFIX" value="10 nH"/>
+<attribute name="IMPEDANCE" value="10 nH"/>
+<attribute name="SPICEPREFIX" value=""/>
 </part>
 <part name="L4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="L-EU" device="L3216C" package3d_urn="urn:adsk.eagle:package:23476/2">
 <spice>
@@ -11662,23 +11617,17 @@ Noel Case - Created 6/16/20</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="IMPEDANCE" value=""/>
-<attribute name="SPICEPREFIX" value="8 nH"/>
-</part>
-<part name="C5" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="C" device="" value="1 uF">
-<spice>
-<pinmapping spiceprefix="C">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="_EXTERNAL_" value="1 uF"/>
+<attribute name="IMPEDANCE" value="8 nH"/>
+<attribute name="SPICEPREFIX" value=""/>
 </part>
 <part name="U$1" library="QPQ1907_BPF" deviceset="BPF" device=""/>
 <part name="U$2" library="QPQ1907_BPF" deviceset="BPF" device=""/>
 <part name="U$4" library="AR9721" deviceset="AR9721" device=""/>
 <part name="U$5" library="Rasp_Pi_0W" deviceset="RASP_PI_0W" device=""/>
 <part name="U$3" library="TM-QWT-2.422GHz" deviceset="QWT2.422" device=""/>
+<part name="C7" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="1 uF"/>
+<part name="C5" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="10 nF"/>
+<part name="C8" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="2.2 uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -11732,16 +11681,8 @@ Noel Case - Created 6/16/20</description>
 <instance part="GND9" gate="1" x="139.7" y="96.52" smashed="yes">
 <attribute name="VALUE" x="137.16" y="93.98" size="1.778" layer="96"/>
 </instance>
-<instance part="C8" gate="G$1" x="81.28" y="181.61" smashed="yes" rot="R90">
-<attribute name="NAME" x="78.74" y="184.15" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="81.28" y="184.15" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="GND13" gate="1" x="90.17" y="171.45" smashed="yes">
 <attribute name="VALUE" x="87.63" y="168.91" size="1.778" layer="96"/>
-</instance>
-<instance part="C9" gate="G$1" x="85.09" y="189.23" smashed="yes" rot="R90">
-<attribute name="NAME" x="82.55" y="191.77" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="85.09" y="191.77" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND15" gate="1" x="85.09" y="91.44" smashed="yes">
 <attribute name="VALUE" x="82.55" y="88.9" size="1.778" layer="96"/>
@@ -11815,30 +11756,26 @@ Noel Case - Created 6/16/20</description>
 <instance part="L2" gate="G$1" x="116.84" y="132.08" smashed="yes" rot="R180">
 <attribute name="NAME" x="118.3386" y="135.89" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="113.538" y="135.89" size="1.778" layer="96" rot="R270"/>
-<attribute name="SPICEPREFIX" x="116.84" y="132.08" size="1.778" layer="96" rot="R180"/>
+<attribute name="SPICEPREFIX" x="113.03" y="134.62" size="1.778" layer="96" rot="R270"/>
 <attribute name="IMPEDANCE" x="116.84" y="132.08" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="L3" gate="G$1" x="116.84" y="143.51" smashed="yes" rot="R180">
 <attribute name="NAME" x="118.3386" y="147.32" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="113.538" y="147.32" size="1.778" layer="96" rot="R270"/>
 <attribute name="SPICEPREFIX" x="116.84" y="143.51" size="1.778" layer="96" rot="R180"/>
-<attribute name="IMPEDANCE" x="116.84" y="143.51" size="1.778" layer="96" rot="R180"/>
+<attribute name="IMPEDANCE" x="113.03" y="146.05" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="L1" gate="G$1" x="200.66" y="132.08" smashed="yes" rot="R180">
 <attribute name="NAME" x="202.1586" y="135.89" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="197.358" y="135.89" size="1.778" layer="96" rot="R270"/>
 <attribute name="SPICEPREFIX" x="200.66" y="132.08" size="1.778" layer="96" rot="R180"/>
-<attribute name="IMPEDANCE" x="200.66" y="132.08" size="1.778" layer="96" rot="R180"/>
+<attribute name="IMPEDANCE" x="196.85" y="135.89" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="L4" gate="G$1" x="200.66" y="143.51" smashed="yes" rot="R180">
 <attribute name="NAME" x="202.1586" y="147.32" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="197.358" y="147.32" size="1.778" layer="96" rot="R270"/>
-<attribute name="SPICEPREFIX" x="200.66" y="143.51" size="1.778" layer="96" rot="R180"/>
-<attribute name="IMPEDANCE" x="200.66" y="143.51" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="C5" gate="G$1" x="43.18" y="179.07" smashed="yes">
-<attribute name="NAME" x="38.1" y="179.07" size="1.778" layer="95"/>
-<attribute name="VALUE" x="34.29" y="176.53" size="1.778" layer="96"/>
+<attribute name="SPICEPREFIX" x="196.85" y="146.05" size="1.778" layer="96" rot="R270"/>
+<attribute name="IMPEDANCE" x="196.85" y="146.05" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="U$1" gate="G$1" x="139.7" y="110.49" smashed="yes">
 <attribute name="NAME" x="148.59" y="97.79" size="1.778" layer="95"/>
@@ -11851,8 +11788,20 @@ Noel Case - Created 6/16/20</description>
 <attribute name="NAME" x="237.49" y="176.53" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="254" y="176.53" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U$3" gate="G$1" x="50.8" y="113.03" smashed="yes">
-<attribute name="NAME" x="38.1" y="118.11" size="1.778" layer="95"/>
+<instance part="U$3" gate="G$1" x="50.8" y="113.03" smashed="yes" rot="R180">
+<attribute name="NAME" x="63.5" y="107.95" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="C7" gate="CE" x="43.18" y="176.53" smashed="yes" rot="R180">
+<attribute name="NAME" x="42.164" y="175.895" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="42.164" y="180.721" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="C5" gate="CE" x="81.28" y="181.61" smashed="yes" rot="R90">
+<attribute name="NAME" x="80.645" y="182.626" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="85.471" y="182.626" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C8" gate="CE" x="85.09" y="189.23" smashed="yes" rot="R90">
+<attribute name="NAME" x="84.455" y="190.246" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="89.281" y="190.246" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -11871,9 +11820,10 @@ Noel Case - Created 6/16/20</description>
 <pinref part="U3" gate="G$1" pin="GND"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="57.15" y1="173.99" x2="57.15" y2="176.53" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="173.99" x2="57.15" y2="173.99" width="0.1524" layer="91"/>
 <junction x="57.15" y="173.99"/>
+<pinref part="C7" gate="CE" pin="1"/>
+<wire x1="43.18" y1="173.99" x2="57.15" y2="173.99" width="0.1524" layer="91"/>
+<junction x="43.18" y="173.99"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
@@ -11892,15 +11842,6 @@ Noel Case - Created 6/16/20</description>
 <pinref part="U$1" gate="G$1" pin="GND_3"/>
 <pinref part="U$1" gate="G$1" pin="GND_1"/>
 <pinref part="U$1" gate="G$1" pin="GND_2"/>
-</segment>
-<segment>
-<pinref part="C8" gate="G$1" pin="2"/>
-<pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="90.17" y1="173.99" x2="90.17" y2="181.61" width="0.1524" layer="91"/>
-<wire x1="90.17" y1="181.61" x2="86.36" y2="181.61" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="90.17" y1="189.23" x2="90.17" y2="181.61" width="0.1524" layer="91"/>
-<junction x="90.17" y="181.61"/>
 </segment>
 <segment>
 <wire x1="134.62" y1="135.89" x2="132.08" y2="135.89" width="0.1524" layer="91"/>
@@ -11956,6 +11897,15 @@ Noel Case - Created 6/16/20</description>
 <pinref part="C2" gate="CE" pin="2"/>
 <wire x1="218.44" y1="138.43" x2="218.44" y2="135.89" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND13" gate="1" pin="GND"/>
+<pinref part="C8" gate="CE" pin="2"/>
+<wire x1="90.17" y1="173.99" x2="90.17" y2="181.61" width="0.1524" layer="91"/>
+<pinref part="C5" gate="CE" pin="2"/>
+<wire x1="90.17" y1="181.61" x2="90.17" y2="189.23" width="0.1524" layer="91"/>
+<wire x1="90.17" y1="181.61" x2="86.36" y2="181.61" width="0.1524" layer="91"/>
+<junction x="90.17" y="181.61"/>
+</segment>
 </net>
 <net name="N$10" class="0">
 <segment>
@@ -12003,25 +11953,11 @@ Noel Case - Created 6/16/20</description>
 <segment>
 <pinref part="3.3V4" gate="G$1" pin="3.3V"/>
 <wire x1="76.2" y1="194.31" x2="76.2" y2="189.23" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="189.23" x2="82.55" y2="189.23" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="VOUT"/>
 <wire x1="76.2" y1="189.23" x2="72.39" y2="189.23" width="0.1524" layer="91"/>
+<pinref part="C8" gate="CE" pin="1"/>
+<wire x1="76.2" y1="189.23" x2="82.55" y2="189.23" width="0.1524" layer="91"/>
 <junction x="76.2" y="189.23"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="C8" gate="G$1" pin="1"/>
-<pinref part="U3" gate="G$1" pin="BYPASS"/>
-<wire x1="78.74" y1="181.61" x2="72.39" y2="181.61" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="C6" gate="CE" pin="1"/>
-<wire x1="68.58" y1="113.03" x2="72.39" y2="113.03" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -12046,13 +11982,6 @@ Noel Case - Created 6/16/20</description>
 <pinref part="U$7" gate="G$1" pin="OUT"/>
 <wire x1="113.03" y1="107.95" x2="116.84" y2="113.03" width="0.1524" layer="91"/>
 <junction x="116.84" y="113.03"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="ANT1" gate="A" pin="1"/>
-<wire x1="31.75" y1="113.03" x2="33.02" y2="113.03" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -12081,7 +12010,7 @@ Noel Case - Created 6/16/20</description>
 <pinref part="3V-1" gate="G$1" pin="5V"/>
 <wire x1="43.18" y1="189.23" x2="43.18" y2="194.31" width="0.1524" layer="91"/>
 <junction x="43.18" y="189.23"/>
-<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="C7" gate="CE" pin="2"/>
 <junction x="43.18" y="181.61"/>
 </segment>
 </net>
@@ -12150,6 +12079,27 @@ Noel Case - Created 6/16/20</description>
 <wire x1="248.92" y1="173.99" x2="254" y2="173.99" width="0.1524" layer="91"/>
 <wire x1="254" y1="173.99" x2="254" y2="153.67" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="VCC"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="ANT1" gate="A" pin="1"/>
+<pinref part="U$3" gate="G$1" pin="P$2"/>
+<wire x1="31.75" y1="113.03" x2="33.02" y2="113.03" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$1"/>
+<pinref part="C6" gate="CE" pin="1"/>
+<wire x1="68.58" y1="113.03" x2="72.39" y2="113.03" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="C5" gate="CE" pin="1"/>
+<pinref part="U3" gate="G$1" pin="BYPASS"/>
+<wire x1="78.74" y1="181.61" x2="72.39" y2="181.61" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
