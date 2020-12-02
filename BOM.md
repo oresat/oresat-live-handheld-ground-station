@@ -10,15 +10,13 @@
 | 7   | #2-56 Nylon hex nut               | Frys       | Waldom       | FN-853-0025P |
 | 63" | 20AWG magnet wire                 | Frys       | Philmore     | 12-1220      |
 
-Optional items for easy clamping while gluing or for assembly without glue:
+Items for easy clamping while gluing or for assembly without glue:
 
-| Qty | Description                       | Source        | Manufacturer | Part Number  |
-|-----|-----------------------------------|---------------|--------------|--------------|
-| 2   | #8-32 x 3 in Threaded Rod         | Mcmaster-Carr | N/A          | 91565A838    |
-| 2   | #8-32 x 4 in Threaded Rod         | Mcmaster-Carr | N/A          | 91565A839    |
-| 1   | #8-32 x 6 in Threaded Rod         | Mcmaster-Carr | N/A          | 91565A340    |
-| 4   | #8-32 Female Threaded Standoff    | Mcmaster-Carr | N/A          | 91115A204    |
-| 1   | #8-32 Steel Hex Nut               | Mcmaster-Carr | N/A          | 90480A009    |
+| Qty | Description                                | Source        | Manufacturer | Part Number  |
+|-----|--------------------------------------------|---------------|--------------|--------------|
+| 4   | #8-32 x 5 in Threaded Rod                  | Mcmaster-Carr | N/A          | 91565A335    |
+| 3   | #8-32 2 1/2 in Female Threaded Standoff    | Mcmaster-Carr | N/A          | 91115A831    |
+| 2   | #8-32 Steel Hex Nut                        | Mcmaster-Carr | N/A          | 90480A009    |
 
 If you wish to use metric fasteners you can substitute #2-56 for M2 and #8-32 for M4
 
@@ -42,7 +40,7 @@ Phone Holder Slide
 
 Battery Holder
 
-Antenna Sections (6)
+Antenna Sections (8)
 
 Antenna Top Cap
 
