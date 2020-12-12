@@ -11266,10 +11266,10 @@ Noel Case - Created 6/16/20</description>
 <packages>
 <package name="AR9721">
 <pad name="P$2" x="0" y="0" drill="2" diameter="5"/>
-<pad name="GND" x="-3.5" y="-29" drill="1.5" diameter="1.5" shape="square" rot="R90"/>
-<pad name="D-" x="-1" y="-29" drill="1.5" diameter="1.5" shape="square" rot="R90"/>
-<pad name="D+" x="1" y="-29" drill="1.5" diameter="1.5" shape="square" rot="R90"/>
-<pad name="VCC" x="3.5" y="-29" drill="1.5" diameter="1.5" shape="square" rot="R90"/>
+<pad name="GND" x="-3.75" y="-29" drill="1.5" diameter="1.5" shape="square" rot="R180"/>
+<pad name="D-" x="-1.25" y="-29" drill="1.5" diameter="1.5" shape="square" rot="R180"/>
+<pad name="D+" x="1.25" y="-29" drill="1.5" diameter="1.5" shape="square" rot="R180"/>
+<pad name="VCC" x="3.75" y="-29" drill="1.5" diameter="1.5" shape="square" rot="R180"/>
 <wire x1="-10" y1="30" x2="10" y2="30" width="0.1524" layer="21"/>
 <wire x1="10" y1="30" x2="10" y2="-30" width="0.1524" layer="21"/>
 <wire x1="10" y1="-30" x2="-10" y2="-30" width="0.1524" layer="21"/>
@@ -11333,14 +11333,14 @@ Noel Case - Created 6/16/20</description>
 <packages>
 <package name="TP3M9037">
 <smd name="P$1" x="0" y="0" dx="1.27" dy="0.635" layer="1"/>
-<smd name="2X2_DFN_8PIN1" x="-0.8" y="-0.734996875" dx="0.3" dy="0.67" layer="1"/>
-<smd name="2X2_DFN_8PIN2" x="-0.3" y="-0.734996875" dx="0.3" dy="0.67" layer="1"/>
-<smd name="2X2_DFN_8PIN3" x="0.2" y="-0.734996875" dx="0.3" dy="0.67" layer="1"/>
-<smd name="2X2_DFN_8PIN4" x="0.7" y="-0.734996875" dx="0.3" dy="0.67" layer="1"/>
-<smd name="2X2_DFN_8PIN5" x="0.7" y="0.7" dx="0.3" dy="0.67" layer="1"/>
-<smd name="2X2_DFN_8PIN6" x="0.2" y="0.7" dx="0.3" dy="0.67" layer="1"/>
-<smd name="2X2_DFN_8PIN7" x="-0.3" y="0.7" dx="0.3" dy="0.67" layer="1"/>
-<smd name="2X2_DFN_8PIN8" x="-0.8" y="0.7" dx="0.3" dy="0.67" layer="1"/>
+<smd name="2X2_DFN_8PIN1" x="-0.8" y="-0.884996875" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
+<smd name="2X2_DFN_8PIN2" x="-0.3" y="-0.884996875" dx="0.6096" dy="0.3048" layer="1" rot="R270"/>
+<smd name="2X2_DFN_8PIN3" x="0.2" y="-0.884996875" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
+<smd name="2X2_DFN_8PIN4" x="0.7" y="-0.884996875" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
+<smd name="2X2_DFN_8PIN5" x="0.7" y="0.85" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
+<smd name="2X2_DFN_8PIN6" x="0.2" y="0.85" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
+<smd name="2X2_DFN_8PIN7" x="-0.3" y="0.85" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
+<smd name="2X2_DFN_8PIN8" x="-0.8" y="0.85" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
 <wire x1="-1.1" y1="1.37" x2="1" y2="1.37" width="0.1524" layer="21"/>
 <wire x1="1" y1="1.37" x2="1" y2="-1.404996875" width="0.1524" layer="21"/>
 <wire x1="1" y1="-1.404996875" x2="-1.1" y2="-1.404996875" width="0.1524" layer="21"/>
@@ -11540,6 +11540,8 @@ Noel Case - Created 6/16/20</description>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
+</class>
+<class number="1" name="power" width="0" drill="0">
 </class>
 </classes>
 <parts>
@@ -11807,7 +11809,7 @@ Noel Case - Created 6/16/20</description>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="J1" gate="G$1" pin="GND@0"/>
@@ -11914,7 +11916,7 @@ Noel Case - Created 6/16/20</description>
 <pinref part="LED1" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="3.3V" class="0">
+<net name="3.3V" class="1">
 <segment>
 <pinref part="R9" gate="R" pin="2"/>
 <pinref part="3.3V2" gate="G$1" pin="3.3V"/>
@@ -12000,7 +12002,7 @@ Noel Case - Created 6/16/20</description>
 <pinref part="U$4" gate="G$1" pin="D-"/>
 </segment>
 </net>
-<net name="5V" class="0">
+<net name="5V" class="1">
 <segment>
 <pinref part="U3" gate="G$1" pin="VIN"/>
 <wire x1="46.99" y1="189.23" x2="43.18" y2="189.23" width="0.1524" layer="91"/>
@@ -12124,7 +12126,6 @@ Noel Case - Created 6/16/20</description>
 <approved hash="208,1,101.6,173.99,GND,sup,,,,"/>
 <approved hash="208,1,139.7,99.06,GND,sup,,,,"/>
 <approved hash="208,1,139.7,100.33,GND,out,,,,"/>
-<approved hash="208,1,90.17,173.99,GND,sup,,,,"/>
 <approved hash="208,1,132.08,133.35,GND,sup,,,,"/>
 <approved hash="208,1,99.06,93.98,GND,sup,,,,"/>
 <approved hash="208,1,85.09,93.98,GND,sup,,,,"/>
@@ -12133,6 +12134,7 @@ Noel Case - Created 6/16/20</description>
 <approved hash="208,1,224.79,99.06,GND,sup,,,,"/>
 <approved hash="208,1,224.79,100.33,GND,out,,,,"/>
 <approved hash="208,1,215.9,133.35,GND,sup,,,,"/>
+<approved hash="208,1,90.17,173.99,GND,sup,,,,"/>
 <approved hash="106,1,248.92,153.67,N$18,,,,,"/>
 <approved hash="106,1,243.84,153.67,N$19,,,,,"/>
 <approved hash="106,1,254,153.67,VCC,,,,,"/>
