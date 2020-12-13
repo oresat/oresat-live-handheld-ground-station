@@ -11809,7 +11809,7 @@ Noel Case - Created 6/16/20</description>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="1">
+<net name="GND" class="0">
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="J1" gate="G$1" pin="GND@0"/>
