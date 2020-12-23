@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11472,17 +11472,17 @@ Noel Case - Created 6/16/20</description>
 <packages>
 <package name="QWT_2.422G">
 <polygon width="0.0001" layer="1">
-<vertex x="-9.417" y="0.4765"/>
-<vertex x="-9.417" y="-0.4765"/>
-<vertex x="9.417" y="-0.4765"/>
-<vertex x="9.417" y="0.4765"/>
+<vertex x="-9.417" y="0.58"/>
+<vertex x="-9.417" y="-0.58"/>
+<vertex x="9.417" y="-0.58"/>
+<vertex x="9.417" y="0.58"/>
 </polygon>
-<smd name="P$1" x="-10.7045" y="0" dx="2.575" dy="2.575" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
-<smd name="P$2" x="9.4915" y="0" dx="0.149" dy="0.149" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="P$1" x="-10.942" y="0" dx="3.05" dy="3.05" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
+<smd name="P$2" x="9.554" y="0" dx="0.273" dy="0.273" layer="1" stop="no" thermals="no" cream="no"/>
 <wire x1="-12" y1="9" x2="10" y2="8" width="0.1524" layer="51"/>
 <wire x1="-12" y1="-9" x2="10" y2="-8" width="0.1524" layer="51"/>
-<text x="-11.43" y="2.54" size="0.254" layer="21" font="vector">2.575mm</text>
-<text x="8.89" y="1.27" size="0.254" layer="21" font="vector">0.149mm</text>
+<text x="-11.43" y="2.54" size="0.254" layer="21" font="vector">3.05mm</text>
+<text x="8.89" y="1.27" size="0.254" layer="21" font="vector">0.273mm</text>
 </package>
 </packages>
 <symbols>
@@ -11497,7 +11497,7 @@ Noel Case - Created 6/16/20</description>
 <text x="0" y="-5.08" size="1.778" layer="96">2.422 GHz</text>
 <text x="-12.7" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="-17.78" y="2.54" size="1.778" layer="97">50</text>
-<text x="15.24" y="2.54" size="1.778" layer="97">144</text>
+<text x="15.24" y="2.54" size="1.778" layer="97">140</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -11672,9 +11672,9 @@ Noel Case - Created 6/16/20</description>
 <instance part="GND15" gate="1" x="85.09" y="91.44" smashed="yes">
 <attribute name="VALUE" x="82.55" y="88.9" size="1.778" layer="96"/>
 </instance>
-<instance part="ANT1" gate="A" x="31.75" y="118.11" smashed="yes">
-<attribute name="NAME" x="29.21" y="119.38" size="1.778" layer="95"/>
-<attribute name="VALUE" x="34.29" y="113.03" size="1.778" layer="96"/>
+<instance part="ANT1" gate="A" x="34.29" y="123.19" smashed="yes">
+<attribute name="NAME" x="31.75" y="124.46" size="1.778" layer="95"/>
+<attribute name="VALUE" x="36.83" y="118.11" size="1.778" layer="96"/>
 </instance>
 <instance part="LED1" gate="G$1" x="101.6" y="179.07" smashed="yes">
 <attribute name="NAME" x="105.156" y="174.498" size="1.778" layer="95" rot="R90"/>
@@ -12022,13 +12022,6 @@ Noel Case - Created 6/16/20</description>
 <wire x1="200.66" y1="138.43" x2="200.66" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="ANT1" gate="A" pin="1"/>
-<pinref part="U$3" gate="G$1" pin="P$2"/>
-<wire x1="31.75" y1="113.03" x2="33.02" y2="113.03" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="P$1"/>
@@ -12059,6 +12052,13 @@ Noel Case - Created 6/16/20</description>
 <pinref part="U$5" gate="G$1" pin="5V"/>
 <wire x1="31.75" y1="166.37" x2="237.49" y2="166.37" width="0.1524" layer="91"/>
 <wire x1="237.49" y1="166.37" x2="237.49" y2="179.07" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$2"/>
+<wire x1="33.02" y1="113.03" x2="27.94" y2="113.03" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="113.03" x2="27.94" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
