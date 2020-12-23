@@ -4171,31 +4171,12 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <text x="-2.54" y="0" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="3.3V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="5V">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-0.635" y="0.635" size="1.27" layer="96">&gt;VALUE</text>
-<pin name="5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="3.3V" prefix="3.3V">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="3.3V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="5V" prefix="3V-">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="5V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -11264,51 +11245,52 @@ Noel Case - Created 6/16/20</description>
 
 Noel Case - Created 6/16/20</description>
 <packages>
-<package name="AR9721">
-<pad name="P$2" x="0" y="0" drill="2" diameter="5"/>
-<pad name="GND" x="-3.75" y="-29" drill="1.5" diameter="1.5" shape="square" rot="R180"/>
-<pad name="D-" x="-1.25" y="-29" drill="1.5" diameter="1.5" shape="square" rot="R180"/>
-<pad name="D+" x="1.25" y="-29" drill="1.5" diameter="1.5" shape="square" rot="R180"/>
-<pad name="VCC" x="3.75" y="-29" drill="1.5" diameter="1.5" shape="square" rot="R180"/>
-<wire x1="-10" y1="30" x2="10" y2="30" width="0.1524" layer="21"/>
-<wire x1="10" y1="30" x2="10" y2="-30" width="0.1524" layer="21"/>
-<wire x1="10" y1="-30" x2="-10" y2="-30" width="0.1524" layer="21"/>
-<wire x1="-10" y1="-30" x2="-10" y2="30" width="0.1524" layer="21"/>
-<rectangle x1="-10" y1="-30" x2="10" y2="30" layer="39"/>
+<package name="WF-NP9202">
+<wire x1="-8.5" y1="17.5" x2="8.5" y2="17.5" width="0.25" layer="21"/>
+<wire x1="8.5" y1="17.5" x2="8.5" y2="-17.5" width="0.25" layer="21"/>
+<wire x1="8.5" y1="-17.5" x2="-8.5" y2="-17.5" width="0.25" layer="21"/>
+<wire x1="-8.5" y1="-17.5" x2="-8.5" y2="17.5" width="0.25" layer="21"/>
+<rectangle x1="-8.5" y1="-17.5" x2="8.5" y2="17.5" layer="39"/>
+<hole x="-6" y="-15" drill="2.2"/>
+<hole x="6" y="-15" drill="2.2"/>
+<hole x="6" y="15" drill="2.2"/>
+<hole x="-6" y="15" drill="2.2"/>
+<pad name="LED" x="-2.980478125" y="-12.01233125" drill="1.5" diameter="1.5" shape="square" rot="R180"/>
+<pad name="IOR" x="2.966271875" y="-11.984246875" drill="1.5" diameter="1.5" shape="square" rot="R180"/>
+<pad name="USB" x="0.059521875" y="-12.01233125" drill="1.524" diameter="1.905" shape="square" rot="R180"/>
+<pad name="GND" x="0" y="0" drill="1"/>
 </package>
 </packages>
 <symbols>
-<symbol name="ATHEROS_CARD">
+<symbol name="WF_SYMBOL">
 <description>This is a Qualcomm Atheros AR9721 USB adapter. Its primary function is to translate 2.45 GHz RF to a digital USB A signal.
 
 The large circular pin in the center is the connection to the RF cable providing the RF input.</description>
-<wire x1="-11.43" y1="-7.62" x2="-11.43" y2="7.62" width="0.1524" layer="94"/>
-<wire x1="-11.43" y1="7.62" x2="11.43" y2="7.62" width="0.1524" layer="94"/>
-<wire x1="11.43" y1="7.62" x2="11.43" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="11.43" y1="-7.62" x2="-11.43" y2="-7.62" width="0.1524" layer="94"/>
-<pin name="GND" x="-7.62" y="10.16" length="short" direction="pwr" rot="R270"/>
-<pin name="D-" x="-2.54" y="10.16" length="short" rot="R270"/>
-<pin name="VCC" x="7.62" y="10.16" length="short" direction="sup" rot="R270"/>
-<pin name="D+" x="2.54" y="10.16" length="short" rot="R270"/>
-<text x="6.35" y="-10.16" size="2.032" layer="95">AR9721</text>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.1524" layer="94"/>
+<text x="-5.08" y="-10.16" size="2.032" layer="95">AR9721</text>
 <circle x="0" y="-3.81" radius="2.54" width="0.1524" layer="94"/>
-<pin name="RF_IN" x="0" y="-3.81" visible="pin" length="point"/>
 <circle x="0" y="-3.81" radius="1.27" width="0.1524" layer="94"/>
+<wire x1="-3.175" y1="6.985" x2="3.175" y2="6.985" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="6.985" x2="3.175" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="3.175" x2="-3.175" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="-3.175" y1="3.175" x2="-3.175" y2="6.985" width="0.1524" layer="94"/>
+<pin name="USB_OUT" x="0" y="5.08" visible="off" length="point"/>
+<text x="-3.302" y="1.27" size="1.27" layer="94">USB_Out</text>
+<text x="-2.286" y="-7.366" size="1.27" layer="94">RF_In</text>
 </symbol>
 </symbols>
 <devicesets>
 <deviceset name="AR9721">
 <gates>
-<gate name="G$1" symbol="ATHEROS_CARD" x="0" y="0"/>
+<gate name="G$1" symbol="WF_SYMBOL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="AR9721">
+<device name="WF" package="WF-NP9202">
 <connects>
-<connect gate="G$1" pin="D+" pad="D+"/>
-<connect gate="G$1" pin="D-" pad="D-"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="RF_IN" pad="P$2"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="USB_OUT" pad="GND IOR LED USB"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11392,7 +11374,7 @@ Noel Case - Created 6/16/20</description>
 <wire x1="25.5" y1="14" x2="25.5" y2="9" width="0.5" layer="21"/>
 <wire x1="25.5" y1="9" x2="-25.5" y2="9" width="0.5" layer="21"/>
 <wire x1="-25.5" y1="9" x2="-25.5" y2="14" width="0.5" layer="21"/>
-<pad name="P$1" x="-24" y="12.75" drill="1"/>
+<pad name="5V" x="-24" y="12.75" drill="1"/>
 <pad name="P$2" x="-21.5" y="12.75" drill="1"/>
 <pad name="P$3" x="-19" y="12.75" drill="1"/>
 <pad name="P$4" x="-16.5" y="12.75" drill="1"/>
@@ -11412,7 +11394,7 @@ Noel Case - Created 6/16/20</description>
 <pad name="P$18" x="18.5" y="12.75" drill="1"/>
 <pad name="P$19" x="21" y="12.75" drill="1"/>
 <pad name="P$20" x="23.5" y="12.75" drill="1"/>
-<pad name="GND$1" x="-24" y="10.25" drill="1" shape="square"/>
+<pad name="GND" x="-24" y="10.25" drill="1" shape="square"/>
 <pad name="P$22" x="-21.5" y="10.25" drill="1"/>
 <pad name="P$23" x="-19" y="10.25" drill="1"/>
 <pad name="P$24" x="-16.5" y="10.25" drill="1"/>
@@ -11435,7 +11417,7 @@ Noel Case - Created 6/16/20</description>
 <text x="0.5" y="-8" size="1.3" layer="25">microUSB A port</text>
 <text x="-10.5" y="17" size="2" layer="25">Raspberry Pi 0W</text>
 <rectangle x1="3.5" y1="-16" x2="11.5" y2="-9" layer="21"/>
-<pad name="GND" x="4.5" y="-13.5" drill="0.5"/>
+<pad name="GND1" x="4.5" y="-13.5" drill="0.5"/>
 <pad name="VCC" x="10.5" y="-13.5" drill="0.5"/>
 <pad name="D-" x="8.5" y="-13.5" drill="0.5"/>
 <pad name="D+" x="6.5" y="-13.5" drill="0.5"/>
@@ -11444,35 +11426,39 @@ Noel Case - Created 6/16/20</description>
 <wire x1="32.5" y1="-15" x2="-32.5" y2="-15" width="0.1" layer="21"/>
 <wire x1="-32.5" y1="-15" x2="-32.5" y2="15" width="0.1" layer="21"/>
 <rectangle x1="-32.5" y1="-15" x2="32.5" y2="15" layer="39"/>
+<rectangle x1="-11.54" y1="-15.99" x2="-3.54" y2="-8.99" layer="21"/>
+<pad name="GND2" x="-10.54" y="-13.49" drill="0.5"/>
+<pad name="VCC1" x="-4.54" y="-13.49" drill="0.5"/>
+<pad name="D-1" x="-6.54" y="-13.49" drill="0.5"/>
+<pad name="D+1" x="-8.54" y="-13.49" drill="0.5"/>
 </package>
 </packages>
 <symbols>
-<symbol name="USB-4">
-<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
-<text x="2.54" y="-2.286" size="1.4224" layer="94" rot="R90">microUSB</text>
-<text x="-2.54" y="8.89" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="D+" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="D-" x="-2.54" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="VCC" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<symbol name="PI_0">
+<wire x1="-8.89" y1="5.08" x2="8.89" y2="5.08" width="0.508" layer="94"/>
+<wire x1="8.89" y1="5.08" x2="8.89" y2="-5.08" width="0.508" layer="94"/>
+<wire x1="8.89" y1="-5.08" x2="5.08" y2="-5.08" width="0.508" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.508" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-8.89" y2="-5.08" width="0.508" layer="94"/>
+<wire x1="-8.89" y1="-5.08" x2="-8.89" y2="5.08" width="0.508" layer="94"/>
+<text x="-5.08" y="-10.16" size="2.54" layer="94">Pi_0W</text>
+<pin name="5V" x="-8.89" y="0" visible="off" length="short" rot="R180"/>
+<text x="-7.62" y="-0.635" size="1.27" layer="95">5V</text>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-1.27" x2="5.08" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<text x="-2.54" y="-3.81" size="1.27" layer="94">USB_IN</text>
 </symbol>
 </symbols>
 <devicesets>
 <deviceset name="RASP_PI_0W" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="USB-4" x="-1.27" y="-1.27"/>
+<gate name="G$1" symbol="PI_0" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="RASP_PI_0W">
+<device name="PI_0W" package="RASP_PI_0W">
 <connects>
-<connect gate="G$1" pin="D+" pad="D+"/>
-<connect gate="G$1" pin="D-" pad="D-"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="5V" pad="5V"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11551,7 +11537,6 @@ Noel Case - Created 6/16/20</description>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
 <part name="U3" library="U-TI-LP2985XX-N-linear-reg" deviceset="LP2985XX-N" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="3V-1" library="oresat-supplies" deviceset="5V" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="3.3V2" library="oresat-supplies" deviceset="3.3V" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -11624,8 +11609,8 @@ Noel Case - Created 6/16/20</description>
 </part>
 <part name="U$1" library="QPQ1907_BPF" deviceset="BPF" device=""/>
 <part name="U$2" library="QPQ1907_BPF" deviceset="BPF" device=""/>
-<part name="U$4" library="AR9721" deviceset="AR9721" device=""/>
-<part name="U$5" library="Rasp_Pi_0W" deviceset="RASP_PI_0W" device=""/>
+<part name="U$4" library="AR9721" deviceset="AR9721" device="WF"/>
+<part name="U$5" library="Rasp_Pi_0W" deviceset="RASP_PI_0W" device="PI_0W"/>
 <part name="U$3" library="TM-QWT-2.422GHz" deviceset="QWT2.422" device=""/>
 <part name="C7" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="1 uF"/>
 <part name="C5" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="10 nF"/>
@@ -11638,7 +11623,8 @@ Noel Case - Created 6/16/20</description>
 <text x="265.43" y="6.35" size="3.048" layer="94">2</text>
 <text x="175.26" y="203.2" size="1.778" layer="97">Note: The Raspberry Pi Zero is powered via a USB port rather than by its pin header</text>
 <text x="274.32" y="81.28" size="1.778" layer="97" rot="R180">Note: J1 connects to the Atheros WiFi Adapter via coax</text>
-<wire x1="246.38" y1="113.03" x2="246.38" y2="139.7" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="246.38" y1="113.03" x2="246.38" y2="139.7" width="0.254" layer="97" style="shortdash"/>
+<wire x1="246.38" y1="148.59" x2="246.38" y2="175.26" width="0.254" layer="95" style="shortdash"/>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="246.38" y="113.03" smashed="yes" rot="MR0">
@@ -11663,9 +11649,6 @@ Noel Case - Created 6/16/20</description>
 </instance>
 <instance part="GND5" gate="1" x="57.15" y="171.45" smashed="yes">
 <attribute name="VALUE" x="54.61" y="168.91" size="1.778" layer="96"/>
-</instance>
-<instance part="3V-1" gate="G$1" x="43.18" y="196.85" smashed="yes">
-<attribute name="VALUE" x="42.545" y="197.485" size="1.27" layer="96"/>
 </instance>
 <instance part="GND1" gate="1" x="99.06" y="91.44" smashed="yes">
 <attribute name="VALUE" x="96.52" y="88.9" size="1.778" layer="96"/>
@@ -11786,9 +11769,9 @@ Noel Case - Created 6/16/20</description>
 <attribute name="NAME" x="233.68" y="97.79" size="1.778" layer="95"/>
 </instance>
 <instance part="U$4" gate="G$1" x="246.38" y="143.51" smashed="yes"/>
-<instance part="U$5" gate="G$1" x="246.38" y="179.07" smashed="yes" rot="R90">
-<attribute name="NAME" x="237.49" y="176.53" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="254" y="176.53" size="1.778" layer="96" rot="R90"/>
+<instance part="U$5" gate="G$1" x="246.38" y="179.07" smashed="yes">
+<attribute name="NAME" x="243.84" y="187.96" size="1.778" layer="95"/>
+<attribute name="VALUE" x="243.84" y="171.45" size="1.778" layer="96"/>
 </instance>
 <instance part="U$3" gate="G$1" x="50.8" y="113.03" smashed="yes" rot="R180">
 <attribute name="NAME" x="63.5" y="107.95" size="1.778" layer="95" rot="R180"/>
@@ -11969,13 +11952,6 @@ Noel Case - Created 6/16/20</description>
 <pinref part="U$7" gate="G$1" pin="IN"/>
 </segment>
 </net>
-<net name="1" class="0">
-<segment>
-<wire x1="238.76" y1="153.67" x2="238.76" y2="173.99" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="173.99" x2="241.3" y2="173.99" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="GND"/>
-</segment>
-</net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="C14" gate="CE" pin="1"/>
@@ -11984,36 +11960,6 @@ Noel Case - Created 6/16/20</description>
 <pinref part="U$7" gate="G$1" pin="OUT"/>
 <wire x1="113.03" y1="107.95" x2="116.84" y2="113.03" width="0.1524" layer="91"/>
 <junction x="116.84" y="113.03"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<wire x1="243.84" y1="173.99" x2="243.84" y2="171.45" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="171.45" x2="248.92" y2="171.45" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="171.45" x2="248.92" y2="153.67" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="D+"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<wire x1="243.84" y1="153.67" x2="243.84" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="170.18" x2="246.38" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="170.18" x2="246.38" y2="173.99" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="D-"/>
-</segment>
-</net>
-<net name="5V" class="1">
-<segment>
-<pinref part="U3" gate="G$1" pin="VIN"/>
-<wire x1="46.99" y1="189.23" x2="43.18" y2="189.23" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="181.61" x2="43.18" y2="189.23" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="EN"/>
-<wire x1="46.99" y1="181.61" x2="43.18" y2="181.61" width="0.1524" layer="91"/>
-<pinref part="3V-1" gate="G$1" pin="5V"/>
-<wire x1="43.18" y1="189.23" x2="43.18" y2="194.31" width="0.1524" layer="91"/>
-<junction x="43.18" y="189.23"/>
-<pinref part="C7" gate="CE" pin="2"/>
-<junction x="43.18" y="181.61"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -12076,13 +12022,6 @@ Noel Case - Created 6/16/20</description>
 <wire x1="200.66" y1="138.43" x2="200.66" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VCC" class="0">
-<segment>
-<wire x1="248.92" y1="173.99" x2="254" y2="173.99" width="0.1524" layer="91"/>
-<wire x1="254" y1="173.99" x2="254" y2="153.67" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="VCC"/>
-</segment>
-</net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="ANT1" gate="A" pin="1"/>
@@ -12104,11 +12043,28 @@ Noel Case - Created 6/16/20</description>
 <wire x1="78.74" y1="181.61" x2="72.39" y2="181.61" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$12" class="1">
+<segment>
+<pinref part="U3" gate="G$1" pin="VIN"/>
+<wire x1="46.99" y1="189.23" x2="43.18" y2="189.23" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="181.61" x2="43.18" y2="189.23" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="EN"/>
+<wire x1="46.99" y1="181.61" x2="43.18" y2="181.61" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="189.23" x2="43.18" y2="194.31" width="0.1524" layer="91"/>
+<junction x="43.18" y="189.23"/>
+<pinref part="C7" gate="CE" pin="2"/>
+<junction x="43.18" y="181.61"/>
+<wire x1="43.18" y1="194.31" x2="31.75" y2="194.31" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="194.31" x2="31.75" y2="166.37" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="5V"/>
+<wire x1="31.75" y1="166.37" x2="237.49" y2="166.37" width="0.1524" layer="91"/>
+<wire x1="237.49" y1="166.37" x2="237.49" y2="179.07" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,46.99,189.23,U3,VIN,5V,,,"/>
 <approved hash="104,1,72.39,189.23,U3,VOUT,3.3V,,,"/>
 <approved hash="104,1,72.39,181.61,U3,BYPASS,N$1,,,"/>
 <approved hash="104,1,85.09,102.87,U$7,SHTDN,GND,,,"/>
@@ -12117,8 +12073,6 @@ Noel Case - Created 6/16/20</description>
 <approved hash="104,1,133.35,100.33,U$1,GND_1,GND,,,"/>
 <approved hash="104,1,231.14,100.33,U$2,GND_3,GND,,,"/>
 <approved hash="104,1,218.44,100.33,U$2,GND_1,GND,,,"/>
-<approved hash="104,1,238.76,153.67,U$4,GND,1,,,"/>
-<approved hash="106,1,238.76,153.67,1,,,,,"/>
 <approved hash="206,1,139.7,100.33,GND,,,,,"/>
 <approved hash="206,1,224.79,100.33,GND,,,,,"/>
 <approved hash="208,1,248.92,99.06,GND,sup,,,,"/>
@@ -12135,13 +12089,6 @@ Noel Case - Created 6/16/20</description>
 <approved hash="208,1,224.79,100.33,GND,out,,,,"/>
 <approved hash="208,1,215.9,133.35,GND,sup,,,,"/>
 <approved hash="208,1,90.17,173.99,GND,sup,,,,"/>
-<approved hash="106,1,248.92,153.67,N$18,,,,,"/>
-<approved hash="106,1,243.84,153.67,N$19,,,,,"/>
-<approved hash="106,1,254,153.67,VCC,,,,,"/>
-<approved hash="111,1,241.3,173.99,1,,,,,"/>
-<approved hash="111,1,243.84,173.99,N$18,,,,,"/>
-<approved hash="111,1,246.38,173.99,N$19,,,,,"/>
-<approved hash="111,1,248.92,173.99,VCC,,,,,"/>
 <approved hash="113,1,139.596,107.846,FRAME1,,,,,"/>
 <approved hash="113,1,101.922,177.8,LED1,,,,,"/>
 </errors>
