@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11437,17 +11437,19 @@ Noel Case - Created 6/16/20</description>
 <symbol name="PI_0">
 <wire x1="-8.89" y1="5.08" x2="8.89" y2="5.08" width="0.508" layer="94"/>
 <wire x1="8.89" y1="5.08" x2="8.89" y2="-5.08" width="0.508" layer="94"/>
-<wire x1="8.89" y1="-5.08" x2="5.08" y2="-5.08" width="0.508" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.508" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="-8.89" y2="-5.08" width="0.508" layer="94"/>
+<wire x1="8.89" y1="-5.08" x2="4.445" y2="-5.08" width="0.508" layer="94"/>
+<wire x1="4.445" y1="-5.08" x2="-3.81" y2="-5.08" width="0.508" layer="94"/>
+<wire x1="-3.81" y1="-5.08" x2="-8.89" y2="-5.08" width="0.508" layer="94"/>
 <wire x1="-8.89" y1="-5.08" x2="-8.89" y2="5.08" width="0.508" layer="94"/>
 <text x="-5.08" y="-10.16" size="2.54" layer="94">Pi_0W</text>
-<pin name="5V" x="-8.89" y="0" visible="off" length="short" rot="R180"/>
-<text x="-7.62" y="-0.635" size="1.27" layer="95">5V</text>
-<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="-1.27" x2="5.08" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-1.27" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<pin name="5V" x="-11.43" y="-1.905" visible="off" length="short"/>
+<text x="-8.255" y="-1.905" size="1.27" layer="95">5V</text>
+<wire x1="-3.81" y1="-5.08" x2="-3.81" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="-1.27" x2="4.445" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="4.445" y1="-1.27" x2="4.445" y2="-5.08" width="0.1524" layer="94"/>
 <text x="-2.54" y="-3.81" size="1.27" layer="94">USB_IN</text>
+<pin name="GND" x="-11.43" y="1.905" visible="off" length="short"/>
+<text x="-8.255" y="1.905" size="1.27" layer="95">GND</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -11459,6 +11461,7 @@ Noel Case - Created 6/16/20</description>
 <device name="PI_0W" package="RASP_PI_0W">
 <connects>
 <connect gate="G$1" pin="5V" pad="5V"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11615,6 +11618,7 @@ Noel Case - Created 6/16/20</description>
 <part name="C7" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="1 uF"/>
 <part name="C5" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="10 nF"/>
 <part name="C8" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="2.2 uF"/>
+<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11788,6 +11792,9 @@ Noel Case - Created 6/16/20</description>
 <attribute name="NAME" x="84.455" y="190.246" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="89.281" y="190.246" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="GND10" gate="1" x="234.442" y="183.642" smashed="yes" rot="R180">
+<attribute name="VALUE" x="236.982" y="186.182" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11890,6 +11897,12 @@ Noel Case - Created 6/16/20</description>
 <wire x1="90.17" y1="181.61" x2="90.17" y2="189.23" width="0.1524" layer="91"/>
 <wire x1="90.17" y1="181.61" x2="86.36" y2="181.61" width="0.1524" layer="91"/>
 <junction x="90.17" y="181.61"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="GND"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="234.95" y1="180.975" x2="234.442" y2="180.975" width="0.1524" layer="91"/>
+<wire x1="234.442" y1="180.975" x2="234.442" y2="181.102" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -12036,29 +12049,28 @@ Noel Case - Created 6/16/20</description>
 <wire x1="78.74" y1="181.61" x2="72.39" y2="181.61" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="1">
-<segment>
-<pinref part="U3" gate="G$1" pin="VIN"/>
-<wire x1="46.99" y1="189.23" x2="43.18" y2="189.23" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="181.61" x2="43.18" y2="189.23" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="EN"/>
-<wire x1="46.99" y1="181.61" x2="43.18" y2="181.61" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="189.23" x2="43.18" y2="194.31" width="0.1524" layer="91"/>
-<junction x="43.18" y="189.23"/>
-<pinref part="C7" gate="CE" pin="2"/>
-<junction x="43.18" y="181.61"/>
-<wire x1="43.18" y1="194.31" x2="31.75" y2="194.31" width="0.1524" layer="91"/>
-<wire x1="31.75" y1="194.31" x2="31.75" y2="166.37" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="5V"/>
-<wire x1="31.75" y1="166.37" x2="237.49" y2="166.37" width="0.1524" layer="91"/>
-<wire x1="237.49" y1="166.37" x2="237.49" y2="179.07" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="P$2"/>
 <wire x1="33.02" y1="113.03" x2="27.94" y2="113.03" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="113.03" x2="27.94" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="1">
+<segment>
+<pinref part="U3" gate="G$1" pin="VIN"/>
+<wire x1="46.99" y1="189.23" x2="43.18" y2="189.23" width="0.1524" layer="91"/>
+<junction x="43.18" y="189.23"/>
+<wire x1="43.18" y1="181.61" x2="43.18" y2="189.23" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="EN"/>
+<wire x1="46.99" y1="181.61" x2="43.18" y2="181.61" width="0.1524" layer="91"/>
+<pinref part="C7" gate="CE" pin="2"/>
+<junction x="43.18" y="181.61"/>
+<wire x1="43.18" y1="201.422" x2="230.378" y2="201.676" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="189.23" x2="43.18" y2="201.422" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="5V"/>
+<wire x1="230.378" y1="201.676" x2="230.378" y2="177.165" width="0.1524" layer="91"/>
+<wire x1="230.378" y1="177.165" x2="234.95" y2="177.165" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
