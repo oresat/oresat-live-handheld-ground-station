@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11920,13 +11920,13 @@ Noel Case - Created 6/16/20</description>
 <part name="C11" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="100 pF"/>
 <part name="C12" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="1 uF"/>
 <part name="C14" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="100 pF"/>
-<part name="U$7" library="TP3M9037_LNA" deviceset="LNA-TP3M9037" device=""/>
+<part name="U7" library="TP3M9037_LNA" deviceset="LNA-TP3M9037" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C3" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="100 pF"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device="">
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
-<part name="U$6" library="TP3M9037_LNA" deviceset="LNA-TP3M9037" device=""/>
+<part name="U6" library="TP3M9037_LNA" deviceset="LNA-TP3M9037" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C1" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="100 pF"/>
@@ -12105,7 +12105,7 @@ Pack</text>
 <attribute name="NAME" x="112.395" y="72.136" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="117.221" y="72.136" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U$7" gate="G$1" x="86.36" y="71.12" smashed="yes">
+<instance part="U7" gate="G$1" x="86.36" y="71.12" smashed="yes">
 <attribute name="NAME" x="97.79" y="60.96" size="1.778" layer="95"/>
 </instance>
 <instance part="GND3" gate="1" x="179.07" y="48.26" smashed="yes">
@@ -12118,7 +12118,7 @@ Pack</text>
 <instance part="GND8" gate="1" x="165.1" y="48.26" smashed="yes">
 <attribute name="VALUE" x="162.56" y="45.72" size="1.778" layer="96"/>
 </instance>
-<instance part="U$6" gate="G$1" x="176.53" y="66.04" smashed="yes">
+<instance part="U6" gate="G$1" x="176.53" y="66.04" smashed="yes">
 <attribute name="NAME" x="187.96" y="55.88" size="1.778" layer="95"/>
 </instance>
 <instance part="GND4" gate="1" x="222.25" y="48.26" smashed="yes">
@@ -12361,21 +12361,21 @@ Pack</text>
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="U$7" gate="G$1" pin="GND"/>
+<pinref part="U7" gate="G$1" pin="GND"/>
 <wire x1="88.9" y1="57.15" x2="88.9" y2="59.69" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="SHTDN"/>
+<pinref part="U7" gate="G$1" pin="SHTDN"/>
 <wire x1="74.93" y1="66.04" x2="74.93" y2="57.15" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="U$6" gate="G$1" pin="GND"/>
+<pinref part="U6" gate="G$1" pin="GND"/>
 <wire x1="179.07" y1="50.8" x2="179.07" y2="54.61" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="SHTDN"/>
+<pinref part="U6" gate="G$1" pin="SHTDN"/>
 <wire x1="165.1" y1="60.96" x2="165.1" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 </segment>
@@ -12499,7 +12499,7 @@ Pack</text>
 <segment>
 <pinref part="C6" gate="CE" pin="2"/>
 <wire x1="55.88" y1="76.2" x2="74.93" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="IN"/>
+<pinref part="U7" gate="G$1" pin="IN"/>
 </segment>
 </net>
 <net name="N$16" class="2">
@@ -12507,7 +12507,7 @@ Pack</text>
 <pinref part="C14" gate="CE" pin="1"/>
 <wire x1="110.49" y1="71.12" x2="110.49" y2="87.63" width="0.1524" layer="91"/>
 <pinref part="L2" gate="G$1" pin="1"/>
-<pinref part="U$7" gate="G$1" pin="OUT"/>
+<pinref part="U7" gate="G$1" pin="OUT"/>
 <wire x1="102.87" y1="71.12" x2="110.49" y2="71.12" width="0.1524" layer="91"/>
 <junction x="110.49" y="71.12"/>
 </segment>
@@ -12523,7 +12523,7 @@ Pack</text>
 <segment>
 <pinref part="C3" gate="CE" pin="2"/>
 <wire x1="161.29" y1="71.12" x2="165.1" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="IN"/>
+<pinref part="U6" gate="G$1" pin="IN"/>
 </segment>
 </net>
 <net name="N$5" class="2">
@@ -12550,7 +12550,7 @@ Pack</text>
 <net name="N$13" class="2">
 <segment>
 <pinref part="L1" gate="G$1" pin="1"/>
-<pinref part="U$6" gate="G$1" pin="OUT"/>
+<pinref part="U6" gate="G$1" pin="OUT"/>
 <wire x1="193.04" y1="66.04" x2="194.31" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="C4" gate="CE" pin="1"/>
 <wire x1="196.85" y1="66.04" x2="194.31" y2="66.04" width="0.1524" layer="91"/>
