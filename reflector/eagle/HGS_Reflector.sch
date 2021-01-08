@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12171,8 +12171,8 @@ by exp-lbrs.ulp</description>
 </part>
 <part name="LED1" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-GREEN" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="GREEN"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C11" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="100 pF"/>
-<part name="C12" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="1 uF"/>
+<part name="C11" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="100 pF"/>
+<part name="C12" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="1 uF"/>
 <part name="C14" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="100 pF"/>
 <part name="U7" library="TP3M9037_LNA" deviceset="LNA-TP3M9037" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -12183,8 +12183,8 @@ by exp-lbrs.ulp</description>
 <part name="U6" library="TP3M9037_LNA" deviceset="LNA-TP3M9037" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C1" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="100 pF"/>
-<part name="C2" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="1 uF"/>
+<part name="C1" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="100 pF"/>
+<part name="C2" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="1 uF"/>
 <part name="C4" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="100 pF"/>
 <part name="L2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="L-EU" device="L3216C" package3d_urn="urn:adsk.eagle:package:23476/2" value="10n">
 <spice>
@@ -12226,7 +12226,7 @@ by exp-lbrs.ulp</description>
 <attribute name="IMPEDANCE" value="8 nH"/>
 <attribute name="SPICEPREFIX" value=""/>
 </part>
-<part name="U$5" library="Rasp_Pi_0W" deviceset="RASP_PI_0W" device="PI_0W"/>
+<part name="PCBA2" library="Rasp_Pi_0W" deviceset="RASP_PI_0W" device="PI_0W"/>
 <part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="USB_MINI-B" device="_SMT" package3d_urn="urn:adsk.eagle:package:38244/1"/>
 <part name="C9" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="100 pF"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -12296,7 +12296,7 @@ by exp-lbrs.ulp</description>
 <part name="C21" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="100 pF"/>
 <part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_B_L" device=""/>
-<part name="X1" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="USB_HOST_W/CHASSIS_GND" device="" package3d_urn="urn:adsk.eagle:package:5829487/3"/>
+<part name="J7" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="USB_HOST_W/CHASSIS_GND" device="" package3d_urn="urn:adsk.eagle:package:5829487/3"/>
 </parts>
 <sheets>
 <sheet>
@@ -12429,7 +12429,7 @@ Pack</text>
 <attribute name="VALUE" x="225.298" y="118.11" size="1.778" layer="96" rot="R270"/>
 <attribute name="SPICEPREFIX" x="224.79" y="116.84" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="U$5" gate="G$1" x="240.03" y="218.44" smashed="yes" rot="MR180">
+<instance part="PCBA2" gate="G$1" x="240.03" y="218.44" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="237.49" y="226.06" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="J2" gate="G$1" x="83.82" y="224.79" smashed="yes" rot="MR0">
@@ -12644,7 +12644,7 @@ Pack</text>
 <attribute name="SHEET" x="411.48" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="342.9" y="19.05" size="2.54" layer="94"/>
 </instance>
-<instance part="X1" gate="G$1" x="302.26" y="182.88" smashed="yes" rot="R270">
+<instance part="J7" gate="G$1" x="302.26" y="182.88" smashed="yes" rot="R270">
 <attribute name="NAME" x="314.96" y="195.58" size="1.27" layer="95" rot="R270"/>
 <attribute name="VALUE" x="292.1" y="177.8" size="1.27" layer="96" rot="R270"/>
 </instance>
@@ -12770,7 +12770,7 @@ Pack</text>
 </segment>
 <segment>
 <pinref part="C17" gate="CE" pin="1"/>
-<pinref part="U$5" gate="G$1" pin="GND"/>
+<pinref part="PCBA2" gate="G$1" pin="GND"/>
 <wire x1="228.6" y1="216.535" x2="228.6" y2="214.63" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="214.63" x2="227.33" y2="214.63" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
@@ -12818,7 +12818,7 @@ Pack</text>
 <pinref part="GND26" gate="1" pin="GND"/>
 <wire x1="320.04" y1="180.34" x2="320.04" y2="173.99" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="180.34" x2="320.04" y2="180.34" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="GND"/>
+<pinref part="J7" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C21" gate="CE" pin="1"/>
@@ -13027,7 +13027,7 @@ Pack</text>
 <wire x1="224.79" y1="222.25" x2="214.63" y2="222.25" width="0.1524" layer="91"/>
 <wire x1="224.79" y1="222.25" x2="228.6" y2="222.25" width="0.1524" layer="91"/>
 <junction x="224.79" y="222.25"/>
-<pinref part="U$5" gate="G$1" pin="5V"/>
+<pinref part="PCBA2" gate="G$1" pin="5V"/>
 <wire x1="228.6" y1="222.25" x2="228.6" y2="220.345" width="0.1524" layer="91"/>
 <pinref part="E3" gate="E" pin="2"/>
 </segment>
@@ -13189,7 +13189,7 @@ Pack</text>
 <wire x1="345.44" y1="215.9" x2="340.36" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="340.36" y1="215.9" x2="340.36" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="340.36" y1="182.88" x2="314.96" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="D+"/>
+<pinref part="J7" gate="G$1" pin="D+"/>
 </segment>
 </net>
 <net name="N$36" class="0">
@@ -13198,24 +13198,24 @@ Pack</text>
 <wire x1="342.9" y1="185.42" x2="342.9" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="J3" gate="A" pin="3"/>
 <wire x1="342.9" y1="213.36" x2="345.44" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="D-"/>
+<pinref part="J7" gate="G$1" pin="D-"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
 <pinref part="TP2" gate="G$1" pin="1"/>
 <wire x1="317.5" y1="187.96" x2="314.96" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="VBUS"/>
+<pinref part="J7" gate="G$1" pin="VBUS"/>
 </segment>
 </net>
 <net name="N$38" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="CG1"/>
+<pinref part="J7" gate="G$1" pin="CG1"/>
 <wire x1="307.34" y1="195.58" x2="307.34" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="198.12" x2="302.26" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="198.12" x2="302.26" y2="171.45" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="171.45" x2="307.34" y2="171.45" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="CG2"/>
+<pinref part="J7" gate="G$1" pin="CG2"/>
 <wire x1="307.34" y1="171.45" x2="307.34" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="C21" gate="CE" pin="2"/>
 <wire x1="307.34" y1="168.91" x2="307.34" y2="171.45" width="0.1524" layer="91"/>
