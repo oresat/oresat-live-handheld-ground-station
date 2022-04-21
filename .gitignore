@@ -23,7 +23,7 @@ fp-info-cache
 # KiCAD 6
 
 *-backups
-*.kcad_prl
+*.kicad_prl
 
 # EAGLE
 
