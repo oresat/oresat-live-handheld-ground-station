@@ -20,9 +20,10 @@ fp-info-cache
 *.dsn
 *.ses
 
-# Exported BOM files
-*.xml
-*.csv
+# KiCAD 6
+
+*-backups
+*.kcad_prl
 
 # EAGLE
 
