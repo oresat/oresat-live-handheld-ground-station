@@ -25,6 +25,10 @@ fp-info-cache
 *-backups
 *.kicad_prl
 
+# PSAS
+
+archive
+
 # EAGLE
 
 *.s#*
