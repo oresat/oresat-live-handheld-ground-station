@@ -361,7 +361,7 @@
     (uuid 2dd0add1-9a95-4b8c-a47a-bb7c827bbb1c)
     (property "Reference" "J1" (id 0) (at 115.8874 78.74 0))
     (property "Value" "Conn_Coaxial" (id 1) (at 115.8874 81.28 0))
-    (property "Footprint" "HGS_Reflector:132134-10" (id 2) (at 115.57 86.36 0)
+    (property "Footprint" "Footprints:J-Amphenol-132134-10-SMA-F-SMT-vertical" (id 2) (at 115.57 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" " ~" (id 3) (at 115.57 86.36 0)
@@ -435,7 +435,7 @@
       (reference "H1") (unit 1) (value "Antenna Signal") (footprint "Connector_Pin:Pin_D1.0mm_L10.0mm")
     )
     (path "/2dd0add1-9a95-4b8c-a47a-bb7c827bbb1c"
-      (reference "J1") (unit 1) (value "Conn_Coaxial") (footprint "HGS_Reflector:132134-10")
+      (reference "J1") (unit 1) (value "Conn_Coaxial") (footprint "Footprints:J-Amphenol-132134-10-SMA-F-SMT-vertical")
     )
     (path "/8a429765-4e67-4a49-8e8d-ddb3e75fdadd"
       (reference "U1") (unit 1) (value "NCS3-272+") (footprint "NCS3-272+:FIL_MEM2012SC470")
