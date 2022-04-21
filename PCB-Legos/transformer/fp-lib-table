@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name "footprints")(type "KiCad")(uri "${KIPRJMOD}/oresat-kicad/libraries/footprints")(options "")(descr ""))
+  (lib (name "oresat-footprints")(type "KiCad")(uri "${KIPRJMOD}/oresat-kicad/oresat-footprints")(options "")(descr ""))
 )
