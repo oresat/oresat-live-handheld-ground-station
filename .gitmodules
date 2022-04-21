@@ -1,0 +1,3 @@
+[submodule "PCB-Legos/transformer/oresat-kicad"]
+	path = PCB-Legos/transformer/oresat-kicad
+	url = git@github.com:oresat/oresat-kicad.git
