@@ -212,7 +212,7 @@
         (xy 3.81 3.81)
         (xy 3.81 -3.81)
         (xy 1.27 -3.81)
-      ) (layer "F.Mask") (width 0.1) (fill solid) (tstamp 1ebf55b2-09a7-4dc8-8b62-2c2166fb1446))
+      ) (layer "F.Mask") (width 0.1) (fill solid) (tstamp 8ca3e20d-bcc7-4c5e-9deb-562dfed9fecb))
     (fp_poly (pts
         (xy -3.81 3.81)
         (xy -1.205 3.81)
@@ -283,6 +283,11 @@
             (xy -1.1557 -6.6449)
           ) (width 0.1) (fill yes))
       ) (tstamp 1e0670b1-a793-48f4-9da3-84fa0c929ebd))
+    (model "${KIPRJMOD}/oresat-kicad/oresat-3dmodels/J-Amphenol-132134-10-SMA-F-SMT-vertical.stp"
+      (offset (xyz 0 0 8.84))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 -90 0))
+    )
   )
 
   (gr_rect (start 152.5 95) (end 130 105) (layer "Edge.Cuts") (width 0.254) (fill none) (tstamp 3a36b480-d94e-4366-b006-163adebbe2c5))

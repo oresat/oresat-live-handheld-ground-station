@@ -401,7 +401,7 @@
     (property "Footprint" "oresat-footprints:J-Amphenol-132134-10-SMA-F-SMT-vertical" (id 2) (at 116.84 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" " ~" (id 3) (at 116.84 86.36 0)
+    (property "Datasheet" "https://www.digikey.com/en/products/detail/amphenol-rf/132134-10/3125418" (id 3) (at 116.84 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 64f601f9-168a-49d5-acec-502d01d3c42d))
