@@ -1,4 +1,3 @@
 (sym_lib_table
-  (lib (name "New_Library")(type "KiCad")(uri "${KIPRJMOD}/New_Library.kicad_sym")(options "")(descr ""))
-  (lib (name "NCS3_272")(type "KiCad")(uri "${KIPRJMOD}/NCS3_272.kicad_sym")(options "")(descr ""))
+  (lib (name "U-Minicircuits-NCS3-272+-ceramic-transformer")(type "KiCad")(uri "${KIPRJMOD}/oresat-kicad/oresat-symbols/U-Minicircuits-NCS3-272+-ceramic-transformer.kicad_sym")(options "")(descr ""))
 )
