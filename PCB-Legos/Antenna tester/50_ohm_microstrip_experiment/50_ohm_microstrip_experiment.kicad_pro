@@ -34,8 +34,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 2.0,
-          "width": 2.5
+          "height": 5.08,
+          "width": 2.413
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.3
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -63,7 +63,7 @@
         "annular_width": "error",
         "clearance": "error",
         "copper_edge_clearance": "error",
-        "courtyards_overlap": "ignore",
+        "courtyards_overlap": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
@@ -346,7 +346,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "LNA.kicad_pro",
+    "filename": "50_ohm_microstrip_experiment.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -367,37 +367,6 @@
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6.0
-      },
-      {
-        "bus_width": 12.0,
-        "clearance": 1.35,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "RF Path",
-        "nets": [
-          "Net-(C13-Pad1)",
-          "Net-(C13-Pad2)",
-          "Net-(C2-Pad1)",
-          "Net-(C2-Pad2)",
-          "Net-(C6-Pad1)",
-          "Net-(C6-Pad2)",
-          "Net-(C9-Pad1)",
-          "Net-(C9-Pad2)",
-          "Net-(J2-Pad1)",
-          "Net-(J3-Pad1)",
-          "Net-(R3-Pad1)",
-          "Net-(R3-Pad2)"
-        ],
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.45,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
-        "wire_width": 6.0
       }
     ],
     "meta": {
@@ -409,7 +378,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "LNA.net",
+      "netlist": "50_ohm_microstrip_experiment.net",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
@@ -456,7 +425,7 @@
   },
   "sheets": [
     [
-      "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55",
+      "6b6fa031-d624-43d1-842e-f25c3d8a114c",
       ""
     ]
   ],
