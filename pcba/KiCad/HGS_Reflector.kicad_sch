@@ -3,7 +3,12 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "6e315cc8-f4ea-4ab4-9729-187271e6eeaf")
-	(paper "USLedger")
+	(paper "B")
+	(title_block
+		(title "OreSat Live Handheld Ground Station")
+		(date "2024-09-10")
+		(rev "2")
+	)
 	(lib_symbols
 		(symbol "Connector:USB_C_Plug_USB2.0"
 			(pin_names
