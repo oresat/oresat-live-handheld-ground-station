@@ -436,7 +436,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
@@ -468,60 +468,43 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.127,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "New Class",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.127,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "RF",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.127,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
+        "via_diameter": 0.4572,
+        "via_drill": 0.254,
         "wire_width": 6
       },
       {
         "bus_width": 12,
-        "clearance": 0.127,
+        "clearance": 1.0105,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "power",
+        "name": "RF-50-max",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.38,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
+        "via_diameter": 0.4572,
+        "via_drill": 0.254,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.6063,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "RF-50-min",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.38,
+        "via_diameter": 0.4572,
+        "via_drill": 0.254,
         "wire_width": 6
       }
     ],
@@ -532,72 +515,12 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "RF",
-        "pattern": "N$11"
+        "netclass": "RF-50-max",
+        "pattern": "/ant"
       },
       {
-        "netclass": "RF",
-        "pattern": "N$13"
-      },
-      {
-        "netclass": "RF",
-        "pattern": "N$16"
-      },
-      {
-        "netclass": "RF",
-        "pattern": "N$23"
-      },
-      {
-        "netclass": "RF",
-        "pattern": "N$24"
-      },
-      {
-        "netclass": "RF",
-        "pattern": "N$26"
-      },
-      {
-        "netclass": "RF",
-        "pattern": "N$27"
-      },
-      {
-        "netclass": "RF",
-        "pattern": "N$3"
-      },
-      {
-        "netclass": "RF",
-        "pattern": "N$4"
-      },
-      {
-        "netclass": "RF",
-        "pattern": "N$5"
-      },
-      {
-        "netclass": "RF",
-        "pattern": "N$6"
-      },
-      {
-        "netclass": "RF",
-        "pattern": "N$8"
-      },
-      {
-        "netclass": "RF",
-        "pattern": "T1-50"
-      },
-      {
-        "netclass": "power",
-        "pattern": "N$20"
-      },
-      {
-        "netclass": "power",
-        "pattern": "N$21"
-      },
-      {
-        "netclass": "power",
-        "pattern": "N$22"
-      },
-      {
-        "netclass": "power",
-        "pattern": "N$25"
+        "netclass": "RF-50-max",
+        "pattern": "/RF*"
       }
     ]
   },
@@ -740,7 +663,7 @@
       "field_names": [],
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
-      "intersheets_ref_short": false,
+      "intersheets_ref_short": true,
       "intersheets_ref_show": false,
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,

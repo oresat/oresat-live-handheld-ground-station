@@ -5632,6 +5632,50 @@
 		)
 		(uuid "fe0a7b69-58d5-4c8c-8baa-133840126514")
 	)
+	(label "RF3"
+		(at 81.28 212.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "caf2ed37-619a-48b2-a244-0a4c37ac57d5")
+	)
+	(label "RF4"
+		(at 121.92 212.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cdf9335b-b3fd-4170-afe0-ee641df8fb10")
+	)
+	(label "RF1"
+		(at 30.48 212.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ed1efbf1-4d1a-459d-bb59-dca7c50e214b")
+	)
+	(label "RF2"
+		(at 54.61 212.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f1504e9d-f370-4c84-bbb7-2efd060ffdda")
+	)
 	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 114.3 153.67 90)
